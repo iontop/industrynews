@@ -1,0 +1,333 @@
+---
+title: "Industry News"
+subtitle: "Vol. 68"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r}
+knitr::include_graphics('D:/R/projects/industry_news/title.png')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+세상이 참 빠르게 흘러가고 있다고 느껴지는 요즘입니다.  
+미친듯이 따라가려고 노를 젓는데 점점 멀어지는 느낌입니다.  
+
+<br> 
+
+[구글 I/O 2022](https://io.google/2022/)  
+
+[마이크로소프트 빌드 2022](https://news.microsoft.com/build2022/)  
+
+[애플 WWDC 2022](https://developer.apple.com/wwdc22/)
+
+<br>
+
+네, 모두 플랫폼을 가진 회사들입니다.  
+
+공교롭게도 모두 미국회사이구요.  
+
+애플 빼고 모두 종료된 행사입니다.  
+
+보고 있자면 정말 엄청나게 발전되고 있구나하는 생각이 저절로 듭니다.  
+
+특히 모든 회사들의 화두는 AI로 귀결되어 가는 듯 합니다.  
+
+저런 행사를 볼 때마다 나는 어디에서 무엇을 해야 하는가라는 고민을 하게됩니다.  
+
+<br>
+
+### 하나 - Imagen by Google Brain
+
+Dall-e2를 보고 이런 것이 가능하단 말인가... 하며 놀라워하고 있는데     
+이미 세상을 지배하고 있는 것과 다름없는 구글에서 [Imagen](https://imagen.research.google/)을 세상에 내놓았습니다.
+(Dall-e2를 보고 있는데도 놀랍습니다. `r emo::ji('open_mouth')`)  
+
+<br>
+
+```{r ,fig.caption='A dog looking curiously in the mirror, seeing a cat.', out.width="50%"}
+knitr::include_graphics('https://cdn.vox-cdn.com/thumbor/vxeACvISlQyRVdu2jDeKTaZD_jA=/0x0:472x585/920x0/filters:focal(0x0:472x585):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/23584868/Screenshot_2022_05_24_at_10.23.02.png')
+
+```
+
+<br>
+
+조만간 구글이 이끄는 안드로이드 진영에 풀리면서 어떤 변화를 가져올지 기대가 됩니다.  
+가만히 생각해보니 이젠 사진을 찍는다는 행위 자체가 의미없어 질지도 모르겠다는 생각이 드네요.  
+
+<br>
+
+### 둘 - CogVideo
+
+Dall-e2도 그렇고 Imagen도 그렇고 텍스트로 이미지를 만들어 내는 것이었는데 이제 한 발 더 나아가 텍스트로 영상도 만들어 냅니다.   
+2일 전에 깃헙에 올라온 [CogVideo](https://github.com/THUDM/CogVideo)  `r emo::ji("+1")`  가 바로 그것 입니다.    
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://github.com/THUDM/CogVideo/raw/main/assets/intro-image.png')
+
+```
+
+<br>
+
+텍스트를 그것도 **중국어도 됩니다!!!** 입력하면 간단한 32프레임 4초짜리 영상을 만들어 줍니다.   
+
+기술은 2022년인데, 이를 뒷받침해주는 정책이나 관료들은 1922년 수준도 안 되는 현실이 너무나도 안타깝습니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### 봄가을‧주말마다 원전출력 낮춰야 할 판
+
+<br>  
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=242467)
+
+이런 기사를 접할 때마다 편향된 기자의 시선이 얼마나 많은 것을 왜곡하고 있는가를 느낍니다.  
+
+첫 문장부터가 **재생에너지나 원자력발전소처럼 전력수요 변화에 따라 즉각 발전량을 조절할 수 없는 경직성 전원 비중 증가로 전력계통의 적정 예비력 확보 기준을 지키는 게 점차 어려워지자, 전력당국과 한국수력원자력이 ‘원전 계획부하추종운전’ 근거와 운영기준을 마련하는 방안을 고민하고 있다.** 로 시작합니다.  
+
+재생에너지를 경직성 전원이라 하며 원자력과 함께 묶어 은근슬쩍 재생에너지도 잘못이 있는 것처럼 표현합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202205/242467_96664_1651.jpg')
+
+```
+
+<br>  
+
+재생에너지는 변동성이 문제이지 인버터 제어방식을 이용한 매우 유연한 전원 중 하나입니다.   
+바람이 풀지 않을 때 돌지 않다가 바람이 불면 순식간에 100% 출력을 낸다해도 전혀 문제가 없는 유연한 전원인데 이를 모르는 것인지, 어떤 의도가 있는 것인지 교묘하게 원자력과 엮어서 뭔가 같은 문제가 있다는 식으로 기사를 쓰는 것은 아니라고 봅니다.  
+
+여하튼 재생에너지는 급격한 부하변동이나 계통이상 발생시 급격하게 그것도 1/1000초 수준으로 제어가능한 매우 유연한 전원입니다.   
+다만 간헐성이 문제가 될 수 있는데 이건 어느 발전이나 가지고 있는 문제입니다.  
+
+만약 간헐성이 문제라면 양수발전, ESS, DR 등으로 유연하게 에너지를 저장하고 수요감발을 할 수 있는 에너지 완충장치를 늘이자는 기사가 되어야 합니다.  
+
+암튼 노후 원전은 수명을 연장하고, 신한울 3,4호기까지 지어진다면 이제 어떻게 전력망을 운영할 것인지 궁금해집니다.  
+
+벌써부터 원자력 발전소를 부분부하 운전을 하겠다고 하는데, 정작 전력 예비율을 10% 이하로 떨어지고 ...   
+
+신재생, 유연에너지, 마이크로 그리드를 정치적인 관점에서만 바라보는 사람들에겐 이해가 되지 않는 상황이 펼쳐지고 있습니다.  
+
+<br>  
+
+### Altrad have reached an agreement with Doosan Enerbility to acquire Doosan Babcock Limited  
+
+<br>
+
+[기사링크](https://www.altrad.com/en/newsreader/altrad-have-reached-an-agreement-with-doosan-enerbility-previously-doosan-heavy-industries-construction-to-acquire-doosan-babcoc.html)  
+
+몇몇 분들께는 며칠 전에 카톡으로 알려드렸던 두산밥콕이 팔렸다는 소식입니다.   
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://newsmanager.altrad.com/files/altrad-group/news/2022/05/26_altrad-have-reached-an-agreement-with-doosan-enerbility-previously-doosan-heavy-industries-construction-to-acquire-doosan-babcock-limited/db-picture.jpg')
+
+```
+
+<br>  
+
+프랑스에 본사를 둔 Altrad사에 팔았습니다. 이제부터는 Altrad Babcock 입니다.   
+
+특별한 내용은 없고 팔렸다는 소식을 알려드리려고 넣어봤습니다.  
+
+<br>  
+
+### Firsts for HVDC Light
+
+<br>
+
+[기사링크](https://www.modernpowersystems.com/features/featurefirsts-for-hvdc-light-9714680/)
+
+Hitachi Energy(이하 히타치)가 삼성물산에게 수주한 **최초의 MENA(중동 및 북아프리카)지역 해저 송전망**  계약 소식입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.modernpowersystems.com/uploads/newsarticle/9714680/images/559011/large/fig%202%20large.jpg')
+
+```
+
+<br> 
+
+사진에서 볼 수 있는 이 HVDC는 총 용량이 3.2GW 규모로 노르웨이 해안에서 전력을 가져와 대륙의 전력망에 연결합니다.  
+
+히타치는 해저케이블 전송을 위해 AC전력을 DC로 변환한 후 해양 전력 시스템에서 사용하기 위해 DC를 AC로 재변환하는 컨버터 스테이션 4기를 공급합니다.  
+
+이를 통해 발트해 연안에 있는 3개의 해상풍력단지, 2개의 독일 발전단지(Baltic 1 및 Baltic 2) + 덴마크 발전단지(Kriegers Flak)를 통합할 수 있습니다.  
+
+양국의 발전소는 30km가 안되는 거리에 위치하고 있으며 400MW 전송용량을 가진 2개의 해상 케이블로 연결되어 상호 연결되어 있습니다.  
+
+국가를 가로질러 다양한 전력망 구성과 재생에너지를 활용하는 소식이 끝없이 올라오는 유럽과 재생에너지가 정치적인 논란의 결과물이 되어버린채 기후위기, 탄소중립, 에너지 전환과 같은 거대한 이슈들에 대해 말하지 않는 우리의 모습이 대조적으로 느껴집니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+'21년도 전력계통 운영실적이 배포되었습니다.   
+함께 첨부하여 공유 드립니다.  
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+

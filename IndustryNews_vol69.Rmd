@@ -1,0 +1,385 @@
+---
+title: "Industry News"
+subtitle: "Vol. 69"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r}
+knitr::include_graphics('D:/R/projects/industry_news/title.png')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+병든 몸이 낫지 않습니다.  
+
+제 체력의 바로미터인 런닝 기록이 나날이 나빠지고 있는 걸로 봐서 뭔가 문제가 있나봅니다.  
+
+급한 일들 쳐내고 나면 운동을 본격적으로 해야 할 것 같습니다.  
+
+슬프게도 3월부터 병원과 매우 친하게 지내고 있습니다.  
+
+아프지 말고 다들 건강하세요. `r emo::ji('muscle')`  
+
+<br>
+
+### 하나 - 로봇 염소 BEX
+
+BEX라는 이름의 로봇입니다.   
+
+뜬금없이 3월 도쿄에서 열렸던 2022 International Robot Exhibition에 등장해서 언론의 관심을 받았습니다.  
+
+노령층을 위해 100kg까지 짊어지고 거친 환경을 다닐 수 있다고 하는데...  
+
+이게 왜 뉴스에 나는지 이해가 되지 않아 가져와봤습니다.  
+
+일본 로봇기술이 아시모(혼다), 아이모(소니) 초기모델 때까지만해도 엄청나다고 여겼는데... 이런게 언론에 실릴 정도라면 정말 안타깝습니다.  
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://www.newsbricks.com/root_upld/general-news/2022/06/20218/org_46236202206011005.jpg')
+
+```
+
+<br>
+
+참고로 흔해빠진 한국 자동차 회사 로봇 한 번 보고 가시죠.
+
+[Atlas](https://youtu.be/tF4DML7FIWk) <-- 요기를 누르시면 얼마 전에 귀화한 한국 로봇 하나가 나옵니다.  
+
+<br>
+
+### 둘 - 애플 WWDC2022
+
+[WWDC22](https://developer.apple.com/wwdc22/)
+
+전 별로 관심이 없지만 많은 분들이 기대하는 애플 WWDC2022가 열렸습니다. 
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://www.apple.com/newsroom/images/live-action/wwdc-2022/Apple-WWDC22-details-announcement-hero_big.jpg.large.jpg')
+
+```
+
+<br>
+
+새로나온 제품들입니다. 
+
+모두 매력적인 제품이라 정신이 없네요.  
+
+- New iPhone software, called iOS 16.  
+
+- An all-new MacBook Air with the new M2 chip.  
+
+- A new 13-inch MacBook Pro with the M2 chip.  
+
+- New Mac software, called macOS Ventura.  
+
+- New iPad software, called iPadOS 16.  
+
+- Apple Pay Later, Apple’s buy now, pay later service.  
+
+- New Apple Watch software, called watchOS 9.  
+
+- The new Apple M2 chip.
+
+실리콘 칩으로 생태계를 말살하고 싶은 모양인가 봅니다. `r emo::ji('+1')`
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### 에너지전환, 환경 문제? 경제 문제? 아니면 안보 문제?
+
+기사가 정말 잘 쓰여졌습니다.
+
+지난 주엔 에너지 전문 매체라는 곳에서 신재생을 경직성 전원으로 넣는 말도 안되는 기사를 썼다고 욕을 했는데 이 기사는 제대로 썼습니다.  
+
+<br>  
+상, 중, 하 세편으로 구성되어 있는데 천천히 읽어보시면 정말 큰 도움이 되실겁니다.  
+
+
+[상](https://news.jtbc.joins.com/article/article.aspx?news_id=NB12059867)  
+
+[중](https://news.jtbc.joins.com/article/article.aspx?news_id=NB12060695)  
+
+[하](https://news.jtbc.joins.com/html/472/NB12061472.html)  
+
+<br>
+
+현재 에너지 전환에 대해 꼭 필요한 것을 짚어주고 있습니다.  
+
+기사에서 계속해서 언급되고 있는 **균형** 과 **유연성** 이 결국 핵심이 되는 것입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://photo.jtbc.joins.com/news/jam_photo/202205/30/fef5fd10-a228-4436-b732-ca0593a96ce3.jpg')
+
+```
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://photo.jtbc.joins.com/news/jam_photo/202205/30/135ca768-6185-4321-8c92-f982bbf95a19.jpg')
+
+```
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://photo.jtbc.joins.com/news/jam_photo/202205/30/9a6ea3e3-9a8f-4597-998b-5caefcece697.jpg')
+
+```
+
+<br>
+
+에너지 전환이 필요한 이유부터 탈석탄, 전원의 유연성, 신재생의 간헐성, 그리고 V2G와 같은 기술까지 모두 하나의 글타래로 묶어 설명해주고 있습니다.  
+
+기자의 마지막 말이 가장 와 닿네요.   
+제가 꼭 드리고 싶었던 말입니다.  
+
+**전기차뿐만 아니라 가정용 태양광 패널과 ESS, 그리고 상업용 수준의 대용량 에너지 저장장치까지 모두 만들어 판매하고 있죠. 우리나라에서야 테슬라가 '전기차 제조사'지만, 해외에선 '에너지 솔루션 기업'으로 자리매김하고 있습니다. 발명왕 혹은 괴짜인 CEO의 창의성과 독창성 덕분일까요. 그렇지 않습니다. 전기차는 테슬라 이전에도 분명 존재했습니다. 일론 머스크가 “감쪽같다”며 소개한 태양광 패널도 마찬가지입니다. 기능성과 심미성 모두를 다 갖춘, 그저 평범한 지붕 마감재처럼 보이는 패널 역시 이미 존재합니다. 그렇게 만든 전기를 저장하는 파워월 역시 마찬가지입니다. 우리나라가 먼저 했고, 일부 더 나은 기술력이 있음에도 국내에선 이를 한데 엮는 시도가 이뤄지지 못했던 겁니다.**
+
+<br>
+
+**왜 못 했을까요. 그저 개별 기업만의 책임일까요. 경영진이 불과 몇 년 후의 미래를 내다보지 못한 탓일까요. “재생에너지는 우리나라에 적합하지 않아”, “무슨 전기차로 그리드에 전기를 공급해” 등등. 제대로 된 근거도 없이, 그저 이러한 변화를 '치기 어린 시도'로 바라본 우리 모두는 그 책임에서 자유롭지 않습니다. 그리고 이러한 시선이 달라지지 않는다면, 각국이 눈에 보일 만큼의 성과를 낼 2030년, 그리고 자체적으로 탄소중립에 도달할 2050년, 우리는 여전히 에너지 빈국일 겁니다. 해외에서 벌어지는 각종 사건사고들로 인해 요동치는 자원가격의 파도에 계속해서 휩쓸릴 테고요. 결국 그러고 나서야 뒤늦게 에너지전환에 동참한다면, 태양광은 중국산, 풍력은 미국산, 연료전지는 유럽산… 우리의 몫은 아무것도 남지 않을 겁니다.**
+
+<br>  
+
+### Biden Pausing Solar Tariffs, Pushes for U.S. Production  
+
+<br>
+
+[기사링크](https://www.powermag.com/biden-pausing-solar-tariffs-pushes-for-u-s-production/)  
+
+[백악관 팩트시트](https://www.whitehouse.gov/briefing-room/statements-releases/2022/06/06/fact-sheet-president-biden-takes-bold-executive-action-to-spur-domestic-clean-energy-manufacturing/)
+
+
+미국 바이든 대통령이 동남아에서 수입되는 태양광 패널에 대한 관세를 2년 면제하겠다고 발표한 것으로 뉴스가 많이 나왔습니다.  
+
+태양광 패널을 만드는 쪽은 미국 태양광 발전 프로젝트와 산업 일자리를 위협하는 공급망 제약을 초래한다는 이유로 반대하고 있으며, 태양광 패널을 사서 발전소를 건설, 운영하는 쪽은 찬성하는 입장을 보이고 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://gdb.voanews.com/FA3D3FEE-3B5A-48F0-8293-95ACB642C5F8_cx0_cy14_cw93_w1023_r1_s.jpg')
+
+```
+
+<br>  
+
+흥미로운 점이 이 발표를 하면서 미국내에서 전기 히트 펌프를 생산하는 것을 지원하겠다는 메모도 함께 발표했습니다.
+
+[Memo](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/06/06/memorandum-on-presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-electric-heat-pumps/)
+
+<br>  
+
+### A Decade of Transformation: Clean Energy Costs
+
+<br>
+
+[기사링크](https://www.nrel.gov/news/features/2022/re-futures.html)  
+
+[영상링크](https://youtu.be/5mSVXFsOexg)
+
+미국 신재생 에너지 연구소(National Renewable Energy Laboratory - NREL) 영상입니다.  
+(약간 의외인게 구독자가 8천명 밖에 안되네요... 하기사 저도 구독해서 보지는 않으니 ㅎㅎㅎ)
+
+영상 한 줄 요약 들어갑니다.  
+
+**2012년에는 Utility-scale의 solar photovoltaic (PV) system이 2050년이 되어야  USD2/Watt가 될거라 예상했는데, 예상보다 훨씬 더 빠른속도로 속도가 떨어져서 이미 $1/Watt (28년이나 남았는데 이미 반값)에 도달했다.**   
+
+
+10년 전(2012년)에는 RE80을 달성하면 전기 요금이 MWh당 USD30 ~ 60이 될 것이라 생각했는데,  
+지금 상태로 계산을 해보면 USD5 근방이 될 것 같다.   
+즉 재생에너지를 설치할 수록 전기요금이 급격히 하락할 것이다.  
+
+따라서 탄소 중립은 2050년이 되어도 달성하기 어려운 것이 아니라 오히려 10년 정도는 당겨서 실현될 가능성이 높다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.nrel.gov/news/features/2022/images/202205-nrel-futures-study.jpg')
+
+```
+
+<br> 
+
+세상을 따라간다고 애쓰는데도 세상은 더 빠르게 움직이고 있습니다.  
+
+세상의 흐름을 외면하려 하는 사람들에겐 어떤 느낌일지 궁금합니다.  
+
+오래 전 레이 커즈와일이 쓴 `특이점이 온다`를 읽으면서 말도 안된다는 생각을 했는데...   
+
+이젠 그가 말한 2047년(2042년이라 했던가요? 헷갈리네요?)보다 더 빠른 시점에 특이점이 올 것 같다는 느낌을 받습니다.   
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+<변동내역>  
+
+- 중앙급전발전기 : 해당사항 없음  
+- 비중앙급전발전기 : 당진화력소수력 폐지 등[+269.8MW]  
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+

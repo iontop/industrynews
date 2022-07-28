@@ -1,0 +1,329 @@
+---
+title: "Industry News"
+subtitle: "Vol. 66"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r}
+knitr::include_graphics('D:/R/projects/industry_news/title.jpg')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+몸뚱아리가 노후화되었는지 여기저기 고장나서 오버홀 중입니다.  
+다들 건강하셔야 합니다.  
+아픈 와중에도 이건 써서 보내야겠다는 생각이 들어서 집에 들어오자마자 노트북 펼쳤습니다.  
+  
+
+<br>
+
+### 하나 - R
+
+Python의 인기가 하늘을 찌르는만큼 Data science에서 R의 입지가 나날이 줄어들고 있습니다.  
+프로그램밍 언어의 인기(?) 순위를 볼 수 있는 [TIOBE Index](https://www.tiobe.com/tiobe-index/)를 보면 2022년 5월 기준 Python은 난공불락처럼 보였던 C를 밀어내고 1위에 오르는 기염을 토하고 있는 반면 R은 Swift에게 밀리면서 13위로 주저앉았습니다.`r emo::ji("sob")`  
+
+사실 Swift는 애플이라는 집안에서 밀어주는 다이아몬드 수저를 물고 태어난 언어`r emo::ji("gem")`라, R같은 흙수저가 비빌 수 있는 레벨이 아니긴 합니다만 좀 서글프네요. (애플집안 서자 처지가 된 Objective-C가 무려 16위`r emo::ji('exclamation_mark')`... 애플 생태계가 무섭긴 무섭네요.)   
+
+
+바로 뒤에는 구글이라는 집안에서 밀어주는 또 다른 다이아몬드 수저인 GO가 턱 밑까지 따라온터라 사실 앞길이 밝지만은 않습니다.  
+
+여하튼 이러한 온갖 어려움이 있지만 저는 R에 애정을 가진 사람이라 R의 선전을 기대합니다.  
+
+[Data Science Tutorials](https://datasciencetut.com/best-books-to-learn-r-programming/)에서 R 공부하기 좋은 책을 잘 선정해 두어 공유 드립니다.  
+
+책 가격이 전부 숨막힐정도인데 이 리스트에 있는 몇몇 책들은 혜자스러우신 저자님들이 이북으로 공개를 해 두셨습니다.  
+
+이번 기회에 (제가 그렇게 말렸음에도) 공부하실 분들을 위해 링크를 걸어드립니다.
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png')
+
+```
+
+<br>
+
+[R for Data Science](https://r4ds.had.co.nz/)는 선정된 책 중 2번째에 위치한 무려 **Hadley Wickham** 교수님(= R 창조주라 보시면 됩니다.)이 쓴 책입니다.  
+그냥 창조주가 이렇게 만들었다라고 쓴 책이라 보시면 됩니다. 저도 이 책으로 시작했습니다.  
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://r-graphics.org/cover.jpg')
+
+```
+
+<br>
+
+[R Graphics Cookbook](https://r-graphics.org/)은 선정된 책 중 5번째에 위치한 책입니다. R에서 시각화를 하기 위해서는 피해갈 수 없는, 사실상 무조건 써야하는 ggplot2에 대한 책입니다. 그래프를 그린다고 생각하신다면 무조건 한 번은 보셔야 합니다.  
+
+
+단 이 책이 발간된 이후 ggplot2가 업데이트되면서 책의 코드가 작동하지 않는 경우가 있습니다.  
+필요하신 분은 하시다가 막히는 부분을 알려주시면 제 git을 알려드리겠습니다. 업데이트 되어 맞지 않는 부분을 모두 수정해 두었습니다.  
+
+<br>
+
+얼마 전엔 ggplot2를 더욱 예쁘게 만들어 주는 ggblanket package가 공개되어 보고서를 작성할 때 한 번 써볼까 생각 중입니다.  
+
+[ggblanket](https://davidhodge931.netlify.app/2022/05/14/ggblanket-making-beautiful-ggplot2-visualisation-simpler/) <- 여기를 보시면 되는데 딱히 크게 바뀐 건 없고 색깔을 조금 바꾼거 같은데 훨씬 유려해 보입니다. `r emo::ji("+1")`    
+
+<br>
+
+### 둘 - Dall.E mini
+
+Dall-e2에 관심 쏟아지고 있는데 여기 조금 부족하지만 Dall-e2를 맛볼 수 있는 DallE mini가 있어 소개드립니다.  
+큰 기대는 가지지 마시고 재미삼아 한 번 해보시기 바랍니다.  
+사실 이 정도만해도 엄청난 기술인데 Dall-e2의 결과물을 봐버리는 바람에 놀랍기는 커녕 조금은 실망스럽습니다.  
+
+[Dall.E mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) <- 그림을 만들고자 하는 단어나 문장(영어로!)을 입력하신 후 **RUN**을 누르면 그림이 만들어집니다.  
+
+
+놀라운 세상입니다.`r emo::ji("open_mouth")`     
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Fuel Switching 2.0: Carbon Price Index for Coal-to-Clean Electricity
+
+<br>  
+
+영국의 기후변화 씽크탱크인 Transition zero의 최근 기사입니다. `r emo::ji("new")`    
+
+[기사링크](https://www.transitionzero.org/blog/fuel-switching-coal-to-clean)
+
+내용이 매우 흥미롭습니다.   
+지금까지 석탄에서 신재생으로 넘어가는 시기에 가교역할을 LNG로 하는 것이 정석으로 여겨졌으나, 이 보고서 내용에 따르면 가스 가격의 상승과 재생에너지 가격 하락이 LNG가 석탄과 신재생의 가교역할을 할 것이라는 기존 논리를 뒤집어 버렸습니다.  
+
+
+이제는 석탄에서 바로 신재생으로 가는 것이 훨씬 더 경제적이며, 그 근거는 석탄에서 재생에너지로 전환하는 비용이 2010년 대비 **99%** 하락 했다는 점을 꼽고 있습니다.  
+
+<br>  
+
+이 기사는 꼭 방문해서 한 번 보시길 권해드립니다.  
+
+
+데이터를 시각화하는 능력이 여타 웹사이트와 다릅니다.  
+기사내용과 관계없이 시각화의 좋은 예시로 사용해도 될 만큼 좋습니다!`r emo::ji("clap")`   
+
+<br>  
+
+### Why ‘rooftop wind’ simply can’t compete with rooftop solar  
+
+<br>
+
+[기사링크](https://www.popsci.com/environment/wind-turbines-rooftop/)  
+
+개인적으로 궁금하게 생각했던 부분인데 마침 기사가 떠서 들고 왔습니다.  
+제목 그대로 옥상에 태양광은 설치하는데 왜 풍력은 안되느냐?에 대한 답을 주고 있습니다.  
+
+
+매우 자주 들어 친숙한 MIT 교수님(Matthew Lackner, a professor of mechanical and industrial engineering at the University of Massachusetts)께서 말씀하시길 풍력 터빈은 태양광과 비교할 때 더 많은 공간적 요소가 필요하기 때문이라고 합니다.  
+
+즉 대규모 산업용 풍력터빈은 많은 전력을 생산하기 때문에 투자가 가능하지만 소형화가 되면 소형화로 인한 기기 가격 대비 더 빠른 속도고 전력 생산량이 줄어들기 때문에 투자가치가 없다고 합니다.  
+
+또한 풍력은 강한 풍속을 필요로 하기 때문에 장애물이 없을 정도로 가능한 높이 솟아있도록 설치하는데, 소형터빈은 이것이 불가능하기 때문이라 설명합니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.popsci.com/uploads/2022/05/13/pexels-matthis-3704600-scaled.jpg')
+
+```
+
+<br>  
+
+주거지역은 바람이 차단된 지역에 위치하기 때문에 주거지에 설치하는 소형 풍력터빈이 경쟁력을 가지기 어렵다고 설명하며, 덴마크와 스코틀랜드와 같이 주거지 주변에 적절한 공간이 확보된다면 주거지 주변의 언덕에 설치하는 소형 터빈이 어느정도 경제성을 확보할 수 있을 것이라 예측했습니다.  
+
+<br>  
+
+### Sizewell C: Hundreds march against nuclear power plant after Government decision delay
+
+<br>
+
+[기사링크](https://www.bbc.com/news/uk-england-suffolk-61457234)
+
+확실히 에너지 전환의 과도기에 있는 듯 합니다.  
+영국 동부 해안에 200억 파운드 규모의 원자력 발전소 건설을 짓겠다는 계획이 7월로 연기되면서 반대 시위가 있었다는 뉴스입니다.  
+
+
+이 발전소는 EDF(최근 GE-Alstom에게 원자력 터빈 사업부를 인수)가 건설 예정입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://ichef.bbci.co.uk/news/976/cpsprodpb/13E9D/production/_124756518_7f2ca906-e205-4928-8231-b00c8b47c5de.jpg')
+
+```
+
+<br> 
+
+영국정부는 Sizewell C 원전이 건설된다면 최대 10,000개의 일자리를 창출할 수 있다는 입장입니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+없음
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+

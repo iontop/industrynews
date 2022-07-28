@@ -1,0 +1,298 @@
+---
+title: "Industry News"
+subtitle: "Vol. 74"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r,out.width="100%"}
+knitr::include_graphics('D:/R/projects/industry_news/title.png')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+정신줄을 놓고 살고 있습니다.  
+
+대단한 일을 하는 것도 아닌데 뭔가 어수선해져서 정신을 못 차리고 있습니다.  
+
+적응할 때까지는 주말에 이걸 써서 보내야 하나 하는 고민도 하고 있는데... 일단 끝까지 한 번 해보겠습니다.
+
+<br>
+
+### 하나 - 제임스 웹, 첫번째 사진 
+
+21년 크리스마스에 올려보낸 제임스 웹이 이제 자리를 잡고 우주의 신비를 보내고 있습니다.  
+
+그저 경이로울 따름입니다.  
+
+1190광년 떨어진 별에 물이 있는 대기가 있다는 것을 알 수 있다는 것이 신기함을 넘어서 경외감마저 불러옵니다.  
+
+<br>
+
+[James Webb Space Telescope](https://www.nasa.gov/webbfirstimages)
+
+<br>
+
+한 때 밤하늘을 참 좋아했다가 시들해졌는데, 제임스 웹의 사진을 보면서 뭔가 해보고 싶다는 생각이 들고 있습니다.    
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg')
+
+```
+
+
+<br>
+<br>
+
+
+### 둘 - 고유가 시대, 독일인들은 신났다... 9유로 티켓의 놀라운 효과
+
+고유가를 대처하는 가장 현명한 방법이 아닐까 합니다.  
+
+에너지 관련 언론들의 기사를 도배하더니 한국에서도 이제 이야기가 되기 시작하고 있습니다.  
+
+처음에 별거 아닌데 왠 호들갑이지? 라고 생각했는데 파장이 장난이 아닙니다.  
+
+어떨때 유럽인들이 참 어리석어 보이는데, 이런 정책 입안, 결정 과정을 보면 참 현명하다는 생각이 들기도 합니다.  
+
+<br>
+
+[기사원문](http://www.ohmynews.com/NWS_Web/Series/series_premium_pg.aspx?CNTN_CD=A0002848731)
+
+<br>
+
+
+```{r ,out.width="50%"}
+knitr::include_graphics('http://ojsfile.ohmynews.com/STD_IMG_FILE/2022/0708/IE003017227_STD.jpg')
+
+```
+
+
+<br>
+<br>
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Pope: Nations must work together to adapt to climate change
+
+교황청 과학아카데미는 7월 13일부터 14일까지 바티칸의 카지노 피오 IV에서 “기후 스트레스 하에서 인간과 생태계의 회복력”이라는 주제에 초점을 맞춘 이틀간 회의를 주최  
+
+<br>  
+
+[기사링크](https://www.vaticannews.va/en/pope/news/2022-07/pope-francis-climate-change-resilience-ecosystems-biodiversity.html)    
+
+<br>
+
+프란치스코 교황은 “생태학적 개종”에 대한 그의 거듭된 요청을 언급하면서, 이 과정은 모든 사람이 하느님의 창조에 감사하고, 서로 친교를 이루며, 환경 문제를 다루기 위해 함께 노력해야 한다고 언급  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.vaticannews.va/content/dam/vaticannews/agenzie/images/afp/2022/07/13/10/1657699971019.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.750.422.jpeg')
+
+```
+
+<br>  
+
+종교지도자까지 나서서 기후 변화를 경고하고 협력해야 한다고 말하는 세상이 도래했습니다.  
+
+안타깝게도 우리나라에서는 기후변화에 대한 인식이 너무 낮고 경각심이 없는 것 같습니다.  
+
+<br>  
+
+
+### This two-bladed offshore wind turbine can withstand hurricanes  
+
+
+<br>
+
+[기사링크](https://electrek.co/2022/07/12/this-two-bladed-offshore-wind-turbine-can-withstand-hurricanes/)  
+
+콜로라도 볼더 대학교, 버지니아 대학교, 댈러스 텍사스 대학교, 콜로라도 광산 학교, 국립 재생 에너지 연구소(NREL)의 연구원들이 허리케인에도 견딜 수 있는 날개 2개인 풍력터빈을 개발      
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2022/07/hurricane-resilient-wind-turbines.jpg?w=2000&quality=82&strip=all&ssl=1')
+
+```
+
+<br>  
+
+연구팀은 SUMR-D(Segmented Ultralight Morphing Rotor 시연기)로 알려진 53.38kW 터빈제작.  
+
+터빈은 2개의 가볍고 유연한 블레이드와 다운윈드 로터로 구성.  
+
+Boulder 남쪽의 NREL Flatirons 캠퍼스에서 4년 간의 연구에서 테스트 수행.    
+
+
+<br>  
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 북내지내2호 태양광발전소 신설 등[+27.0MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+

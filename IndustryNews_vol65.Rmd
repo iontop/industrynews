@@ -1,0 +1,310 @@
+---
+title: "Industry News"
+subtitle: "Vol. 65"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r}
+knitr::include_graphics('D:/R/projects/industry_news/title.jpg')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+Vol.65부터는 R Markdown + HTML로 변경하였습니다.  
+MS Word가 나쁘지 않았는데 비슷한 포맷으로 반복적으로 하는데 비효율적인 부분이 있어 차라리 Markdown을 써보자는 마음이 생겨 변경했습니다.    
+
+아예 잡설을 위한 공간도 하나 만들었습니다.  
+
+<br>
+
+### 하나 - 논문 소개
+
+[US nuclear power: status, prospects, and climate implications](https://energiestiftung.ch/files/energiestiftung/fliesstextbilder/Studien/2022%20Lovins/20220124_Lovins%20final.pdf)   
+좋은 논문을 우연히 찾게 되어 소개합니다.  
+
+*권위에의 호소*로 비쳐질 수 있지만 스탠포드라는 미국의 한 대학 교수가 쓴 논문입니다.   
+내용이 흥미로워 공유 드립니다.  
+시간이 되실 때 한 번 읽어보시길 추천드립니다.    
+
+이 논문의 서문에 *Renewables also received about 20 times more financial capital, mostly voluntary private investments, while nuclear investments used mainly tax revenues or capital conscripted from customers.These ratios look set to continue or strengthen.*    
+*In a normal industry, such comparisons, let alone dismal economics (below), might dampen enthusiasm.* 부분이 있습니다.    
+
+"재생에너지 발전 대부분은 자발적인 민간투자로 (원자력 대비) 약 20배 더 많은 금융자본을 받은 반면 원자력 발전 대부분은 대부분 세금이나 강제 징수(?)된 자본을 사용했다. 정상적인 산업이라면 경제를 더 악화시키고 열정마저 사라지게 할 수 있다"는 내용으로 시작하고 있습니다.  
+
+어설픈 번역이지만 저 말이 무엇을 뜻하는지 누구나 잘 알 것입니다.   
+
+
+<br>
+
+### 둘 - 플라밍고
+
+지난 주 소개 드린 Dall-e2에 이어 이번 주는 구글의 딥마인드(Deepmind)가 주어진 몇 장의 사진과 텍스트로 학습하고 사진을 설명하거나 질문에 응답할 수 있는 시각 언어 모델(Visual Language Model)을 소개드립니다.  
+
+이 모델은 다중 모드(Multi-modal) 작업을 위해 소량의 데이터로 학습하는 '퓨샷 학습(few-shot learning)'을 기반으로 이미지나 비디오 및 텍스트로 구성된 입력을 받아 주어진 입력과 관련된 텍스트를 출력합니다.  
+
+[여기](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model)에 가시면 놀라운 플라밍고의 능력이 나옵니다.  
+
+더더욱 놀라운 사실은 이 플라밍고가 지난 주에 소개한 Dall-e2의 결과물을 구별할 수 있다는 것입니다!  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://pbs.twimg.com/media/FRxv4pDWUAEqoDW.png')
+
+```
+
+<br>
+
+저만 놀라운가요??? `r emo::ji("open_mouth")`  
+
+<br>
+
+이 외에도 얼마 전('22년 3월 18일) 발표된 산업부의 2020년 에너지 총조사 결과를 보고 있습니다.  
+중간중간 읽다가 자꾸 딴데로 빠지는 바람에 정리가 늦어지고 있습니다.  
+완벽하지 않더라도 하는데까지 해서 한 번 공유드리겠습니다. `r emo::ji("+1")`   
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Siemens Energy Sells 100th H-Class Gas Turbine—Fleet Exceeds 2.5 Million Operating Hours
+
+<br>  
+
+곧 두산에너빌리티에 따라잡히겠지만 열심히 GT를 팔고 있는 Siemens 소식입니다.`r emo::ji("fist_oncoming")`    
+
+[기사링크](https://www.powermag.com/siemens-energy-sells-100th-h-class-gas-turbine-fleet-exceeds-2-5-million-operating-hours/)
+
+지난 3월말 Siemens는 Guangdong Energy Group Co. Ltd. 및 Shenzhen Energy Group Co. Ltd.와 SGT-8000H 4대를 공급하는 계약을 체결했습니다.  
+
+이 계약으로 Siemens는 H-class GT 100대 판매를 달성했다고 합니다.  
+(의외로 이집트 무려 24기, 다음으로 한국에 15기를 공급했습니다. 미국 빼면 이집트 다음으로 많이 공급된 나라가 한국입니다. 최초의 60Hz H-Class가 한국에 공급되었다고 하네요.)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.powermag.com/wp-content/uploads/2022/05/100-h-class-gas-turbines-worldwide-768x432.jpg')
+
+```
+
+<br>  
+
+H-Class는 2008년 독일 바이에른주 Irsching에 있는 Irsching 발전소에 설치되어 2011년에 상업운전을 시작하여 당시 발전소 효율 부문 세계기록을 세워 [Power Top Plant](https://www.powermag.com/top-plantirsching-4-combined-cycle-power-plant-irsching-bavaria-germany/)로 선정되기도 하였습니다. 
+
+<br>  
+
+### 중부발전, 풍력터빈 62기 스칸디나비아 최대 발전단지 준공  
+
+<br>
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=241854)  
+
+한국중부발전이 풍력터빈 62기로 구성된 스칸디나비아 최대 풍력발전단지를 준공하고 상업운전을 시작했다는 소식입니다.  
+30개월만에 풍력터빈 62기를 세우고 운전에 들어갔다고 합니다.`r emo::ji("clap")`  
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202205/241854_96064_2539.jpg')
+
+```
+
+<br>  
+
+결국 시간이 지나면 신재생에너지 수출이 주력을 차지하게 될 것입니다.    
+거의 대부분의 투자자금은 신재생을 향하고 있기 때문입니다.  
+2020년 미국만 보더라도 재생에너지 발전용량은 232배 증가했습니다.    
+좋으나 싫으나 현실은 신규 발전 중 90%이상이 신재생입니다.    
+
+<br>  
+
+### 전력신사업 겨냥 태양광발전소 사들이는 SK家
+
+<br>
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=241823)
+
+SK디앤디는 제주와 충남지역 소규모 태양광발전소 매입을 시작으로 올해말까지 100MW의 발전소를 인수할 예정이라 합니다.  
+이를 위해 상반기 글로벌 금융기관과 발전 자원 매입을 위한 금융 플랫폼을 구축하고 2000억원 규모 자금을 조달할 예정으로 지속적인 투자를 통해 5년 내 발전소 확보물량을 1GW규모로 늘릴 계획이라 합니다.  
+
+결국 마지막으로 가고자 하는 길은 기사에서도 나온 것과 같이 전력중개 플랫폼 사업자가 될 것 같습니다.  
+가상발전소, 스마트 그리드, 한전의 독점 판매시장 개방 등을 미리 내다보는 행보로 보입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://mediask.co.kr/wp-content/uploads/2021/02/skdnd.jpg')
+
+```
+
+<br> 
+
+정작 에너지 기자재를 공급하는 제 주변에서 이러한 환경 변화를 고민하고, 환경 변화에 맞는 제품을 만들어야 한다는 소리는 잘 들리지 않아 안타깝습니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+2022년 5월 4일 적용 발전설비 용량변경    
+
+- 중앙급전발전기 : 해당사항 없음  
+- 비중앙급전발전기 : 빛고을에코에너지(주)연료전지 신설 등[+236.9MW]  
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+

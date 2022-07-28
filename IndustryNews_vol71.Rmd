@@ -1,0 +1,371 @@
+---
+title: "Industry News"
+subtitle: "Vol. 71"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r,out.width="100%"}
+knitr::include_graphics('D:/R/projects/industry_news/title.png')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+최근에 공부했던 통계처리 내용을 다시 복기하고 있습니다.    
+
+데이터 처리가 아닌 통계가 목적이라면 딱딱하고 재미없는 통계교육원 과정을 추천드립니다.    
+
+강사분들이 일부러 이러나 할 정도로 억양없고 농담 한 마디 없는 기계가 읽어주는 듯한 강의인데, 통계값에 대한 정의를 명확하게 내려줍니다.    
+
+아... 통계교육원 이야기가 나와서 말인데 의외로 국가기관에서 운영하는 이런 온라인 강의가 상당히 유용한게 많습니다.    
+
+생각나는걸로는 국립수목원에 가면 야생화 키우는 법을 정리해서 올려놓은 책자도 무료로 다운 받으실 수 있고, 전력 계통 운영에 대한 정말 필요한 강의가 전력거래소 교육원에서 무료로 진행됩니다.   
+
+들어보지는 않았지만 한국천문연구원에서는 SAR탑재체, 위성자세제어, 위성구조 같은 이걸 누가 듣나 싶은 강의도 개설되어 있습니다.   
+
+세상에는 재미있는 배울거리가 너무 많은 것 같습니다.  
+
+<br>
+
+### 하나 - Net Zero Could Mean Fewer Cars on Top of Switching to EVs 
+
+<br>
+
+[Bloomberg NEF Report](https://about.bnef.com/blog/net-zero-could-mean-fewer-cars-on-top-of-switching-to-evs/)
+
+<br>
+
+간만에 BNEF에 들렸다가 전기차에 대한 흥미로운 관점을 읽을 수 있었습니다.  
+
+급격하게 전기차 비중이 늘어나고 있지만 2050년까지 도로운송부분에서 탄소중립을 달성하기는 매우 어렵다는 의견을 보이고 있습니다.  
+
+전기차가 예상보다 빠르게 증가하고 있긴하지만 2050년 탄소중립(Net Zero)를 달성하려면 2030년까지 전세계 신규 승용차 판매의 61%, 2035년까지 93%를 탄소배출이 없는 차량으로 교체되어야 합니다.   
+
+그래서 제안하는 것이 대형장거리 화물을 운송하는 트럭에 연료전지가 최적인지 고려해봐야하고 (수소 트럭 필요하단 이야기), 내연기관을 배터리 구동으로 바꾸는 것과 함께 자동차 이용 수요를 줄이는 것(예를 들어 재택근무)도 방법이 될 수 있다는 것입니다.  
+
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://assets.bbhub.io/professional/sites/24/capture47.jpg')
+
+```
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://assets.bbhub.io/professional/sites/24/capture48.jpg')
+
+```
+
+<br>
+
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://assets.bbhub.io/professional/sites/24/capture49.jpg')
+
+```
+
+<br>
+
+전기차의 보급보다는 전기차를 운용할 수 있는 인프라를 구축하는 것이 어쩌면 더 큰 이슈가 될 수 있다는 것을 느꼈습니다.  
+
+인류는 항상 그러했듯 분명 방법을 찾을거라 믿습니다.  
+
+
+### 둘 - 오우무아무아
+
+한국천문연구원 이야기가 나와서 생각난 한동안 우주천문학 하는 사람들에게 강력한 떡밥이었던 오우무아무아를 소개합니다.  
+
+2017년 10월 19일 하와이 할레아칼라 천문대의 천문학자 로버트 웨릭은 판스타스 망원경이 수집한 데이터에서 오무아무아를 처음 발견했습니다.  
+
+이미지들은 이 물체를 하늘을 가로질러 질주하는 빛의 점으로 보여 줬는데, 태양의 중력에 얽매였다고 보기에는 너무 빨리 움직였기 때문에 이를 단서로 천문학계는 웨릭이 최초로 태양계 안에서 탐지된 성간 물체를 발견했다고 결론지었습니다. (역시 인생은 운빨! `r emo::ji('smile')`)  
+
+이로써 오우무아무아가 인류가 발견한 최초의 성간물체가 되었습니다. (성간물체는 태양계 밖에서 만들어진 천체를 의미합니다.)   
+ 
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://solarsystem.nasa.gov/internal_resources/3577')
+
+```
+
+<br>
+
+그러나!!!  
+
+모양이 일반적인 유성이나 혜성처럼 둥글둥글하지 않다는 점, 태양계를 벗어날 때 궤도 수정이 이었던 것처럼 보인다는 점, 예상 밖의 가속력(우리가 인공위성의 속도를 높여 궤도 밖으로 날릴 때 사용하는 스윙바이와 같은 모양새)으로 인해 외계인의 작품(인공적인 비행체)라는 주장이 제기됩니다.  
+
+2018년 스피처 우주망원경이 표면에서 가스가 분출되는 것을 발견했다고 하지만 직접 관측된 것도 아니고 태양을 지나칠 때도 가스 분출이 없어 일단 혜성으로 분류하긴 했지만 여전히 논란의 여지가 있습니다.  
+
+떡밥이 좀 가라앉는가 했는데 하버드 스미스소니언 천체물리학센터의 아비 로브 교수가 오우무아무아는 외계지성체가 설계, 제작, 발사했다는 내용의 책을 내면서 다시 한 번 논쟁에 불을 붙였습니다.  
+
+당시 논쟁이 상당했기 때문에 관심을 가지고 보던 중 최근에 책이 발간되었다는 소식을 듣게되어 한 번쯤 소개시켜 드리면 좋겠다해서 가져와 봤습니다.  
+
+역시 이런 미스터리가 재미있습니다. `r emo::ji('+1')`
+
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### UK–German link progresses
+
+이미 10년전 부터 장거리 송전에는 유리한 것을 알았지만 최근에 빛을 발하고 있는 HVDC 소식입니다.  
+
+<br>  
+[기사링크](https://www.modernpowersystems.com/features/featureukgerman-link-progresses-9780154/)  
+
+
+<br>
+
+독일과 영국사이를 HVDC로 연결하는 NewConnect 계획에 따라 총 공사비용 15억 유로가 넘는 1.4GW, $\pm$ 525kV HVDC 케이블링 및 변환기 계약이 성사되었음.    
+
+1. 케이블 작업은 725km로 세계에서 가장 긴 케이블 공사 중 하나이며 설계, 제조, 설치, 테스트, 시운전은 Prysmian Group가 수주  
+
+2. 변환스테이션은 영국과 독일에 각각 하나씩 두 개의 변환 스테이션을 설계, 건설하는 계약이고 이는 Siemens Energy가 수주  
+  - 여기에는 AC전압조절 및 AC 그리드 안정화를 포함한 다양한 지원기능을 수행할 수 있는 HVDC Plus 기술이 사용예정    
+   
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://image.digitalinsightresearch.in/Uploads/ImageLibrary/Active/2016June/MPS/MPS_p25_0522.jpg')
+
+```
+
+<br>  
+
+영국 - 독일간 단일 프로젝트로는 최대 규모라고 합니다. 탄소중립과 우크라이나 전쟁이 유럽지역을 움직이게 만드는 느낌입니다.  
+
+무엇보다 이 송전망이 완성되면 영국과 독일은 재생 에너지원을 통합하는 의의를 가지게 되는데 $CO_2$감소에는 정말 진심인듯 합니다.  
+ 
+
+<br>  
+
+### China Group Announces Successful Test of Space-Based Solar Power  
+
+중국 Xidian University의 연구팀은 지구에 에너지를 전송할 수 있는 우주 기반 태양광 발전소를 가능하게 하는 기술을 성공적으로 테스트했다고 발표 (이러한 기술은 미국 NASA가 이전에 발표했고 지난 10년 동안 다른 곳에서 연구한 유사한 기술과 유사한 것임)
+
+<br>
+
+[기사링크](https://www.powermag.com/china-group-announces-successful-test-of-space-based-solar-power/)  
+
+
+산시(陝西)성 시뎬 대학의 두안 바오옌(Duan Baoyan)이 이끄는 “데일리 프로젝트”팀은 6월 14일 성명을 통해 그룹이 2028년을 목표로 우주에 태양광 발전소를 건설하는 것을 목표로 설정했다고 발표  
+
+이 프로젝트는 2014년에 처음 발표된 태양광 발전에 대한 우주 기반 제안인 OMEGA (Orb-Shape Membrane Energy Gathering Array)의 일부임.  
+
+당시 연구팀은 시스템 배포를 2030년 목표로 설정했으며, 연구팀은 보도자료에서 최근 여러 외부 에너지 전문가와 학계 앞에서 테스트를 진행했으며 6월 5일 테스트 성공을 검증했다고 밝힘.  
+  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.powermag.com/wp-content/uploads/2022/06/china-solar-xidian-1-768x443.png')
+
+```
+
+<br>  
+
+태양광과 우주의 조합이 진행되다보면 어느 순간 [다이슨구](https://ko.wikipedia.org/wiki/%EB%8B%A4%EC%9D%B4%EC%8A%A8%EA%B5%AC)와 같은 발전소를 지을 수 있게 되지 않을까요?  
+
+정말 그렇게 된다면 화석연료를 연소시키는 지금의 행위가 얼마나 원시적으로 보일지 생각만해도 재미있어집니다.   
+
+
+<br>  
+
+### 왕숙지구 집단에너지, 나래ES+서부발전 품으로
+
+<br>
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=242971)  
+
+<br>
+
+하남, 위례에 이어 남양주까지 SK 손에 들어갔습니다.  
+
+에너지의 강자가 되겠다더니... 정말 그렇게 해 볼 셈인가 봅니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202206/242971_97150_4243.jpg')
+
+```
+
+<br> 
+
+기사에서 보는 것과 같이 입찰한 모든 사업자가 모두 집단에너지업체 + 발전자회사 구성으로 들어왔습니다.  
+
+*산업통상자원부와 한국에너지공단은 16일 수원 이비스 앰배서더 호텔에서 ‘왕숙 및 왕숙2 공공주택지구 집단에너지사업자 선정을 위한 평가위원회’를 열어 나래에너지서비스와 서부발전 컨소시엄을 사업자로 최종 선정했다. 왕숙지구에 도전장을 냈던 ‘별내에너지+남동발전’과 ‘서울에너지공사+동서발전+포스코에너지’ 컨소시엄은 근소한 격차로 고배를 마셨다.*
+
+확실히 발전소 출력이 줄어들고 석탄, 원자력 대신 LNG나 재생에너지로 가면서 수요가 많은 수도권쪽의 발전소가 증가하고 있다는 느낌이 듭니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 해도지 태양광 발전소 신설 등[+5.9MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+

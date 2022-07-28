@@ -1,0 +1,317 @@
+---
+title: "Industry News"
+subtitle: "Vol. 67"
+author: "J.H AHN"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    fig_caption: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+<style>
+div.center {
+  text-align: center;
+}
+
+div.left {
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+} 
+
+div.justify {
+  text-align: justify;
+} 
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      fig.width = 7,
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+```{r}
+knitr::include_graphics('D:/R/projects/industry_news/title.jpg')
+
+```
+
+<br>  
+<br>  
+
+## 잡설  
+
+아침 출근길에 바흐의 골드베르크 변주곡을 들었습니다.  
+(애플뮤직 큐레이션은 정말 대단한듯...`r emo::ji('+1')`)  
+
+<br> 
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://m.media-amazon.com/images/I/612K4A4nOTS._SL1200_.jpg')
+
+```
+
+익숙한 곡인데 왠지 울컥했습니다.   
+사무실에 오자마자 다른 연주자의 연주를 듣는 중입니다.  
+
+참고로 출근길에는 위 표지와 같이 2021년 녹음된 Hannes Minnaar 연주를 들었고,  
+지금은 2021년 녹음된 David Fray 연주를 듣고 있습니다.  
+전 Hannes Minnaar의 연주에 손을 들어주고 싶습니다.
+
+<br>
+
+### 하나 - 5월 SMP가격 하락
+
+몇 년을 갈 것 같이 이야기하던 SMP가 이번 달에 들어오면서 갑자기 떨어졌습니다.  
+4월 내내 200원/kWh을 넘게 유지하던 SMP 가격이 140원/kWh 수준까지 떨어졌습니다. `r emo::ji('open_mouth')`    
+(물론 작년에 비교하자면 이것도 거의 2배 수준이기 합니다.)  
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://static-cms.enlighten.kr/2022/05/5%EC%9B%94-smp_2-1024x615.png')
+
+```
+
+<br>
+
+이렇게 급격하게 SMP 가격이 떨어진 이유 중 하나는 LNG 가격이 급격하게 떨어졌기 때문입니다.  
+계속 더 떨어진다, 아니다, 전문가들의 예측이 엇갈리고 있는데 향후 몇 년간 복합으로 먹고 살아야 하는 우리는 유심히 잘 살펴봐야 할 것 같습니다. 
+
+<br>
+
+### 둘 - Py-script
+
+이번 주에 웹서비스에 쓰이는 HTML+CSS+JS를 공부했다는 말씀을 드렸는데, 이 세 언어(?)는 사실상 대체 불가능한 존재들이었습니다.  
+웹을 하겠다면 무조건 3가지를 배워야 한다는 이야기입니다.  
+
+
+하지만 얼마전 파이썬으로 자바스크립트(JS, JavaScript)를 대신할 수 있는 Py-script가 나오면서 기대감이 엄청나게 올라가고 있습니다.  
+어마어마하게 보이는 대체 불가한 자바스크립트는 불과 10일만에 급조된 언어인데다, 당시 선풍적인 인기를 끌고 있던 자바(Java)라는 프로그래밍 언어의 후광을 얻고 싶어 아무 관련도 없지만 이름을 자바스크립트로 한 것이었죠.  
+
+어쨌든... 이 자바스크립트를 대체할 수 있는 존재가 몇 주 전 세상에 나온 [Py-script](https://pyscript.net/)  `r emo::ji("+1")`  입니다.  
+
+<br>
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://miro.medium.com/max/700/1*WNbl_1riOiUbZvMTMrsEHA.png')
+
+```
+
+<br>
+
+사실 지금은 부족한 부분도 많고 속도도 느리지만 파이썬 개발자 커뮤니티를 생각해본다면 조만간 자바스크립트를 대체할 수 있을지도 모르겠습니다.  
+
+웹서비스를 고민하고 계신다면 Py-script도 한 번 들여다보시기 바랍니다. `r emo::ji('eyes')`
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### '국내 27번째 원전' 신한울 1호기 시동
+
+<br>  
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=242283)
+
+국내에서 27번째 건설된 원자력발전소이자 세번째 APR1400(1400MW) 원전인 신한울 1호기가 원자로가 가동을 시작했다는 뉴스입니다.   
+원자로에 불을 댕겼다는 표현을 하니 뭔가 조금 낯서네요.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202205/242283_96483_1414.jpg')
+
+```
+
+<br>  
+
+뭐... 할 말은 많지만 짧게 가겠습니다.  
+
+
+<br>  
+
+### Siemens Energy Makes $4.3 Billion Gamesa Takeover Offer  
+
+<br>
+
+[기사링크](https://www.bloomberg.com/news/articles/2022-05-21/siemens-energy-to-offer-18-05-euros-per-share-in-gamesa-takeover)  
+
+Siemens energy가 Gamesa를 주당 EUR 18.05에 인수 했다고 합니다.  
+총 금액은 43억 달러 규모이고 이전에 Siemens energy가 이미 67%의 Gamesa 주식을 보유 중이었다고 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.popsci.com/uploads/2022/05/13/pexels-matthis-3704600-scaled.jpg')
+
+```
+
+<br>  
+
+Siemens는 Gamesa 주식을 완전히 인수 한 후 상장폐지 할 예정이며, 이 때문에 Gamesa 주가는 지난 주에만 18%나 상승했습니다.  
+어찌되었건 Siemens는 완전체`r emo::ji('question')`가 되었고 향후 통합 시너지 효과(공급망 및 물류비용, 연구개발 및 관리 비용 절감)로 3억 유로를 절감할 수 있을 것으로 기대하고 있다고 합니다.  
+
+<br>  
+
+### How robots can build offshore wind turbines faster
+
+<br>
+
+[기사링크](https://www.luxtimes.lu/en/business-finance/how-robots-can-build-offshore-wind-turbines-faster-628a41f8de135b9236cc87be)
+
+세계 최대 해상풍력 설치 업체 중 하나인 Jan De Nul Group이 로봇을 이용한 해상 풍력 설치를 
+
+대한 구조물을 세우려면 잭업 선박으로 알려진 값비싼 선박이 필요합니다.   
+이 선박들이 풍력 터빈을 설치할 장소에 도착하면 앵커를 내려 선박을 파도에서 들어올려 앞뒤로 밀리지 않고 설치 작업을 할 수 있도록 합니다.  
+이런 일련의 과정이 이상적인 조건에서는 3시간, 조류가 강한 조건에서는 20시간 이상 걸리기도 합니다.  
+BloombergNEF에 따르면 앵커를 내려 파도 위로 올릴 필요가 없는 부유 선박은 이런 작업을 50% 단축 시킬 수 있고, 해저에 설치선을 고정시킬 구조물을 함께 가져가지 않아도 되기 때문에 더 많은 터빈 자재를 운반할 수도 있습니다.  
+
+이런 장점을 가진 부유 설치선은 흔들리는 바다에 떠서 설치 작업을 해야 하기 때문에 정확한 작업이 어려운데, 이를 위해 유럽 우주국(European Space Agency) 연구원인 André Schiele이 설립한 X-Laboratory에서 개발한 시스템으로 크레인을 원격 제어 하여 시간을 단축할 수 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://blobsvc.wort.lu/picture/e718b94222aae64731617862f90b6b51/653/391/wortv3/25f5f772a91345efe5ce05e47eedba78d692fd8e')
+
+```
+
+<br> 
+
+Jan De Nul Group은 이 기술을 채택하였고, Les Alizes라는 이름의 첫 번째 선박은 올해 말에 작업에 들어갈 예정이며 지상에 부착하기 위해 장비를 운반해야 하는 유사한 선박보다 3배 더 많은 무게를 실을 수 있습니다.  
+
+이 개발품은 2015년 우주 비행사가 국제 우주 정거장에서 조이스틱을 들고 네덜란드의 한 실험실에서 4륜 로봇을 움직였던 기술을 응용할 방법을 찾던 연구원에 의해 이렇게 상용화 되었습니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+없음
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
+
+
