@@ -1,0 +1,334 @@
+---
+title: "Industry News"
+subtitle: "Vol. 77"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### Hello, Quarto
+
+R markdown을 대체할만한 놈이 나왔습니다. R 뿐만 아니라 Python, Julia, Observable까지 지원합니다. 테스트를 해 보니 맥에서는 pdf로 한글 출력도 원활하게 잘 되는데 회사 노트북으로는 잘 되지 않습니다. 결국 한 시간이 넘도록 씨름하다가 포기했습니다. 라고 썼는데 해결책을 찾았으나 이미 HTML로 만들어서 그냥 HTML로 배포합니다.     
+
+방법을 천천히 알아가봐야 하겠지만 HTML이 주는 이득이 많아서 어찌할지 고민 중입니다. 기능이 많은 HTML냐 vs. 깔끔하고 배포가 편한 PDF냐의 고민입니다.     
+
+아, Quarto는 VS Code까지 지원하니 Python 유저도 쉽게 사용이 가능합니다.  
+
+참고로 이번 77호부터는 Quarto를 이용하여 작성하고 있습니다.  
+
+[Quarto](https://quarto.org/)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://d33wubrfki0l68.cloudfront.net/1e13e2f2b4d1760d131ad2be5096e105573341e2/db099/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/thumbnail_huc2394eec6c3beee37cf037e067ab5abf_72127_2220x0_resize_q75_box.jpg')
+
+```
+
+### Hi, Julia
+
+이름을 왜 줄리아로 지었는지 알 수 없으나, 이름 때문에 검색이 상당히 어려운 프로그래밍 언어입니다.  
+
+현재 TIOBE Index 28위로 Kotlin보다 상위에 랭커되고 있습니다.   
+
+MIT의 Nerd님들이 만들어서인지, 일단 매뉴얼부터 확실합니다.  
+
+매뉴얼의 수준을 보면... 이걸 번역하는 것 이상으로 뭔가 더 만들 수 있을까 하는 수준이고, 패키지 관리도 엄청나게 깔끔합니다.   
+
+게!다!가! 매뉴얼에 대놓고 **안녕하세요?** 를 출력하는 예제를 보여줍니다.   
+
+Hello world!가 아닌 **안녕하세요?** 라니~!  
+
+아...!! 모든 패키지는 GitHub에서 관리됩니다. `r emo::ji("thumbsup")`   
+
+게다가 속도가 미쳤습니다. `r emo::ji("rocket")`     
+
+Python, MATLAB과 비교는 불가하고 C나 FORTRAN 정도 와야 속도 비교가 가능한 수준입니다.  
+
+주피터 노트북에서 실행가능하고 널려있는 C나 FORTRAN 라이브러리를 그대로 가져와서 사용할 수도 있습니다.  
+
+정말 세상은 좋은 것들이 너무 많습니다.   
+
+[Julia Manual](https://docs.julialang.org/en/v1/manual/getting-started/)
+
+```{r ,out.width="100%"}
+#| label: fig-speed
+#| fig-cap: 이 미쳐버린 속도가 보이시나요?
+
+knitr::include_graphics('https://julialang.org/assets/images/benchmarks.svg')
+
+```
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Goldman Sachs doesn’t see nuclear as a transformational technology for the future
+
+<br>  
+
+[기사링크](https://www.cnbc.com/2022/08/05/goldman-doesnt-see-nuclear-as-a-transformational-tech-for-the-future.html)    
+
+<br>
+
+엔지니어들이 정책에 휘둘리는 사이 금융권에서 먼저 못 박았습니다.  
+
+원자력은 변혁적인(transformational) 기술로 볼 수 없고, 천연가스가 향후 20년간 유럽의 에너지 공급의 핵심(key)으로 남을 것으로 논평했습니다.  
+
+골드만삭스가 모든 금융을 대표한다고 보기는 어렵지만, 다른 금융사들이 골드만 삭스와 다른 의향을 가지고 있다고 보기는 더 어려울 것 같습니다.  
+
+이러한 보고서의 의미는 향후 투자는 신재생과 천연가스 발전소로 향할 것이고, 이러한 흐름을 잘 잡아내는 것이 필요해 보입니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://image.cnbcfm.com/api/v1/image/107099451-1659685641954-gettyimages-1242300571-220804_lp2_9329.jpeg?v=1659685842&w=740&h=416')
+
+```
+
+<br>  
+
+### EDF's woes are a bigger long term problem for EU energy than the war in Ukraine  
+
+<br>
+
+[기사링크](https://jeromeaparis.substack.com/p/edfs-woes-are-a-bigger-long-term)  
+
+<br>
+
+시국이 시국인지라 죄다 유럽 소식 밖에 없습니다.    
+
+하나의 기사에 상당히 많은 내용이 담겨 있습니다.  
+
+당연하게도 유럽의 에너지 가격은 치솟고 있습니다. 아래 @fig-averageprice 참조  
+
+놀라운 것은 2021년에서 2022년 사이 독일의 전력원 중 가스(약 15\%)와 석탄(약 28\%)는 차지하는 비중이 거의 변하지 않은 반면 원자력은 절반 수준(11\% $\rightarrow$ 6\%)로 줄였다는 사실입니다. 줄어든 원전비중만큼을 재생에너지 보급으로 막아냈다는 뜻입니다.  
+
+<br>  
+
+```{r}
+#| label: fig-averageprice
+#| fig-cap: Average power prices in select European conutries
+
+knitr::include_graphics('https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F28f86323-1da8-4717-a296-f215ac602234_1752x940.png')
+
+```
+
+<br>  
+
+그렇다면 여기서 궁금증이 생겨야 합니다.  
+
+독일의 경우를 본다면 사실 유럽의 에너지 가격이 그렇게 크게 오르지 않았어야 한다는 사실입니다.  
+즉 가스 가격 때문에 전력가격이 높아졌다고 말하려면 가스발전이 가동되는 피크시간에만 가격이 높아져야 합니다.  
+
+기사에서는 전력가격이 가스 가격과 연관성이 있는 것은 맞지만, 간과하고 있는 다른 원인을 지목합니다.  
+
+```{r}
+#| label: fig-diff
+#| fig-cap: RTE Market Data
+
+knitr::include_graphics('https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff4e4ee06-3e82-43e4-a7ee-e89902e29a0c_2806x1620.png')
+
+```
+
+[RTE Market Data](https://www.rte-france.com/eco2mix/les-donnees-de-marche#)
+
+<br>  
+
+@fig-diff 에서 보는 바와 같이 유럽의 전력가격은 균일하지 않고 상당히 차이가 납니다.  
+
+의외로 가장 많은 원전을 보유하고 있는 프랑스가 가장 높은 전력가격을 유지하고 있습니다.  
+
+유럽 대부분의 국가들은 전력 피크때 기저부하를 가장 싼 재생에너지로 커버하고 있는데 프랑스는 피크시간에도 원자력으로 높은 가격을 유지하면서 전력을 생산해야 하기 때문이라고 설명하고 있습니다.  
+
+```{r}
+#| label: fig-ft
+#| fig-cap: EDF's nuclear power output has been on a long decline
+
+knitr::include_graphics('https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b9ab31a-7661-40b6-b4c6-b21ff7c09acf_1348x1028.png')
+
+```
+
+@fig-ft 는 Financial Times에 실린 EDF 전력생산용량입니다.  
+
+EDF는 현재 58개 중 12개의 원자로가 부식문제로 오프라인 상태이며, 일부는 구조적인 문제로 언제 다시 기동이 가능할지 알 수 없습니다.  
+
+안정성을 떠나 지속적으로 증가하는 유지보수 비용과 조만간 최대 생산 용량의 절반 수준에 다다르는 설비라는 것을 알 수 있습니다.  
+
+전력비용이 높아지는 것은 바로 이 점 때문이라고 지적합니다. 프랑스에서 전력을 수출할 때에는 타국은 신재생 에너지의 싼 에너지를 기저부하로 깔고 필요한 양만 원자력 발전으로 만든 전력을 수입하는데 반대의 경우에는 타국에서 가스 발전으로 만든 비싼 전력을 수입해야 하기 때문이라고 지적합니다.  
+
+다시 유지보수 비용의 문제로 돌아와서, 프랑스의 원전은 높아지는 노후 원전의 유지보수로 인해 가동시간이 줄어듦과 동시에 높은 비용을 지속적으로 지출해야 하는 문제에 직면해 있습니다.  
+
+차세대 EPR 원전은 건설비용이 증가했고, 영국과 중국 모두 심각한 문제와 지연상태입니다. 모든 기술적 문제가 해결된다고 가정하더라도 경제성이 있는지는 다시 한 번 고려해봐야 합니다.  
+
+신재생에너지에 대한 반감으로 프랑스는 대규모 해상 풍력 건설이 계속 지연되고 있으며, 이로 인해 향후 10 ~ 20년간 프랑스는 전력 수입국으로 전락할 위기에 서 있습니다.  
+
+이러한 연유로 최근 프랑스 정부가 EDF를 국유화 하기로 결정한 것이고, 이는 회사와 국가에 실제 위기가 있음을 암묵적으로 인정한 것입니다.   
+
+우크라이나 전쟁은 비극이지만, 유럽의 대처를 바라보면서 우리가 어떤 방향으로 가야하는지 알 수 있습니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 라이테크 태양광발전소 신설 신설 등[+125.9MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
