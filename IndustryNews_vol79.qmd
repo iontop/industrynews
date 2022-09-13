@@ -1,0 +1,334 @@
+---
+title: "Industry News"
+subtitle: "Vol. 79"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### IEA - Data and statistics
+
+항상 눈독들이고 있는 부분입니다.  
+
+IEA 웹사이트에는 각종 데이터를 이렇게 잘 정리해 둔 것을 보고 언젠가 우리도 이런 것이 필요하겠다 싶은 생각을 했었습니다.  
+
+[IEA Data and statisics](https://www.iea.org/data-and-statistics)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://www.powermag.com/wp-content/uploads/2019/11/iea_weo2019_capacitytrajectory.jpg')
+
+```
+
+<br>
+
+EIA도 그렇고 데이터를 저장하고 가공하는 부분에 대한 관심과 활용이 해외(특히 서구)와 차이가 많이 나는 것처럼 느껴집니다.  
+
+데이터 관련 조직들이 이러한 서비스를 회사 홈페이지에서 제공한다면 어떨까 그런 생각을 해보았습니다.  
+
+<br>
+
+### Open Sustainable Technology
+
+지난 주에 Github repository를 하나 소개해 드렸는데...  
+
+이번 주에 소개드리는 이것도 Git hub에 올라와 있고 12,000건의 star를 받았습니다.  
+  
+[Blog](https://opensustain.tech/)
+  
+[GitHub](https://github.com/protontypes/open-sustainable-technology)
+  
+  
+처음 봤을 때 느낌이 "이런 걸 그냥 올린다고?" `r  emo::ji("open_mouth")` 이었습니다.  
+
+지속가능한 에너지에 관련된 데이터, 평가 툴, 모델 데이터 등등 정말 이런걸 그냥 공짜로 이렇게 풀어도 되나 싶은 자료들을 그냥 다 넣어놨습니다.  
+
+태양광, 풍력, 수력, 지열, 바이오에너지, 에너지 스토리지, 에너지 시스템 모델링에서 최적화, 에너지 소비 등등... 정말 생각 가능한 모든 에너지 관련 정보를 한 통에 다 집어넣어놨습니다.  
+
+정말 할 말을 잃게 만드는데 관심이 있으시면 꼭 한 번 방문해보시길 추천드립니다.
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Emerging small reactors projected to provide 90 GW of nuclear power to the US grid by 2050: NEI survey
+
+<br>  
+
+[기사링크](https://www.utilitydive.com/news/emerging-small-reactors-projected-to-provide-90-gw-of-nuclear-power-to-the/629936/)    
+
+<br>
+
+SMR에 대한 내용입니다.  
+
+NEI(Nuclear Energy Institute)에서는 지난 5일 2050년까지 731TWh를 약 300기의 SMR로 공급할 것이라는 예측을 내어두었습니다.  
+
+NEI에 따르면 폐쇄된 석탄발전소에 SMR을 설치하는 것을 고려하는 발전사가 있다고 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.utilitydive.com/imgproxy/IP3gWxwiYGDv0NdfhZ6EmjVIbEBETZ-8r2uqsNAAhcw/crop:1943:1050/g:nowe:0:1109/rs:fill:1200:648:1/bG9jYWw6Ly8vZGl2ZWltYWdlLzEwMDAtRm9vdC1WaWV3X0ZpbmFsX3MuanBn.jpg')
+
+```
+
+<br>  
+
+문제는 비용인데, 가장 최근에 건설되고 있는 조지아의 Vogtle 3, 4호기는 일정보다 몇 년이상 지연되고 예산도 수십억달러가 초과하였으며 최초 SMR 비용은 kW당 3800달러 ~ 5500달러로 추정했는데 공급망 제한, 라이센스 지연, 숙련공 수급과 같은 제약사항을 고려해보면 더 높은 비용이 예상된다고 합니다.  
+
+<br>
+
+[EIA](https://www.eia.gov/todayinenergy/detail.php?id=48736)
+
+<br>
+
+```{r}
+knitr::include_graphics('https://www.eia.gov/todayinenergy/images/2021.07.16/main.svg')
+
+```
+
+<br>
+
+작년 EIA Report를 보면 태양광은 kW당 1800달러, 풍력은 kW당 1400달러, 복합발전은 kW당 1100달러 수준을 보이고 있습니다.   
+
+거의 4~5배가 비싼 SMR이 기술로 가격을 극복할 것인지, 아니면 가장 비싼 에너지로 남게 될 것인지는 좀 더 지켜봐야 할 것 같습니다.   
+
+<br>
+
+
+### What’s driving the surge in interest in hybrid power plants?  
+
+<br>
+
+[기사링크](https://www.power-eng.com/renewables/whats-driving-the-surge-in-interest-in-hybrid-power-plants/)  
+
+<br>
+
+배터리 가격 하락과 재생에너지 성장으로 배터리와 결합하여 운영되는 하이브리드 발전소가 늘어나고 있다는 소식입니다.   
+
+현재는 대부분 태양광 발전소와 배터리를 연결하는 것이 대부분이지만 다양한 구성을 가진 하이브리드 발전소들이 늘어나고 있다고 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://images.power-eng.com/wp-content/uploads/2022/08/E1E16-0035_SouthMainFreetown_MA_Energy-Storage_Aerial-scaled-e1660227397941-2.jpg')
+
+```
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.power-grid.com/wp-content/uploads/2022/08/hybrid_project_page_image-1024x750.jpg')
+
+```
+
+<br>  
+  
+위 그래픽은 로렌스 버클리 국립연구소(LBNL)에서 미국 전역에서 운영 및 proposal된 하이브리드 발전소 입니다.     
+
+2021년 말 미국 전역에 거의 1MW이상 규모를 가진 300개의 하이브리드 발전소가 가동되고 있으며, 총 발전용량은 36GW에 달하고 에너지 저장용량은 3.2GW/8.1GWh 수준입니다.  
+
+2021년이 특히 태양광 + 에너지저장장치의 혁신적인 해라고 말했는데 2021년에 건설된 74개의 하이브리드 발전소 중 67개가 태양광 + 에너지저장장치 구성이었습니다.  
+
+<br>
+
+
+### Tesla (TSLA) confirms plan to launch electricity retail business in Texas  
+
+<br>
+
+[기사링크](https://electrek.co/2022/08/18/tesla-tsla-confirms-launch-electricity-retail-business-texas/)  
+
+<br>
+
+예상한대로 머스크 형님이 드디어 전력시장에 진출하십니다.  
+
+아직 직접 밝힌 것은 아니고 소매시장에서 전력 판매를 위해 [텍사스 공공 유틸리티 위원회(Public Utility Commission of Texas)에 신청](https://electrek.co/2021/08/27/tesla-plans-enter-texas-deregulated-energy-market-massive-battery/)하고 [텍사스의 Powerwall 소유자들과 가상발전소 Demo 운영](https://electrek.co/2022/06/13/tesla-virtual-power-plant-demonstration-texas/)을 시작했습니다.   
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2022/07/Tesla-Gigafactory-Texas-July-2022.jpg?w=2000&quality=82&strip=all&ssl=1')
+
+```
+
+<br>  
+  
+그리고 [테슬라 채용공고](https://www.tesla.com/careers/search/job/product-operations-manager-retail-electricity-140506)에 *"We are seeking a candidate with operations experience in residential electricity retail, preferably with a retail electricity provider in ERCOT."* 이렇게 올라왔습니다.  
+
+텍사스에서 전력판매를 한 후에는 아마 테슬라는 분산에너지의 글로벌 탑티어가 되기 위해 움직일 것입니다.  
+
+머스크는 늘 에너지 사업이 자동차 사업을 넘어설것이라 했고, 테슬라는 에너지 기업이라 했기 때문에 언젠가는 그렇게 될 것입니다.  
+
+테슬라가 에너지 시장에 뛰어드는 순간, 세상이 어떻게 바뀌게 될지 궁금합니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2022년 08월 18일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 스마일1호 태양광발전소 신설 등[+15.2MW] 
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

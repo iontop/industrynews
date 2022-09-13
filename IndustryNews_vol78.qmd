@@ -1,0 +1,308 @@
+---
+title: "Industry News"
+subtitle: "Vol. 78"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### Google ChromeOS Flex
+
+구글 크롬OS인 Flex가 나왔습니다.  
+
+크롬북이 있었다가 사라져서(?) 안타까웠는데 이렇게 다시 태어났습니다.  
+
+일단 저사양으로 크롬북을 만들어서 사용할 수 있다는 것이 가장 큰 장점입니다.  
+
+저도 구형 노트북을 하나 구해서 한 번 깔아서 사용해 볼 예정입니다.  
+
+구글 서비스만 사용 하더라도 일반적인 사용에서 불편을 겪을 일이 없을 것 같습니다.  
+
+[ChromeOS Flex](https://chromeenterprise.google/os/chromeosflex/)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://www.itworld.co.kr/files/itworld/ITW_202202_01/m16-Chrome-OS-Flex.png')
+
+```
+
+### 깃헙 레포 추천
+
+최근에 새로운 프로그래밍 언어들을 배우면서 느끼는 것이 이제 더 이상 책이 필요없다는 것입니다.  
+
+괜찮은 이북이나 Git-Hub의 Repository 하나만 알고 있으면 어느 수준까지 도달하는 것은 큰 문제가 아닌듯 합니다.  
+
+이번에 소개 해 드릴 Repository의 주인공은 비전공자 출신으로 프리랜서 데이터 사이언티스트가 된 분입니다.  
+
+Repository를 보시면 [Kaggle 관련 강의](https://github.com/sw-song/kaggle-study)가 있는데 진정 매우 유용합니다.  
+
+이런 노력을 아무런 댓가도 없이 이렇게 내어놓았습니다.  
+
+[GitHub - sw-song](https://github.com/sw-song)
+
+아... 혹시 Kaagle competion에 도전하실 분 있으시면 따로 연락 한 번 주세요.  
+
+저는 Competition 3개 도전하여 2개는 완료, 1개는 하다가 중단 중입니다.
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### On the History and Future of 100% Renewable Energy Systems Research
+
+<br>  
+
+[논문링크](https://ieeexplore.ieee.org/document/9837910)    
+
+<br>
+
+IEEE에 기념비적인 논문이 하나 실렸습니다.  
+
+제목이 무려 **"On the History and Future of 100% Renewable Energy Systems Research"** 입니다!   
+
+5개 그룹의 연구자들이 합동으로 그동안 수행한 연구를 집대성한 논문입니다.   
+ 
+항상 느끼는 것인지만 이런 것을 번역하여 시사점과 각 조직이 나아가야 할 방향을 정리하여 공유해주는 조직이 있었으면 좋겠습니다.  
+
+해당 논문에는 100% 재생에너지 시스템에 대한 주요 비판에 대한 대응을 포함하고 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://ieeexplore.ieee.org/ielx7/6287639/9668973/9837910/graphical_abstract/access-gagraphic-3193402.jpg')
+
+```
+
+<br>  
+
+### 신설 火電, 묻지마 설비용량 ‘뻥튀기’  
+
+<br>
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=244540)  
+
+<br>
+
+복합발전 건설 시 발전사업 허가 용량보다 설비 용량을 키워 발전소를 건설하는 것에 대한 기사가 실렸습니다.  
+
+*우선 SK가스가 올해 착공한 울산지피에스복합은 애초 970MW로 발전사업허가를 받았으나 한차례 용량변경을 통해 설비용량을 1122MW로 키운데 이어 환경영향평가 때 발전용량을 1234MW로 추가 증량했다. 또 발전사 측이 전력당국에 최근 정례 보고한 건설현황 시설용량은 기준온도 15℃ 기준(봄·가을에 해당) 1236MW에 달한다. 최초보다 설비용량을 300MW 가까이 키운 셈이다.*  
+  
+  
+  
+*중부발전이 보령 6호기(석탄) 대체발전소로 건설 예정인 함안 천연가스발전소도 마찬가지다. 이 발전소의 사업허가용량은 500MW이지만, 한국종합기술이 수행하는 환경영향평가 작업상 설비용량은 550MW로 적시돼 있다. 업계는 서부발전의 구미복합처럼 최종 설비용량이 더 커질 것으로 보고 있다. 발전자회사 관계자는 “남동발전 삼천포천연가스(1120MW)도 유사한 전철을 밟을 수밖에 없을 것”이라고 말했다.*
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202208/244540_98637_949.jpg')
+
+```
+
+<br>  
+  
+향후 복합발전 입찰에 어떤 영향이 있을지 동향을 잘 파악해야 할 것 같습니다.    
+
+<br>
+
+
+### 6번 입찰 끝에 마곡열병합 건설업체 가닥  
+
+<br>
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=244529)  
+
+<br>
+
+회사 이름 바뀌었다고 그렇게 크게 기사를 내던 [3월 10일자 기사](http://www.e2news.com/news/articleView.html?idxno=240263) 양반들이 떡 하니 **두산중공업**이라 해 뒀습니다.  
+
+여기 정말 기자들 자질이 의심스럽습니다.   
+
+어찌되었건 마곡열병합을 대림(엇... DL이라 해줘야 하나요?)과 컨소시엄으로 수의 계약 예정이라 합니다.  
+
+*마곡열병합 건설업체 선정은 지난해부터 이어진 모두 6차례의 입찰에도 불구 유효경쟁이 이뤄지지 않아 계약을 체결하지 못한 채 계속 지연돼 왔다. 철근 등 건설자재 가격이 치솟으면서 공사가 책정한 열병합발전소 투자비로는 타산을 맞추지 못할 것이란 건설업체의 판단이 큰 영향을 끼쳤다*  
+
+원자재 가격 상승이 원인이라는데 수지타산을 잘 계산하여 입찰 했을 것이라 믿습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202208/244529_98625_5516.jpg')
+
+```
+
+<br>  
+  
+오늘이 이미 '22년 8월 중순을 넘기고 있는데 발전소를 '25년 12월에 완공한다고 하니 진행 속도가 대단할 것 같습니다.      
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Enerbility
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("enerbility")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2022년 08월 10일 적용 발전설비 용량변경  
+  
+  
+<변동내역>  
+  
+- 중앙급전발전기 : 변동사항 없음  
+- 비중앙급전발전기 : 경기 이천 관고 연료전지 신설 등[+29.7MW]  
+- 제주내연#1 연료원 변경(중유 → 바이오중유)  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

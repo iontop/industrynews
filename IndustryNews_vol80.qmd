@@ -1,0 +1,335 @@
+---
+title: "Industry News"
+subtitle: "Vol. 80"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### IRA 2022
+
+지난 2주간은 IRA 2022로 에너지 업계가 뒤집혔습니다.  
+
+우크라이나 전쟁으로 인하여 러시아의 에너지 공세에 유럽이 화석연료와 원전에 굴복할거라 예상했지만 오히려 2030년 탄소 감축 목표를 55%로 상향조정했고, 미국은 IRA 2022로 재생에너지를 에너지 전환에 중심에 두고 국가적으로 지원하겠다는 것을 천명했습니다.  
+
+하지만 국내 언론에서는 아무도 RE100, Fit for 55, IRA 2022로 인한 충격을 다루지 않습니다.  
+
+<br>
+
+[기사링크](https://www.forbes.com/sites/energyinnovation/2022/08/23/inflation-reduction-act-benefits-clean-energy-tax-credits-could-double-deployment/?sh=38b43c3e6727)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://imageio.forbes.com/specials-images/imageserve/6303fbcbf0e6ed3c05fa8c6e/US-utility-scale-wind-and-solar-deployment-and-cost-trends/960x0.png?format=png&width=960')
+
+```
+  
+<br>
+
+기술은 중립적입니다.   
+
+그것을 사용하는 사람들이 가치 평가를 할 뿐.  
+
+<br>
+
+### 깃헙 레포 추천
+
+아주 실용(?)적인 깃헙 하나 추천 들어갑니다.    
+
+어마어마하게 유명한 Do it! 시리즈 [Do ti! 쉽게 배우는 R 데이터 분석](https://github.com/youngwoos/Doit_R)의 예제와 데이터가 있는 깃헙입니다.    
+
+R을 공부하시는 분들이라면 한 번쯤 고려해보셨을 책이라 우선 깃헙 한 번 들려보시라고 추천드립니다.  
+
+<br>
+
+
+### ggbump - Sigmoid Chart
+
+깃헙 추천하는 글을 쓰다보니 예전에 보고 소개해 드려야지 했던 레포가 하나 더 생각나서 남깁니다.  
+
+신경망 모형의 활성함수 형태인 시그모이드 모양을 딴 차트인 시그모이드 차트는 유려하면서도 정보 전달력이 좋아 인포그래픽에 자주 쓰이곤 합니다.
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://github.com/davidsjoberg/ggbump/raw/master/man/figures/ranking_gdpr.png?raw=true')
+
+```
+
+<br>
+
+항상 이런 그래프를 한 번 만들어보고 싶다 생각을 했었는데 놀랍게도 위 그래프가 R + ggplot2 + ggbump를 사용하여 작성된 것입니다.  
+
+
+얼마전 유튜브에서 파이썬과 R의 각각의 장점을 꼽을 때 R은 강력한 그래픽과 시각화 성능이 강점이라 해서 '뭔 말이지?'라고 생각했는데 이 그래프를 보는 순간 바로 이해했습니다.  
+
+
+ggplot2의 extension library인 [ggbump](https://github.com/davidsjoberg/ggbump)를 소개합니다.
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### There is a place for natural gas on a zero-carbon grid: EPRI
+
+<br>  
+
+[기사링크](https://www.utilitydive.com/news/natural-gas-carbon-capture-CCS-45Q-tax-credit-epri/630325/)    
+
+<br>
+
+흥미로운 기사가 실렸습니다.  
+
+말은 많았지만 지지부진한 Carbon Capture에 관한 내용입니다.  
+
+ERRI가 8월 12일 Nature에 기고한 [논문](https://www.nature.com/articles/s41467-022-32468-w#Sec1)을 통해 Carbon removal(탄소 제거)기술과 가스 화력 발전을 합치면 향후 15년 동안 탈탄소화 비용을 3000억달러까지 줄일 수 있다고 발표했다고 합니다.  
+
+물론 많은 이들이 현재까지 지지부진한 Carbon capture & sequestration(CCS) 실적을 지적하고 CCS대신 더 많은 재생에너지나 에너지 저장장치에 투자하는 것이 낫다는 의견을 내고 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.utilitydive.com/imgproxy/SW8HPmtuC2exWZ7iEuMlyKbKrqu4X8OVXTCMYWQASBw/g:ce/rs:fill:1200:648:1/bG9jYWw6Ly8vZGl2ZWltYWdlL0dldHR5SW1hZ2VzLTE3ODQwMzczNi5qcGc.jpg')
+
+```
+
+<br>
+
+하지만 IRA 2022로 인해 (개발 투자 규모에 비해 미미하긴 하지만) 45Q 세금공제를 통한 인센티브를 받을 수 있어 유인책이 될지 지켜봐야 할 것 같습니다.  
+
+어찌되었건 세금감면과 확실한 정책 방향을 보여줌으로써 CCS까지 수면으로 떠 올랐습니다.  
+
+<br>  
+
+### Inside Clean Energy: The Idea of 100 Percent Renewable Energy Is Once Again Having a Moment  
+
+<br>
+
+[기사링크](https://insideclimatenews.org/news/25082022/inside-clean-energy-renewables/)  
+
+<br>
+
+지난 주에 소개해드린 IEEE 논문이 핫합니다.  
+
+기사를 보면서 알게된 놀라운 사실인데 1975년에 덴마크의 물리학자 Bent Sørensen라는 분이 덴마크의 전력 공급 100%를 재생에너지로 공급이 가능하다는 내용의 [논문](https://www.science.org/doi/10.1126/science.189.4199.255)을 발표했었답니다.  
+
+사실 이 정도면 예지력이라 부를 수 있을 듯 한데, 1975년이면 오일쇼크가 정점을 찍었던 때이네요.   
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://insideclimatenews.org/wp-content/uploads/2022/08/wind_sean-gallup-getty-1536x1062.jpg')
+
+```
+
+<br>  
+  
+기사의 인터뷰에 나선 Breyer 교수는 이미 비용적으로는 풍력과 태양광이 가장 저렴한 전력 공급원이 되었으나 완전 재생 가능한 시스템으로 전환할 때의 비용과 기술에는 아직 문제가 있다고 지적합니다.     
+
+참으로 인상적인 것이 이 기사 가운데에 "I should specify that Breyer is not a neutral party in this discussion."로 Breyer교수가 중립적인 인터뷰어가 아님을 밝히고 있다는 것입니다.  
+
+중립적이지 않다는 것을 밝힐 수 있는 인터뷰가 참 부럽습니다.  
+
+<br>
+
+
+### Climate Law Raises DOE Stakes to Help Lower Hydrogen’s Hurdles  
+
+<br>
+
+[기사링크](https://news.bloomberglaw.com/environment-and-energy/climate-law-raises-doe-stakes-to-help-lower-hydrogens-hurdles)  
+
+<br>
+
+이 기사는 이번 달 초 민주당이 통과시킨 기후 법안에서 수소 생산에 대한 30% 세금 공제로 추진력을 얻게 되었다는 소식입니다.  
+
+게다가 미국 에너지부(Energy Department)의 80억달러 규모의 수소허브 프로그램은 작년에 별도의 초당적 기반시설법에 의해 수립되었고 기후법의 세금공제가 시행되는 대로 시작될 것입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://db0ip7zd23b50.cloudfront.net/dims4/default/c34d6a8/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F3c%2F9a%2F69a3c63d472bbaa211ed8d2841de%2F389073221.jpg')
+
+```
+
+<br>  
+  
+이제 앞으로 미국은 수소를 기후 변화 도구로 만들어 시멘트와 철강과 같은 탄소 집약적인 산업을 위한 에너지 운반체 또는 풍력 및 태양열 발전을 저장하고 보낼 수 있는 거대한 배터리로 사용하게 될 것입니다.  
+국제 에너지 기구(International Energy Agency)는 2050년까지 전 세계 수소 공급 및 수요가 6배 이상 증가하여 순 제로(Net Zero) 목표를 달성할 것으로 예상한다고 합니다.  
+
+다행히 우리도 수소경제를 향해 나가고 있습니다.  
+
+좋은 결실이 있길 기대해봅니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+80호부터 Doosan enerbility 대신 Energy에 대한 Wordcloud를 구성합니다.
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2022년 08월 24일 적용 발전설비 용량변경  
+
+
+<변동내역>  
+
+- 중앙급전발전기 : 변동사항 없음  
+- 비중앙급전발전기 : 인천 연료전지 2단계 신설 등[+46.909MW]  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
