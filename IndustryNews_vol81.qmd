@@ -278,7 +278,7 @@ eng_news <- function(term) {
   return(news_dat)
 }
 
-df1 <- eng_news("enerbility")
+df1 <- eng_news("energy")
 
 title_text <- df1$Title
 
@@ -288,8 +288,7 @@ title_text <-
   str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
   str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
   str_replace_all("\\v", "") %>%  # 수직 탭 (|) 삭제
-  str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
-  str_replace_all("(?i)(enerbility)", "") %>%
+  str_replace_all("(?i)(energy)", "") %>% # 대소문자 관계없이 doosan 삭제
   str_replace_all("(?i)(heavy)", "")
 
 title_text <-

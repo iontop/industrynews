@@ -1,0 +1,339 @@
+---
+title: "Industry News"
+subtitle: "Vol. 80"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### 삼성전자 + RE100
+
+IRA 2022에 이어 이번에는 삼성전자가 RE100을 선언했습니다.   
+
+이 News Letter가 배포될 때쯤이면 이미 구닥다리 소식이 되어있겠지만 2022년 9월 15일 삼성전자가 국내에서  RE100을 선언했습니다.  
+
+거세지는 기후변화, ESG 등의 환경변화에 맞추기 위한 당연한 선택이었다고 보여집니다.  
+
+<br>
+
+[기사링크](https://biz.chosun.com/industry/company/2022/09/14/JMWHBLEX4FEMXNF2X6K6G42SNU/)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://img.khan.co.kr/news/2022/09/15/news-p.v1.20220915.3c21476660e645bf90b9de72f3992691_P1.webp')
+
+```
+  
+<br>
+
+**삼성전자의 1년 전력소비량은 27TWh, 한국 전체 풍력, 태양광 발전량은 21.5TWh ...** `r  emo::ji("open_mouth")`   
+
+풍력, 태양광발전의 이용률을 25%로 본다면 대충 소비량의 4배에 달하는 설비 용량이 필요함을 알 수 있습니다.  
+
+애플처럼 협력업체의 RE100까지 선언한 것도 아니요, SK 하이닉스, LG 디스플레이 같은 다른 대규모 사용업체를 합친 것이 아닌 순수하게 삼성전자가 RE100을 달성하기 위해 필요한 용량이 저정도 입니다.   
+
+에너지 시장이 어떻게 나아갈지 누가봐도 알 수 있습니다.  
+
+불과 몇 주전 발표한 제10차 전력수급기본계획이 무색해지는 순간이었습니다.  
+
+지난 주와 동일한 생각을 남깁니다.  
+
+기술은 중립적입니다.   
+
+그것을 사용하는 사람들이 가치 평가를 할 뿐.  
+
+<br>
+
+### seaborn
+
+[The seaborn.objects interface](https://seaborn.pydata.org/tutorial/objects_interface.html)  
+
+
+Python의 대표적인 데이터 시각화 Package 인 seaborn에 그래픽 문법(R의 ggplot2 스타일)을 추가했습니다.  
+
+R의 장점을 빠르게 흡수하고 있는 모습인데 이러다가는 R인지 Python인지 구분이 안 될 수준까지 갈 것 같습니다.  
+
+서로의 장점을 적극적으로 받아들이는 이러한 변화는 항상 환영입니다.   
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://raw.githubusercontent.com/mwaskom/seaborn/master/doc/_static/logo-wide-lightbg.svg')
+
+```
+
+<br>
+
+이제 %>%(파이프 연산자)만 들어오면 R에서 사용하던 시각화를 그대로 복붙해서 사용할 수 있을 수준이 될 것으로 보입니다.  
+
+pandas에서 파이프 연산자가 들어온다면 이제 R에서 가장 큰 장점인 dplyr + ggplot2의 조합이 Python에서도 구현이 가능할 듯 합니다.  
+
+Python 유저분들께서는 한 번 사용해보시길 바랍니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### There is a place for natural gas on a zero-carbon grid: EPRI
+
+<br>  
+
+[기사링크](https://www.utilitydive.com/news/natural-gas-carbon-capture-CCS-45Q-tax-credit-epri/630325/)    
+
+<br>
+
+흥미로운 기사가 실렸습니다.  
+
+말은 많았지만 지지부진한 Carbon Capture에 관한 내용입니다.  
+
+ERRI가 8월 12일 Nature에 기고한 [논문](https://www.nature.com/articles/s41467-022-32468-w#Sec1)을 통해 Carbon removal(탄소 제거)기술과 가스 화력 발전을 합치면 향후 15년 동안 탈탄소화 비용을 3000억달러까지 줄일 수 있다고 발표했다고 합니다.  
+
+물론 많은 이들이 현재까지 지지부진한 Carbon capture & sequestration(CCS) 실적을 지적하고 CCS대신 더 많은 재생에너지나 에너지 저장장치에 투자하는 것이 낫다는 의견을 내고 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.utilitydive.com/imgproxy/SW8HPmtuC2exWZ7iEuMlyKbKrqu4X8OVXTCMYWQASBw/g:ce/rs:fill:1200:648:1/bG9jYWw6Ly8vZGl2ZWltYWdlL0dldHR5SW1hZ2VzLTE3ODQwMzczNi5qcGc.jpg')
+
+```
+
+<br>
+
+하지만 IRA 2022로 인해 (개발 투자 규모에 비해 미미하긴 하지만) 45Q 세금공제를 통한 인센티브를 받을 수 있어 유인책이 될지 지켜봐야 할 것 같습니다.  
+
+어찌되었건 세금감면과 확실한 정책 방향을 보여줌으로써 CCS까지 수면으로 떠 올랐습니다.  
+
+<br>  
+
+### Inside Clean Energy: The Idea of 100 Percent Renewable Energy Is Once Again Having a Moment  
+
+<br>
+
+[기사링크](https://insideclimatenews.org/news/25082022/inside-clean-energy-renewables/)  
+
+<br>
+
+지난 주에 소개해드린 IEEE 논문이 핫합니다.  
+
+기사를 보면서 알게된 놀라운 사실인데 1975년에 덴마크의 물리학자 Bent Sørensen라는 분이 덴마크의 전력 공급 100%를 재생에너지로 공급이 가능하다는 내용의 [논문](https://www.science.org/doi/10.1126/science.189.4199.255)을 발표했었답니다.  
+
+사실 이 정도면 예지력이라 부를 수 있을 듯 한데, 1975년이면 오일쇼크가 정점을 찍었던 때이네요.   
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://insideclimatenews.org/wp-content/uploads/2022/08/wind_sean-gallup-getty-1536x1062.jpg')
+
+```
+
+<br>  
+  
+기사의 인터뷰에 나선 Breyer 교수는 이미 비용적으로는 풍력과 태양광이 가장 저렴한 전력 공급원이 되었으나 완전 재생 가능한 시스템으로 전환할 때의 비용과 기술에는 아직 문제가 있다고 지적합니다.     
+
+참으로 인상적인 것이 이 기사 가운데에 "I should specify that Breyer is not a neutral party in this discussion."로 Breyer교수가 중립적인 인터뷰어가 아님을 밝히고 있다는 것입니다.  
+
+중립적이지 않다는 것을 밝힐 수 있는 인터뷰가 참 부럽습니다.  
+
+<br>
+
+
+### Climate Law Raises DOE Stakes to Help Lower Hydrogen’s Hurdles  
+
+<br>
+
+[기사링크](https://news.bloomberglaw.com/environment-and-energy/climate-law-raises-doe-stakes-to-help-lower-hydrogens-hurdles)  
+
+<br>
+
+이 기사는 이번 달 초 민주당이 통과시킨 기후 법안에서 수소 생산에 대한 30% 세금 공제로 추진력을 얻게 되었다는 소식입니다.  
+
+게다가 미국 에너지부(Energy Department)의 80억달러 규모의 수소허브 프로그램은 작년에 별도의 초당적 기반시설법에 의해 수립되었고 기후법의 세금공제가 시행되는 대로 시작될 것입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://db0ip7zd23b50.cloudfront.net/dims4/default/c34d6a8/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F3c%2F9a%2F69a3c63d472bbaa211ed8d2841de%2F389073221.jpg')
+
+```
+
+<br>  
+  
+이제 앞으로 미국은 수소를 기후 변화 도구로 만들어 시멘트와 철강과 같은 탄소 집약적인 산업을 위한 에너지 운반체 또는 풍력 및 태양열 발전을 저장하고 보낼 수 있는 거대한 배터리로 사용하게 될 것입니다.  
+국제 에너지 기구(International Energy Agency)는 2050년까지 전 세계 수소 공급 및 수요가 6배 이상 증가하여 순 제로(Net Zero) 목표를 달성할 것으로 예상한다고 합니다.  
+
+다행히 우리도 수소경제를 향해 나가고 있습니다.  
+
+좋은 결실이 있길 기대해봅니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+80호부터 Doosan enerbility 대신 Energy에 대한 Wordcloud를 구성합니다.
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2022년 08월 24일 적용 발전설비 용량변경  
+
+
+<변동내역>  
+
+- 중앙급전발전기 : 변동사항 없음  
+- 비중앙급전발전기 : 인천 연료전지 2단계 신설 등[+46.909MW]  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
