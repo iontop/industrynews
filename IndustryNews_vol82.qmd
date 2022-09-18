@@ -1,6 +1,6 @@
 ---
 title: "Industry News"
-subtitle: "Vol. 80"
+subtitle: "Vol. 82"
 author: "안준호"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output: 
@@ -130,80 +130,83 @@ Python 유저분들께서는 한 번 사용해보시길 바랍니다.
 
 <br>  
 
-### There is a place for natural gas on a zero-carbon grid: EPRI
+### France denies it may halt power exports to Italy
 
 <br>  
 
-[기사링크](https://www.utilitydive.com/news/natural-gas-carbon-capture-CCS-45Q-tax-credit-epri/630325/)    
+[기사링크](https://www.reuters.com/business/energy/france-denies-it-may-halt-power-exports-italy-2022-09-17/)    
 
 <br>
 
-흥미로운 기사가 실렸습니다.  
+프랑스에서 이탈리아로 전력 공급을 멈추겠다고 했습니다. 좀 더 정확하게 말하자면 EDF가 전력 수출을 중지할 수도 있다고 경고 `r emo::ji("warning")` 했었습니다.  
 
-말은 많았지만 지지부진한 Carbon Capture에 관한 내용입니다.  
+양국의 정부는 아니라고 하고 있지만 프랑스 국영 전력회사인 EDF에서 전력 수출에 문제가 있는 것은 사실인 것으로 보입니다.  
 
-ERRI가 8월 12일 Nature에 기고한 [논문](https://www.nature.com/articles/s41467-022-32468-w#Sec1)을 통해 Carbon removal(탄소 제거)기술과 가스 화력 발전을 합치면 향후 15년 동안 탈탄소화 비용을 3000억달러까지 줄일 수 있다고 발표했다고 합니다.  
-
-물론 많은 이들이 현재까지 지지부진한 Carbon capture & sequestration(CCS) 실적을 지적하고 CCS대신 더 많은 재생에너지나 에너지 저장장치에 투자하는 것이 낫다는 의견을 내고 있습니다.  
+지난 번에도 한 번 언급했듯이 현재 프랑스의 원자력 발전소들은 유지보수 비용 증가와 가동률 저하로 문제가 있다고 합니다.  
 
 <br>  
 
 ```{r}
-knitr::include_graphics('https://www.utilitydive.com/imgproxy/SW8HPmtuC2exWZ7iEuMlyKbKrqu4X8OVXTCMYWQASBw/g:ce/rs:fill:1200:648:1/bG9jYWw6Ly8vZGl2ZWltYWdlL0dldHR5SW1hZ2VzLTE3ODQwMzczNi5qcGc.jpg')
+knitr::include_graphics('https://www.reuters.com/resizer/Z1ScMSqN_FAWS-Hsg-AJxYz1XfQ=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/NXHDFQ4HTFNW3NBGZ5IX2ERVEM.jpg')
 
 ```
 
 <br>
 
-하지만 IRA 2022로 인해 (개발 투자 규모에 비해 미미하긴 하지만) 45Q 세금공제를 통한 인센티브를 받을 수 있어 유인책이 될지 지켜봐야 할 것 같습니다.  
+러시아의 우크라이나 침공과 천연가스 공급 중단으로 시작된 에너지 공급란에 유럽전력의 약한 고리가 하나씩 드러나고 있는 모습입니다.  
 
-어찌되었건 세금감면과 확실한 정책 방향을 보여줌으로써 CCS까지 수면으로 떠 올랐습니다.  
+이러한 과정을 어떻게 현명하게 이겨나갈 수 있을지가 관건이 될 것 같습니다.  
 
 <br>  
 
-### Inside Clean Energy: The Idea of 100 Percent Renewable Energy Is Once Again Having a Moment  
+### Amid an energy crisis, ice cream returns to a Lebanese village thanks to the power of solar  
 
 <br>
 
-[기사링크](https://insideclimatenews.org/news/25082022/inside-clean-energy-renewables/)  
+[기사링크](https://www.abc.net.au/news/2022-09-18/solar-power-a-necessity-in-lebanon/101446280)  
 
 <br>
 
-지난 주에 소개해드린 IEEE 논문이 핫합니다.  
+제목이 유쾌해서 가져와 봤습니다.  
 
-기사를 보면서 알게된 놀라운 사실인데 1975년에 덴마크의 물리학자 Bent Sørensen라는 분이 덴마크의 전력 공급 100%를 재생에너지로 공급이 가능하다는 내용의 [논문](https://www.science.org/doi/10.1126/science.189.4199.255)을 발표했었답니다.  
+유쾌한 제목과 함께 시사하는 바가 많은 것 같아 소개드립니다.  
 
-사실 이 정도면 예지력이라 부를 수 있을 듯 한데, 1975년이면 오일쇼크가 정점을 찍었던 때이네요.   
+전쟁으로 인해 전력공급에 어려움을 겪던 레바논의 한 마을에 2년만에 아이스크림 판매가 재개되었고, 태양광 발전이 큰 역할을 했다는 소식입니다.  
 
 <br>  
 
 ```{r}
-knitr::include_graphics('https://insideclimatenews.org/wp-content/uploads/2022/08/wind_sean-gallup-getty-1536x1062.jpg')
+knitr::include_graphics('https://live-production.wcms.abc-cdn.net.au/8b6297b9d70a1b083b43c6eb81316786?impolicy=wcms_crop_resize&cropH=3333&cropW=5000&xPos=0&yPos=0&width=862&height=575')
 
 ```
 
 <br>  
   
-기사의 인터뷰에 나선 Breyer 교수는 이미 비용적으로는 풍력과 태양광이 가장 저렴한 전력 공급원이 되었으나 완전 재생 가능한 시스템으로 전환할 때의 비용과 기술에는 아직 문제가 있다고 지적합니다.     
+대규모 설비와 파이낸싱이 필요한 기존 발전소와 달리 소규모로 필요한 만큼만 건설할 수 있는 태양광은 앞으로 이러한 재건사업이나 전력망을 이제 구축해야 하는 저개발 국가에서 큰 역할을 할 것으로 보입니다.  
 
-참으로 인상적인 것이 이 기사 가운데에 "I should specify that Breyer is not a neutral party in this discussion."로 Breyer교수가 중립적인 인터뷰어가 아님을 밝히고 있다는 것입니다.  
+중국이 신용카드를 건너뛰고 곧바로 모바일 결제로 진입했듯, 어쩌면 저개발국가들은 기존 발전원을 건너뛰고 곧바로 마이크로 그리드 + VPP로 진입할 가능성도 충분해 보입니다.  
 
-중립적이지 않다는 것을 밝힐 수 있는 인터뷰가 참 부럽습니다.  
+재생에너지를 운용할 수 있는 유리한 환경과 대규모 파이낸싱이 없어도 되기 때문에 낮은 리스크 부담까지... 
 
-<br>
+우리 회사도 이러한 부분을 한 번쯤 눈여겨 보았으면 좋겠네요.  
 
-
-### Climate Law Raises DOE Stakes to Help Lower Hydrogen’s Hurdles  
 
 <br>
 
-[기사링크](https://news.bloomberglaw.com/environment-and-energy/climate-law-raises-doe-stakes-to-help-lower-hydrogens-hurdles)  
+
+### Korea's Renewable Energy Supply Is Only a Quarter of OECD Average  
 
 <br>
 
-이 기사는 이번 달 초 민주당이 통과시킨 기후 법안에서 수소 생산에 대한 30% 세금 공제로 추진력을 얻게 되었다는 소식입니다.  
+[기사링크](http://www.businesskorea.co.kr/news/articleView.html?idxno=100459)  
 
-게다가 미국 에너지부(Energy Department)의 80억달러 규모의 수소허브 프로그램은 작년에 별도의 초당적 기반시설법에 의해 수립되었고 기후법의 세금공제가 시행되는 대로 시작될 것입니다.  
+<br>
+
+삼성전자의 위력이 정말 대단합니다!!!  
+
+삼성전자가 RE100을 하겠다고 선언하자마자 이런 뉴스들이 쏟아지고 있습니다.   
+
+역시 대기업의 힘이군요.  
 
 <br>  
 
@@ -214,12 +217,17 @@ knitr::include_graphics('https://db0ip7zd23b50.cloudfront.net/dims4/default/c34d
 
 <br>  
   
-이제 앞으로 미국은 수소를 기후 변화 도구로 만들어 시멘트와 철강과 같은 탄소 집약적인 산업을 위한 에너지 운반체 또는 풍력 및 태양열 발전을 저장하고 보낼 수 있는 거대한 배터리로 사용하게 될 것입니다.  
-국제 에너지 기구(International Energy Agency)는 2050년까지 전 세계 수소 공급 및 수요가 6배 이상 증가하여 순 제로(Net Zero) 목표를 달성할 것으로 예상한다고 합니다.  
+결론은 기사의 아래 두 문장으로 요약됩니다.  
 
-다행히 우리도 수소경제를 향해 나가고 있습니다.  
+**"This is far below the OECD average of 30 percent."**  
 
-좋은 결실이 있길 기대해봅니다.  
+**"Samsung Electronics cites the high price of renewable energy as one of the reasons why Korea’s renewable energy supply is not smooth."**  
+
+삼성전자님이 신재생을 쓰셔야 하는데 신재생에너지로 만드는 전력 비중이 OECD 평균의 30%도 안되는 수준이라 비싸게 사서 써야 하는데 이건 안된다는 뜻입니다.  
+
+누차 이야기 했지만 어떤 에너지가 필요하고 투자되어야 하는지는 자본이 결정합니다.  
+
+민간투자가 어디로 향하는지가 에너지 전환의 방향을 결정짓는 것이겠죠.   
 
 <br>
 
@@ -234,7 +242,13 @@ knitr::include_graphics('https://db0ip7zd23b50.cloudfront.net/dims4/default/c34d
 
 ### Wordcloud for Energy  
 
-80호부터 Doosan enerbility 대신 Energy에 대한 Wordcloud를 구성합니다.
+먼저 지난주 word cloud가 잘못되었음을 사과 드립니다.  
+
+energy로 수정하면서 수정이 덜 된 부분을 그대로 사용하는 바람에 문제가 있었던 것 같습니다.  
+
+이번 주는 몇 번 확인을 했습니다.  
+
+유럽의 에너지와 신재생 에너지, 기후변화가 에너지 관련 뉴스에서 가장 큰 비중을 차지하고 있음을 알 수 있습니다.  
 
 <br>  
 
