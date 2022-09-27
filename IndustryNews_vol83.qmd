@@ -1,0 +1,337 @@
+---
+title: "Industry News"
+subtitle: "Vol. 83"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### 데이터 시각화 + 증강현실
+
+데이터 시각화에 증강현실을 사용한 사례가 있어 공유합니다.  
+
+이런걸 처음 생각해내는 사람은 정말 존경스럽습니다.  
+
+<br>
+
+[Building Hope](https://buildinghop.es)  
+
+[Medium Article](https://medium.com/google-news-lab/how-to-build-a-dataviz-in-augmented-reality-46333794eed8)  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://iibawards-prod.s3.amazonaws.com/projects/images/000/004/414/page.png?1570364423')
+
+```
+  
+<br>
+
+'Building Hope'는 증강 현실 데이터 시각화 서비스로, 웹 앱과 Android 및 iOS 다운로드가 가능한 모바일 앱에서 모두 사용가능한 서비스입니다.
+
+사용 방법은 사용자가 'Building Hope' 앱 혹은 웹페이지에 접속 후 'END OF MALARIA', 'MEDIA LITERACY', 'HUMAN RIGHTS' 등과 같은 사회문화적 이슈에 대해 얼마나 긍정적으로 전망하는지 평가합니다.
+
+이슈에 대해 긍정적으로 전망할 수록 더 큰 암석 시각화가 생성이 됩니다.
+
+이후 생성된 암석 시각화는 증강 현실 속 원하는 장소에 배치할 수 있습니다.  
+
+데이터는 2차원으로 레포트 형식으로만 시각화 할 수 있다는 고정관념을 깨뜨려버린 서비스입니다.  
+
+<br>
+
+### 여러분의 기업은 데이터 컬처(DATA CULTURE)인가요?
+
+
+[인사이트 리포트](https://www.samsungsds.com/kr/insights/data_culture.html?fbclid=IwAR3iG8620E2ZaBVG2e5TEgDeS3o9T1PYTio87QRuU8uY-UtlV7c78Kt5g7k)  
+
+원래 헬스장에서는 운동하지 않아도 될 몸매를 가진 사람들이 가장 열심히 합니다.  
+
+정작 운동해야 할 사람들은 운동에 관심이 없거나 해야겠다는 다짐만 할 뿐이죠.  
+
+어쩌다가 헬스장에 가도 몸매 좋은 사람들 사이에서 주눅들어 상처입고 다시 돌아오곤 합니다.  
+
+독서실이나 도서관도 마찬가지 입니다.  
+
+오지 않아도 될 사람들이 와서 가장 열심히하고, 정작 해야 할 사람들은 생각만 하거나 오질 않습니다.  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://www.tableau.com/sites/default/files/2021-05/Equation.png')
+
+```
+
+<br>
+
+어쩌면 모든 일이 그럴지 모릅니다.  
+
+제대로 데이터에 대해 가장 잘 알것 같은 집단에서는 데이터 컬쳐가 형성되었는지 논의하는데...  
+
+정작 엄청난 발전소의 운전데이터에서 인사이트를 찾아야 하는 우리는 아무 생각없이 있습니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Here's How the Inflation Reduction Act Will Save You Thousands for Energy Efficiency Upgrades
+
+<br>  
+
+[기사링크](https://www.cnet.com/home/energy-and-utilities/heres-how-the-inflation-reduction-act-will-save-you-thousands-for-energy-efficiency-upgrades/)    
+
+<br>
+
+IRA 시행으로 에너지 절감 주택에 대한 지원을 태양광의 경우 10년 동안 연장했고, 가정용 ESS, Heatpump 설치는 물론 열효율을 높이기 위한 단열시공을 하는데 최대 $14,000을 지원하기로 했다는 소식입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.cnet.com/a/img/resize/a3a08dd66f7740efdf3b6c8223db1adfbc3bd345/hub/2022/08/09/a2acd9d6-6e08-43ef-b40d-93b9215319ac/gettyimages-84484897.jpg?auto=webp&fit=crop&height=675&width=1200')
+
+```
+
+<br>
+
+이는 매우 강력한 유인책입니다.  
+
+이러한 인센티브에 따라 사람들은 Heatpump나 태양광에 관심을 가질 것이고, 정부의 지원을 받을 수 있을 때 단열시공을 하는등 관련 산업이 활성화와 더불어 전체적인 열효율 상승을 가져올 수 있습니다.  
+
+우리도 늦지 않게 아파트의 태양광 시공이나 Heatpump의 적극적인 활용 방안을 마련하여 지원했으면 하는 바램입니다.  
+에너지 변환에 대한 뉴스에 우리나라 소식은 볼 수 없어 안타까울 따름입니다.  
+
+<br>  
+
+### Switching to renewable energy could save trillions - study  
+
+<br>
+
+[기사링크](https://www.bbc.com/news/science-environment-62892013)  
+
+<br>
+
+우크라이나 전쟁은 인류에겐 재앙이지만 탄소중립을 향한 발걸음을 재촉하게 만드는 기폭제가 되고 있습니다.  
+
+영국 Oxford대학교에서 재생에너지 가격의 급락으로 영국 전체를 RE100을 할 경우 에너지 비용을 대폭 절감할 수 있다는 연구결과를 발표했습니다.  
+
+그리고 이 소식을 BBC가 내보냈습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://ichef.bbci.co.uk/news/976/cpsprodpb/42C1/production/_126698071_hi068564226.jpg.webp')
+
+```
+
+<br>  
+  
+이 소식이 놀라운 이유는 지금까지 한 업체 단위의 RE100이 논의되었을 뿐이고, 한 국가가 RE100으로 전환할 경우 비용이 매우 높을 것으로 추정되어 논의조차 되지 않았는데 이제 국가단위 RE100까지 거론되고 있습니다.  
+
+우크라이나 전쟁을 계기로 가스가격이 폭등하자 유럽 국가들이 재생에너지를 신속하게 설치하겠다는 계획(REpowerEU)을 세웠는데 이 계획을 더 빠르게 추진해도 경제적으로 이득이 될 것이라는 결론이 나왔습니다.  
+
+좀 더 상세한 내용을 알고 싶으신 분들께서는 [논문](https://www.sciencedirect.com/science/article/pii/S254243512200410X)을 읽어보시기 바랍니다.  
+
+<br>
+
+
+### Longi achieves 26.12% efficiency for gallium-doped p-type heterojunction solar cell  
+
+<br>
+
+[기사링크](https://www.pv-magazine.com/2022/09/19/longi-achieves-25-47-efficiency-for-gallium-doped-p-type-heterojunction-solar-cell-2/)  
+
+<br>
+
+중국의 태양광 기업인 Longi가 p-type heterojuction 기술을 기반으로 passivation을 향상시켜 26% 효율을 돌파했다는 소식입니다.  
+
+페로브스카이트 기술없이 이론효율에 근접하고 있습니다.  
+
+정작 페로브스카이트 기술의 강국인 우리나라는 태양광이 정치 논리에 얽매여 지지부진 하는 사이에 중국이 무서운 속도로 뛰어가고 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://16iwyl195vvfgoqu3136p2ly-wpengine.netdna-ssl.com/wp-content/uploads/2022/09/Bild1.v15.jpg')
+
+```
+
+<br>  
+  
+과거 자율주행의 기술중 하나로 라이다가 있었습니다.  
+
+테슬라처럼 카메라만으로는 한계가 있다고 하면서 지지부진하는 사이 테슬라는 카메라만으로 여기까지 올라섰고 이젠 굳이 라이다가 필요한가? 하는 소리까지 들리고 있습니다.  
+
+강력한 기술을 가지고 있다면 국가적으로 육성하고 표준으로 자리잡도록 도와주지는 못할 망정.... 참 할말이 없습니다.  
+
+지금이라도 소 잃고 외양간을 고치는 일이 없도록 했으면 합니다.  
+
+분명 제가 모르는 것이 있을겁니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+워드클라우드를 만들면서 느끼는 것은 한국의 에너지 관련 기사와 해외의 에너지 관련 기사는 전혀 다른 세상이라 느껴질 만큼 온도차가 있다는 것입니다.  
+
+항상 말하지만 국내는 아무도 기후변화, 탄소중립, 신재생 등에 관심을 주지 않습니다.  
+
+안타까울 따름입니다.  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
