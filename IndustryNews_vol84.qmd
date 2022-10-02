@@ -1,0 +1,387 @@
+---
+title: "Industry News"
+subtitle: "Vol. 84"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### Tesla Optimus
+
+테슬라가 AI Day에 공개한 옵티머스 입니다.  
+
+무엇보다 일론 머스크가 $20,000에 상용화를 하겠다고하여 기대가 만발입니다.  
+
+<br>
+
+[기사링크](https://www.bbc.com/news/technology-63100636)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2022/09/Tesla-Optimus-Humanoid-robot.jpg?w=2500&quality=82&strip=all&ssl=1')
+
+```
+  
+<br>
+
+어찌되었건 테슬라는 세상을 빠른 속도로 바꾸고 있습니다.  
+
+불가능하고 했던 일들을 하나씩 가능으로 만들어가 가는 일론 머스크는 정말 대단한 사람인듯 합니다.  
+
+에너지, 교통수단, 우주탐사에 이이 이제 로봇까지 현실세계로 끌고 왔습니다.  
+
+가장 무서운 점은 로봇에 들어가는 모든 기반 기술은 자동차에 사용되었던 기술이라는 점입니다.  
+
+그가 어떻게 세상을 바꿔 나가는지 기대해봐도 좋을 것 같습니다.  
+
+<br>
+
+### 하버드 졸업 30주년 동문회에 다녀와서
+
+[기사링크](https://newspeppermint.com/2019/06/30/harvardreunion50/)  
+[원문보기](https://www.theatlantic.com/education/archive/2018/10/what-my-harvard-college-reunion-taught-me-about-life/573847/)
+
+
+당연히 제 이야기는 아닙니다.   
+
+전 MIT 음대 출신이라.... ㅠ,ㅠ   
+
+그냥 하버드라는 명찰 떼고 담담하게 읽어보시면 좋을 것 같아서 가져왔습니다.  
+
+조금 오래된 소식인데 우연히 글을 읽고 이건 한 번 공유하면 좋겠다해서 옮겨봤습니다.  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://cdn.theatlantic.com/thumbor/CnKVnTuRfjtVLKGAGEkYGhzJo8k=/0x312:2996x1997/1952x1098/media/img/mt/2018/10/GettyImages_614773308/original.jpg')
+
+```
+
+<br>
+
+가장 와닿는 내용은...
+
+**무릎, 엉덩이, 어깨가 성한 친구를 찾기 어려웠습니다.**
+
+그리고 
+
+**얼굴에 나타난 혈색만 봐도 지난 30년 동안 누가 술을 많이 마셨는지 짐작할 수 있었습니다.**
+
+였습니다. 하버드를 나와도 힘든 삶을 살아가나 봅니다.  
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### LG Electronics offers hybrid system combining heat pump, PV and storage
+
+<br>  
+
+[기사링크](https://www.pv-magazine.com/2021/02/03/lg-electronics-offers-hybrid-system-combining-heat-pump-pv-and-storage/)    
+
+<br>
+
+LG전자의 태양광발전-저장-히트펌프 시스템 해외 매출이 증가하고 있다는 소식입니다.  
+
+이렇게 서서히 규모의 경제가 달성되면 가격은 낮아지고, 낮아진 가격으로 더 많은 사람들이 구매하게 되는 선순환의 구조가 만들어 질 것입니다.  
+
+이미 독일에서는 열분야에서 히트펌프가 가장 큰 비중을 차지할만큼 주류 에너지원이 되었습니다.  
+
+개별 주택인 독일에서 가능하다는 것은 대규모 주거단지가 밀집된 한국은 더욱 쉽게 가능하다는 것을 의미합니다.  
+
+주택 뿐만 아니라 산업단지에도 지열교환장치와 히트펌프를 이용하여 공정용 온수를 공급하는 것도 가능합니다.  
+
+산업용 열공급까지 재생에너지가 담당할 수 있게 되는 것입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://16iwyl195vvfgoqu3136p2ly-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/Element-3-100.jpg')
+
+```
+
+<br>
+
+SK, 한화, LG등 유수의 국내 업체가 에너지 전환에 앞다퉈 뛰어들고 이를 전면에 내세우는 동안, 우리는 정치적 논리로 내세우지 못하고 있어 안타까울 따름입니다.  
+
+이들에게 에너지 시장을 뺏기지 않으려면 지금이라도 방향을 잘 잡아야 합니다.  
+
+
+<br>  
+
+### Mercedes-Benz plans to build wind farm at its test track in Papenburg  
+
+<br>
+
+[기사링크](https://group.mercedes-benz.com/company/news/wind-farm-papenburg.html)  
+
+<br>
+
+우리나라는 신기하게도 RE100을 이행하자고 하면 재생에너지가 부족하다고 징징거리고,   
+
+재생에너지 사업을 하자고 하면 필요없고, 원자력같은 고전적인 전력 생산원이 더 좋다고 징징거립니다.  
+
+그리곤 RE100 이행하기 위한 국가의 지원이 부족하다고 또 징징거립니다.  
+
+애플, IKEA, 구글, 아마존, 벤츠등은 공급을 늘리기 위해 재생에너지 사업을 직접 개발합니다. 
+
+이제 국내 업체도 조만간 재생에너지를 직접 개발할 날이 멀지 않은 듯 합니다.  
+
+이번에 벤츠에서 독일 북부에 100MW급 육상풍력을 개발하여 벤츠 전체 수요의 15%를 담당하게 할 예정이라 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://group.mercedes-benz.com/bilder/unternehmen/news/2022/windpark-papenburg-w1024xh512-cutout.jpg')
+
+```
+
+<br>  
+  
+안 될 이유를 찾을 노력과 정성으로 될 수 있는 방법을 찾는 분위기가 형성되었으면 합니다.  
+
+이제 RE100은 선택지가 아니라 강제사항이나 다름이 없습니다.  
+
+국가단위의 RE100 논의가 시작된 마당에 아직도 신재생에너지로의 전환에 머뭇거리고 있는 모습이 참 답답합니다.  
+
+돌이 없어서 석기 시대가 끝난 것이 아니라는 말이 다시 떠오릅니다.  
+
+
+<br>
+
+
+### ABB to divest its entire stake in Hitachi Energy to Hitachi  
+
+<br>
+
+[기사링크](https://www.power-technology.com/news/abb-hitachi-energy/)  
+
+<br>
+
+ABB가 보유하고 있던 Hitachi와의 Joint Venture 지분 19.9%를 Hitachi로 매각하게 되었다고 합니다.  
+
+Joint Venture는 2020년 ABB의 Power Grid사업에서 설립된 합작회사입니다.  
+
+매각과 관련된 절차는 금년 4분기까지 마무리가 될 예정이라 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.power-technology.com/wp-content/uploads/sites/21/2022/09/ABB.jpg')
+
+```
+
+<br>  
+  
+ABB는 작년 11월에 기계식 동력전달 계통(power transmission components, mounted bearings, enclosed gearings)을 제작하는 자회사(Dodge)를 29억 달러에 매각하였고, 이번에 Hitachi에게 JV 지분의 Call option까지 행사하여 거액의 현금을 확보했습니다. (다만 기사에서는 14.25억 달러 되는 금액이 들어와도 큰 이익이 없을 것이라고 하네요.)  
+
+뭔가 회사를 재편하고 있다는 느낌입니다.  
+ABB는 중전기에서 로봇, 자동화, 모션 솔루션 부문의 강자인데 급변하는 시기에 어떤 모습으로 변화할지 지켜봐야 할 것입니다.  
+
+참고로 우리회사에서 만드는 풍력도 ABB 발전기를 쓴답니다.  
+
+<br>
+
+### ‘죽은 지구에 케이팝은 없다’···멜론에 ‘재생에너지 100%’ 요구하는 팬들  
+
+<br>
+
+[기사링크](https://www.khan.co.kr/environment/climate/article/202209291125001)  
+
+<br>
+
+세상에 이런 일을 한국에서 마주하게 될 줄은 몰랐습니다.  
+
+처음 기사를 읽는데 감동스러웠습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://img.khan.co.kr/news/2022/09/29/news-p.v1.20220929.4b76d53999444622ae501023a2152193_P1.webp')
+
+```
+
+<br>  
+  
+세상이 변하는 것이 느껴집니다. 소비자가 컨텐츠 공급자에게 RE100을 요구하는 세상이 도래했습니다.  
+
+점점 더 이러한 움직임이 빨라질 것입니다.  
+
+20세기로 접어들면서 인권을 요구하고, 여성 참정권을 요구했듯이 이제 환경권을 요구할 것입니다.  
+
+이러한 변화는 환영입니다. 그리고 응원합니다.  
+
+컨텐츠 유통사들도 이러한 움직임에 적극 동참해 주실 바랍니다.  
+
+<br>
+
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2022년 09월 28일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 티엠솔라 당진동구1호 태양광발전소 신설 등[+42.954MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
