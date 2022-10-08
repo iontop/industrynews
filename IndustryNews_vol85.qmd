@@ -1,0 +1,363 @@
+---
+title: "Industry News"
+subtitle: "Vol. 85"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### Microsoft open sources its ‘farm of the future’ toolkit
+
+MS가 이런 것도 만들었습니다.  
+
+농사를 데이터에 기반하여 지을 수 있도록 해 주는 FarmVibes.AI Toolkit을 오픈소스로 공개했습니다.  
+
+<br>
+
+[MS Blog](https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/?fbclid=IwAR15MS_hd4PR7gvjo3h8bWhzc0eYtMERPefTL1I-kXFUIltk6TLBROy62B0&mibextid=9by5wv)  
+
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://blogs.microsoft.com/wp-content/uploads/prod/sites/3/2022/10/Untitled-4.jpg')
+
+```
+  
+<br>
+
+드론 및 위성 이미지를 지상의 센서 데이터와 결합해서 insight를 제공하는 Async Fusion,  
+
+위성데이터를 쉽게 처리할 수 있도록 해주는 SpaceEye,  
+
+기상예보와 농장의 센서 정보를 활용해 온도와 풍속을 예측하는 DeepMC,  
+
+등등... 지속가능한 농업을 위한 분석도구들이 포함되어 있습니다.  
+
+노인들만 가득한 우리의 농촌은 이러한 도구들이 개방되어도 접근할 수 없어 안타깝습니다. `r emo::ji("cry")`
+
+<br>
+
+### [박상욱의 기후 1.5] 바람은 유럽산, 햇빛은 중국산? '재생에너지 제자리걸음'의 나비효과
+
+  
+저와 비슷한 시각을 가진 거의 유일한 언론사 기자입니다.  
+  
+
+[기사링크](https://mnews.jtbc.co.kr/News/Article.aspx?news_id=NB12081838&mibextid=9by5wv)  
+
+
+```{r ,out.width="100%"}
+knitr::include_graphics("https://photo.jtbc.co.kr/news/jam_photo/202210/03/89729b38-c682-47ec-9f16-a3d6d08ecf8d.jpg")
+
+```
+
+<br>
+
+**국제사회에선 이미 '재생에너지의 두 축'으로 자리를 잡았음에도 유독 한국에선 '현실성이 없다', '꿈같은 소리다', '사업성이 없다' 온갖 비아냥의 대상이 됐죠.**  
+
+**우리가 이처럼 근거도 없이 재생에너지를 외면하는 사이, 글로벌 재생에너지 시장은 성장을 거듭했습니다. 최근 5년간 태양광 관련 무역액은 무려 1370억달러에 달했습니다.**  
+
+**어째서 미국이, 유럽이 '자국산 발전기', '자국산 전기차'를 찾는 것일까요. 이러지 않고서는 햇빛은 국산이지만 그것으로 전기를 만드는 것은 수입산, 바람은 국산이지만 그것을 전기로 만드는 것은 수입산이 되어버리기 때문입니다. 우리가 재생에너지냐 원전이냐 무의미한 논쟁으로 시간을 버리는 사이, 우리나라의 햇빛은 중국산, 바람은 유럽산이 되어버릴 수 있습니다. 신속한 상황 판단과 정책 마련이 시급한 이유입니다.**  
+
+기사 한구절 한구절이 가슴아프게 다가옵니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Nord Stream methane leaks are ‘world’s worst’ – what does it mean for climate change?
+
+<br>  
+
+[기사링크](https://www.weforum.org/agenda/2022/10/nord-stream-pipeline-methane-leaks/)      
+
+<br>
+
+끔찍한 소식 중 하나입니다.  
+
+유럽에 가스를 공급하는 Nord Stream이 배관이 파손되어 메테인이 누설되고 있다는 소식입니다.  
+
+기사의 영상을 보면 영화의 한 장면을 보는 듯 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://assets.weforum.org/article/image/responsive_big_webp_DFwe3umatYLBoQgHAjVTa2sKLn1gccJ4Fk9qsY1mq4Y.webp')
+
+```
+
+<br>
+
+엄청난 양(최악의 케이스로 검토하면 778백만 세제곱미터에 해당하는 천연가스를 사용하는 것과 동일한 수준)이 유출되고 있기 때문에 기후변화 목표인 1.5 $^\circ C$에 영향을 미칠 수준입니다.  
+
+기후변화에 목숨을 거고 있는 유럽에서 천연가스마저 이런 사태가 발생했으니 에너지 전환에 더욱 더 박차를 가할 것으로 보입니다.  
+
+<br>  
+
+### In the Energy Crisis Renewable Energy Phenomenally Grows, Fossils and Nuclear Decrease  
+
+<br>
+
+[기사링크](hhttps://www.renewable-ei.org/en/activities/column/REupdate/20221006.php)  
+
+<br>
+
+참담한 느낌을 받은 소식이었습니다.  
+
+아직도 도장찍고, 팩스보내고, 은행에 직접가야 하는 일본을 비웃었는데...   
+
+어쩌다가 이렇게 되었는지...  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.renewable-ei.org/realfiles/pdfimage/1665037789_742544956.png')
+
+```
+
+<br>  
+  
+일본마저 재생에너지 발전가격이 화석연료보다 낮아졌습니다.  
+
+이제 전세계에서 유일하게 재생에너지보다 화석연료가 더 싼 나라가 되었습니다.  
+
+에너지 전환의 갈라파고스가 되어가는 느낌입니다.  
+
+<br>
+
+
+### 원전 4.8GW 추가로 혼돈에 빠진 동해안 전력망  
+
+<br>
+
+[기사링크](https://www.electimes.com/news/articleView.html?idxno=309571&fbclid=IwAR2rzrVRiBZAWRps3q5EJpF-aStaoVaznNbhf0pV-lLfpRTV0RPjaLI847Q)  
+
+<br>
+
+다들 예상했지만 아무도 말하지 않던 문제가 수면 위로 오르고 있습니다.  
+
+신재생은 간헐성 때문에 Grid에 천문학적인 추가 투자가 필요하지만 원전은 투자가 없다고 하셨던 분들은 또 다시 침묵하고 있습니다.  
+
+Grid 투자는 비용도 비용이지만 주민 수용성이 문제가 되고 있어 결국 또 신규원전에서 생산된 잉여전력으로 수소를 만들자는 의견도 나오고 있답니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cdn.electimes.com/news/photo/202210/309571_508890_5556.jpg')
+
+```
+
+<br>  
+  
+해상풍력을 설치하여 그 전력으로 그린 수소를 만드는 쉬운 방법을 두고 왜 굳이 원전을 짓고 핑크 수소를 만드는 모험을 하려는 것인지...  
+
+<br>
+
+### Nuclear share in energy generation falls to lowest in four decades-report  
+
+<br>
+
+[기사링크](https://www.reuters.com/business/energy/nuclear-share-energy-generation-falls-lowest-four-decades-report-2022-10-05/?fbclid=IwAR0jCgNuf7mbpANC9gogA5lWPDLyqzUWzccDOr9w9ShzdSxBxFDSOF-ifOQ&mibextid=9by5wv)  
+
+<br>
+
+기술을 발전은 무섭습니다.  
+
+인플레이션이라는 거센 바람마저도 뚫고 지나가는 듯 합니다.  
+
+원자력 발전은 40년만에 최저 수준을 기록하고 있으며, 원자재 가격이 치솟는 인플레 국면에서도 평균 태양광, 풍력 LCOE는 또 떨어졌습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.reuters.com/resizer/6N4f-ITVQoQyBCPrw2k8rFkg4Es=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/CT4JOYNJSJIBXKJSSRXR5CJJPU.jpg')
+
+```
+
+<br>  
+  
+2019년과 비교해보면 2021년 기준 kWh당 
+
+- 태양광 4.0Cent $\rightarrow$ 3.6Cent  
+
+- 풍력 4.1Cent $\rightarrow$ 3.8Cent  
+
+- 원자력 15.5Cent $\rightarrow$ 16.7Cent 
+
+신규 발전소를 지을 때 투자비 회수를 계산하는데...  
+
+아직도 신재생이 민간투자의 95%가 넘는 이유를 모르는 이들이 있습니다.  
+
+<br>
+
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+이번 우크라이나 전쟁이 마무리 된다면 전세계 에너지가 어디로 뛰쳐나갈지는 뻔합니다.  
+
+그래서 미국도 유럽도, 중국도 모두들 표방하는 것은 환경이지만 에너지 패권을 잡기 위해 눈물나게 뛰고 있습니다.   
+
+뛰어나가도 모자를 판국에 머뭇거리는 모습이 너무 답답합니다.  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
