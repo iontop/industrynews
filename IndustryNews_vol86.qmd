@@ -1,0 +1,356 @@
+---
+title: "Industry News"
+subtitle: "Vol. 86"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### '달리', MS 오피스·엣지·빙에 통합
+
+몇 번 소개해 드렸던 이미지 생성 AI '달리(DALL-E)'를 마이크로소프트(MS) 검색엔진 '빙(Bing)'과 브라우저 '엣지(Edge)' 및 'MS 오피스 365'에서 사용할 수 있게되었습니다.   
+
+이제 더 이상 템플릿에 있는 이미지를 찾거나 독창적이고 글 내용에 맞는 이미지를 찾기 위해 헤맬 필요가 없어졌습니다.  
+
+<br>
+
+[기사링크](http://www.aitimes.com/news/articleView.html?idxno=147290)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202210/147290_155298_35.jpg')
+
+```
+  
+<br>
+
+우리는 인공지능이라는 것을 처음 접할 때 반복적이고, 단순한 업무는 인공지능의 영역이 될지라도 예술의 영역, 특히 창작은 인간 고유의 영역으로 남아있을거라 예상했습니다.    
+
+하지만 불과 몇년사이에 미술, 음악, 글을 비롯한 대부분의 예술영역이 인공지능으로 대체되고 있습니다.    
+
+언젠가는 소수의 인간을 제외하고는 노동에서 제외되는 세상이 올지도 모릅니다.    
+인간은 노동과 생산성의 결과로 존엄을 인정받는 존재가 아닌 존재 그 자체로 존재를 인정 받을 수 있도록 사회시스템을 다듬어 나갈 때가 도래했습니다.    
+
+<br>
+
+### GITHUB를 위한 MICROSOFT LEARN
+
+프로그래밍을 하면서 많이 사용하는 깃헙에 대한 안내서를 찾았습니다.   
+  
+돈과 인력이 풍부한 대기업 MS가 만드니 퀄리티가 다릅니다.    
+
+링크에 들어가시면 깃헙에 대한 여러 기능별 교육자료가 있습니다.  
+  
+  
+[MS Learn](https://learn.microsoft.com/ko-kr/training/github/)  
+
+오픈소스를 이렇게 키우고 유지할 수 있다는 것은 정말 대단한 것 같습니다.  
+  
+배우긴 조금 힘들지만 배워두면 정말 새로운 세상을 만나실 수 있을거라 생각합니다.  
+
+밥은 MS가 다 차려뒀으니, 약간의 노력으로 떠먹기만 하면 됩니다.  
+
+<br>
+
+### Data Analysis and Prediction Algorithms with R
+
+간만에 R관련 내용 소개입니다. R 교재 하나 추천드립니다. 예제도 많고 Quiz도 많습니다.  
+
+<br>
+
+[링크](http://rafalab.dfci.harvard.edu/dsbook/)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('http://rafalab.dfci.harvard.edu/dsbook/logo.png')
+
+```
+  
+<br>
+
+이 책은 하버드 대학의 [Data Science 온라인 강의](https://www.edx.org/professional-certificate/harvardx-data-science)의 교재입니다.  
+
+온라인 강의는 1년 5개월 과정으로 학비는 오늘 기준으로 USD $891 입니다.   
+열정만 있다면 고작 100만원으로 하버드 대학의 데이터 사이언스 강의를 몇 번이건 집에서 편하게 들을 수 있는 세상입니다.  
+  
+저도 시간내서 하나씩 따라가보고 싶은데 최근 상황이 여의치 않아 안타깝습니다.  
+
+이 책으로 스터디하는 모임이 있었으면 좋겠다는 생각도 해봤습니다.  
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### [K-RE100 길을 찾다④] ‘녹색요금제’ 익숙한 獨 기업···신재생E 전환 ‘속도전’
+
+<br>  
+
+[기사링크](https://m.ekn.kr/view.php?key=20221013010001820&fbclid=IwAR32wuxM5oulfqPzEpD73Gr57R71vebbSV8CgUZVWuro-Gt582VxxjfGVSg)    
+
+<br>
+
+독일의 사례를 참조한다면 앞으로 우리가 어떻게 나가야 하는지 방향을 잡는데 타산지석으로 삼을 수 있을 것입니다.   
+
+특히 지멘스는 2030년까지 전 사업장 탄소 중립이라는 우리는 엄두도 못 낼 수준의 목표를 선언했습니다.   
+
+이미 2020년 9월에 이산화탄소 배출량을 절반 이상(54%) 줄이는데 성공했다고 합니다.    
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.ekn.kr/mnt/file/202210/2022101301000396300018202.jpg')
+
+```
+
+<br>
+
+이는 기사에서도 나온 것처럼 기업만의 노력이 아니라 정부가 적극적으로 전력수요 100%를 재생에너지로 충당하겠다는  정책을 선제적으로 펼치고 글로벌 에너지 시장에서의 경제성 확보, 환경보호 및 기후대응, 에너지 자립 등에 대해 지속적으로 일관된 입장을 유지해왔기 때문에 가능한 것입니다.  
+
+우리도 지금부터라도 에너지 전환과 RE100에 관하여 과감한 승부수를 던져야 합니다.    
+
+<br>  
+
+### ‘원전 70%’ 佛 전력난…“한국에도 닥칠 문제”
+
+<br>
+
+에너지 전환의 과정이 급박하게 이뤄지고 있는 가운데 우크라이나 전쟁으로 촉발된 에너지 공급난으로 인해 원자력에 대한 미련이 다시금 고개를 들고 있는 모양새입니다.  
+
+기사 내용은 이전에도 몇 번씩 다뤘던 원전노후화와 간헐성 문제를 위한 원전 증설의 어두운 면을 보여주고 있습니다.   
+
+<br>
+
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=246444&fbclid=IwAR0KysRDbILJbQBzYl6iOEv1WDVqAKgG4dQAuMFSRposRFsrCFH1BdHMtVM)  
+
+<br>
+
+뭔가 분위기가 이상하게 흘러가고 있다고 느껴지는 것이 원자력에 우호적이었던 언론들이 하나 둘씩 원전에 부정적인 내용을 기사화하고 있습니다.   
+
+시기상 삼성전자의 RE100 선언이후 이러한 분위기가 느껴지는데 저의 착각이길 바랄뿐입니다.  
+ 
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://www.e2news.com/news/photo/202210/246444_100371_2943.jpg')
+
+```
+
+<br>  
+  
+중립적인 기술에 가치평가와 이념을 덧씌워서 원하는 입맛대로 기사의 방향이 틀어진다면 제대로 된 의견을 모을 수가 없습니다.  
+
+<br>
+
+
+### 세계 4대 ‘기후악당’ 국가, 한국의 탈탄소화 전환이 시급한 이유[딜로이트 컨설팅]  
+
+<br>
+
+[기사링크](https://marketinsight.hankyung.com/article/202210057311r?fbclid=IwAR3Dyxn1-t_GvV2iEDxGFreJq9cYxUNvwl5Tx9xy0W5-c0rQORhhKL3g9mg)  
+
+<br>
+
+탈탄소의 해법으로 원자력을 외치던게 불과 몇 달전인데… 갑자기 상용화도 되지 않은 수소를 꺼내들었습니다.  
+
+수소를 이용하여 탈탄소를 추진하면 2048년에 탄소중립에 도달할 수 있다고 합니다.  
+
+2050년 탄소중립에 거품을 물고 불가능하다고 했던 이들이 갑자기 2048년에 수소를 이용하여 탄소중립이 된다는 기사를 내보내니 혼란스럽기 그지 없습니다.  
+
+갑자기 바뀐 논조는 불만스러우나 “한국도 분명히 위기를 기회로 바꿀 수 있다.”는 대목은 동감합니다.  
+
+기사 중 아래 문장은 제가 늘 하던 이야기라 남겨봅니다.  
+
+**탄소중립으로의 구조 전환은 많은 비용이 수반되지만, 전환에 성공함으로써 얻는 경제적 이득은 이를 상쇄하고도 남을 만큼 막대하다. 탈탄소화와 수소경제 전환의 선제적 추진은 '대응을 위한 비용 지출'이 아니라 '국가 재도약의 기회를 향유하기 위한 투자 기회'로 인식해야 한다. **
+
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+왕좌의 게임에 나오는 그 유명한 대사가 떠오릅니다.  
+
+**"Winter is coming"**  
+
+겨율이 오고 있습니다.  
+
+2022년 겨울은 어느 때보다 혹독하겠지만 에너지 전환의 기점이 되는 어느 때보다 중요한 한 해가 될 것입니다.  
+
+<br>
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+<br>
+
+*2022년 10월 13일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 봉안리 태양광발전소 신설 등[+26.659MW]
+
+<br>
+  
+*2022년 10월 06일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 태백원동풍력발전 1호기~5호기 신설 등[+28.727MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
