@@ -1,0 +1,307 @@
+---
+title: "Industry News"
+subtitle: "Vol. 87"
+author: "안준호"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## 잡설
+
+### Quarto: 한글지원
+
+드디어 Quarto에서 한글을 공식(?) 지원합니다.   
+
+<br>
+
+[Quarto](https://quarto.org/docs/authoring/language.html)  
+
+<br>  
+
+저도 아직 사용 전이라 어느정도 지원이 되는지 알 수 없지만 공식적으로 **lang: kr** 을 써서 한국어를 쓸 수 있다는 것 만으로도 충분히 감동스럽습니다. `r emo::ji("cry")`  
+
+불편함을 혼자서 투덜거리는 저 같은 사람이 있는 반면, 꾸준히 개발자에게 필요성을 알리고 개발에 기여하는 열성적인 사용자들 덕분에 저같은 투덜이들이 편하게 사용할 수 있는듯 합니다.  
+
+<br>
+
+### Imagic: Text-Based Real Image Editing with Diffusion Models
+
+  
+뭐... 이런 것까지 가능한가 싶은 수준의 이미지 생성 모델입니다.  
+
+이젠 합성이나 편집은 아무것도 아닌 세상이 도래했습니다.
+  
+<br>
+
+[Paper](https://arxiv.org/pdf/2210.09276.pdf)  
+
+<br>
+
+논문 첫 페이지의 사진만 모시면 무엇이 가능한지 한 번에 알아볼 수 있습니다.  
+
+이젠 사진 하나만 있으면 내가 원하는 동작이나 표정을 만들어내는 날이 머지 않은 것 같습니다.  
+
+어쩌면 이미 도래했는지도 모르겠습니다.  
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Renewable Power Generation Costs in 2021
+
+<br>  
+
+[Report](https://irena.org/publications/2022/Jul/Renewable-Power-Generation-Costs-in-2021?fbclid=IwAR1QobHaDGs06cRiyACYe-meobojQkJw2fRjBv_9ZFln8_nSJZEc467QQII&mibextid=cszuSN)      
+
+<br>
+
+IRENA에서 2021년 재생에너지 발전비용을 정리하는 보고서를 내어두었는데 이제서야 봤습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://irena.org/-/media/Images/IRENA/Agency/Publication/2022/Jul/IRENA_Power_Generation_Costs_2021_Cover.jpg')
+
+```
+
+<br>
+
+요약페이지만 보더라도 2010년에서 2021년에 이르는 최근 10년간 재생에너지 발전비용은 무서운 속도로 내려가고 있음을 확인할 수 있습니다.  
+
+*The global weighted average LCOE of newly commissioned utility‑scale solar PV projects declined by 88% between 2010 and 2021, whilst that of onshore wind fell by 68%, CSP by 68% and offshore wind by 60%.*  
+
+유틸리티 스케일의 태양광은 88%, 육상풍력은 68%, 해상풍력은 60% 수준입니다.   
+
+향후 10년은 이 속도가 더뎌질지 알 수 없지만 놀라운 발전속도입니다.  
+
+<br>  
+
+### Clean Energy Has a Tipping Point, and 87 Countries Have Reached It   
+
+<br>
+
+[기사링크](https://www.bloomberg.com/graphics/2022-clean-energy-electric-cars-tipping-points/)  
+
+<br>
+
+비슷한 기사를 예전에 한 번 공유드린 적이 있을 겁니다.  
+
+티핑포인트를 넘어선 기술은 무서운 속도로 대중화 된다는 내용이었던 것으로 기억되는데, 이번 블룸버그 보고서에는 재생에너지의 5가지 핵심기술(Solar, Wind, ESS, HeatPump, EV)가 모두 티핑포인트를 넘어섰다는 내용입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ia174NH9dKwU/v0/2000x-1.jpg')
+
+```
+
+<br>  
+  
+너무 아쉬운 것이 한 때 ESS는 우리나라가 주도했었고, 태양광도 나름 제조 인프라가 만들어지고 있었는데 스스로 주저앉아 버렸다는 것입니다.   
+
+에너지정책이 정치도구로 사용되는 바랍에 스스로 무기를 버린듯 하여 서글프기 그지 없습니다.  
+
+<br>
+
+
+### Prospects for US solar electricity at $0/kWh  
+
+<br>
+
+[기사링크](https://www.pv-magazine.com/2022/10/17/prospects-for-us-solar-electricity-at-0-kwh/?fbclid=IwAR1wCyIJPoL-sgxB9kZXn_gkbPhdEPJsXcCXdDqXqpAcRwmQyuz8-nLtaNc&mibextid=cszuSN)  
+
+<br>
+
+제목부터 무시무시합니다.  
+
+Credit Suisse Report에 따르면 2025년에서 2032년 사이 미국의 태양광과 풍력 발전의 구매 가격이 kWh당 0.01달러가 될 것이라는 소식입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.pv-magazine.com/wp-content/uploads/2022/10/Industrial-Roof-Top-Solar-Panels-1536x1024-1.jpg')
+
+```
+
+<br>  
+
+그냥 공짜에 가깝게 전기를 사서 쓸 수 있다는 말입니다.  
+
+물론 IRA의 지원을 받은 덕이긴 하지만 이러한 엄청난 지원을 받는 미국시장에서 어떤 기술이 만들어져 전세계를 뒤덮을지 고민스럽습니다.  
+
+대놓고 자국 재생에너지를 육성하기 위해 혈안인데... 우리만 뭐하나 싶은 생각이 듭니다.  
+
+<br>
+
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+겨울이 오고 있습니다.  
+
+원전을 떠 안고 있는 프랑스는 헛발질을 하는 모양새인데 이 소식은 조만간 한 번 전해 드리겠습니다.  
+
+이번 겨울을 어떻게 넘기느냐에 따라 앞으로 유럽의 에너지 전환 속도가 달라질 것 같습니다.  
+
+지금도 달리고 있는데 진짜 날아갈 수도 있는 상황입니다.  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
