@@ -1,0 +1,333 @@
+---
+title: "Industry News"
+subtitle: "Vol. 89"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World 
+
+### RStudio is now Posit!
+
+R studio가 **Posit** 이라는 새로운 이름으로 바뀌었습니다.  
+
+<br>
+
+[Posit](https://posit.co)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://posit.co/wp-content/uploads/2022/11/BLOG-posit-rebrand2022.jpg')
+
+```
+
+<br>
+
+다행인지 불행인지 우리가 사용하는 R studio Desktop은 이름이 그대로 유지되고 Cloud, Workbench 등은 Posit으로 이름이 바뀌었습니다.  
+
+더 넓은 유저를 끌어오겠다는 운영진의 의지인데 좋은 성과로 이어질지 지켜보겠습니다.
+
+<br>
+
+### Google Presents: AI@ ‘22
+
+창작은 인간 고유의 영역이라고 말하던 시절은 이제 지나갔습니다.  
+
+구글에서 작성하고 AI Tool을 쏟아냈습니다.  
+  
+<br>
+
+[Google Presents: AI@ ‘22](https://youtu.be/X5iLF-cszu0)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202211/147681_155822_552.png')
+
+```
+
+<br>
+
+구글이 AI@2022에서 창작지원 부분에서 지난달 소개 드렸던 '이매진'과 '페나키'와 같은 AI 영상 생성기를 공개했습니다.  
+게다가 짧은 문장을 입력하면 AI가 이야기를 이어가는 '워드크래프트', 오디오 샘플을 기반으로 음성과 음악을 생성하는 '오디오 LM'도 소개 했습니다.
+
+영상을 보시면 아시겠지만 논문을 그대로 넣어주면 알아서 수식을 풀어주고, "흘린거 있으니 닦을것 좀 가져다 줄래?"라고 입력하면 가져다 주는 무시무시한 성능을 보여줍니다. 1시간이 넘는 긴 영상이지만 한 번 보시면 신세계를 경험하실 수 있습니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### China Is Burning More Coal, a Growing Climate Challenge
+
+<br>  
+
+[기사링크](https://www.nytimes.com/2022/11/03/business/energy-environment/china-coal-natural-gas.html)      
+
+<br>
+
+뭔가 심상치 않은 기사입니다. 중국을 몰아세우고 있다는 느낌을 받았습니다.  
+
+중국은 세계 태양광, 풍력 시장의 부인할 수 없는 Top tier입니다.   
+
+그 뿐만 아니라 수력발전을 위한 자원도 풍부합니다. 
+
+게다가 세계에서 가장 많은 원자력 발전소도 보유하고 있습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://static01.nyt.com/images/2022/10/31/world/00China-Energy-1/merlin_215546883_1cd7d62e-26cc-40d3-aff5-89a1696f5267-superJumbo.jpg')
+
+```
+
+<br>
+
+그럼에도 불구하고 중국은 중국을 제외한 나머지 나라에서 사용하는 석탄보다 더 많은 석탄을 사용하여 발전에 사용합니다.    
+
+중국은 지난해 에너지 관련 온실가스 배출량을 거의 6% 증가되었다고 기사에 밝히고 있으며, 이번 주말에 이집트에서 열리는 27차 연례 COP회의에서 온실가스 배출 제한과 자체 에너지 확보 사이에 균형을 맞출 것을 요구하고 있습니다.    
+
+중국은 기후위기에 가장 큰 타격을 받을 것으로 예상되는 국가임에도 전세계 온실가스의 거의 1/3을 배출하고 있습니다.    
+인구가 많고 땅이 넓어 에너지 전환이 쉽지 않다는 것을 보여주는 듯 합니다.  
+
+중국을 향한 공격이 우리에게 더 불리하게 작용할 것 같은 불길한 예감이 듭니다.  
+
+<br>  
+
+### "공정위·환경부, 그린워싱 관리감독 적극 나서야"   
+
+<br>
+
+[기사링크](https://www.newspenguin.com/news/articleView.html?idxno=12705)  
+
+<br>
+
+시차가 있을 뿐 역시 한국에서도 '그린워싱'에 대한 기사가 나오기 시작했습니다.  
+
+한 때 공정무역에 대한 소비자들의 논의가 활발했고 정착되었듯... 이제 탄소중립에 대한 논의가 시작되려는 움직임이 보입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cdn.newspenguin.com/news/photo/202211/12705_38781_4132.jpg')
+
+```
+
+```{r}
+knitr::include_graphics('https://cdn.newspenguin.com/news/photo/202211/12705_38765_5428.jpg')
+
+```
+
+<br>  
+  
+특히나 석유화학제품을 만드는 회사는 소비자들에게 어필하기 위해서 탄소중립을 위해 노력한다는 것을 보일 필요가 있을 것입니다. 자동차까지 전동화로 넘어가면 소비자가 느끼는 환경오염의 대표기업이 석유화학제품이 될 것이니 더욱 빠르게 움직이는 모양새입니다.  
+
+어찌되었건 이제 우리도 탄소중립 제품이라고 쓸 수 있는 구체적인 기준과 관련 제도를 정비해야 할 때가 온 것입니다.  
+
+<br>
+
+
+### Energy cost curbs are impeding Europe’s renewables rollout, Vestas warns  
+
+<br>
+
+[기사링크](https://www.ft.com/content/feb1a8f4-ab00-43e2-9a5f-5d7e08d47132)  
+
+<br>
+
+풍력 탑티어 베스타스의 경고가 의미심장합니다.  
+
+재생에너지의 수익을 제한하지 말라는 것입니다.   
+
+한국에서는 상상도 할 수 없는.... 발전사업으로 벌어들이는 수익이 너무 많으니 MWh당 $180로 동결하자는 유럽정치권과 왜 동결하느냐, 그럼 재생에너지 사업이 침체된다고 경고하는 베스타스 CEO입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/882/cached.offlinehbpl.hbpl.co.uk/news/OPW/HenrikAndersenVestasCMD.png')
+
+```
+
+<br>  
+
+뭐....물론 베스타스의 실적이 우크라이나 전쟁으로 인해 거의 30%가까이 나빠진 것을 맞지만,  
+
+너무 많은 수익을 언급할 수 있는 환경이라는 점에서 어나더 레벨이라는 것이 느껴집니다.  
+
+<br>
+
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+겨울이 시작되었습니다.  
+
+조만간 결판이 날 것입니다.   
+
+Wordcloud를 보니 **clean** 과 **transition** 이 들어옵니다.  
+
+어디에 시장이 있는지, 우리가 어디로 향해야 하는지 보여줍니다.  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음  
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

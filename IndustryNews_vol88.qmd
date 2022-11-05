@@ -153,12 +153,6 @@ knitr::include_graphics('https://www.apple.com/newsroom/images/values/environmen
 
 <br>
 
-에너지 전환의 과정이 급박하게 이뤄지고 있는 가운데 우크라이나 전쟁으로 촉발된 에너지 공급난으로 인해 원자력에 대한 미련이 다시금 고개를 들고 있는 모양새입니다.  
-
-기사 내용은 이전에도 몇 번씩 다뤘던 원전노후화와 간헐성 문제를 위한 원전 증설의 어두운 면을 보여주고 있습니다.   
-
-<br>
-
 [기사링크](https://www.electimes.com/news/articleView.html?idxno=310415&fbclid=IwAR1CAiKcE62S_rB-B-9djWbd95RaS4h_A9AITRw_VlQ22dIxqpqhpv_wJ4k&mibextid=cszuSN)  
 
 <br>
