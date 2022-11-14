@@ -1,0 +1,337 @@
+---
+title: "Industry News"
+subtitle: "Vol. 90"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World  
+
+<br>
+
+### AI가 발견한 대머리 치료제...13일이면 효과 나와
+
+아주 유쾌한 소식으로 시작합니다.  
+
+AI의 유용함을 전세계에 한 번에 알릴 수 있는 기회가 왔습니다.  
+
+중국이라 약간은 불안하지만 그래도 이번엔 믿어보고 싶습니다.  
+
+오늘쯤이면 결과를 볼 수 있을 듯 한데 한 번 찾아봐야겠습니다.  
+
+<br>
+
+[기사링크](http://www.aitimes.com/news/articleView.html?idxno=147746)
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202211/147746_155890_1649.jpg')
+
+```
+  
+<br>
+
+
+### [번역글] 파이썬 3.11에서의 새로운 기능들
+
+지난 주에 파이썬 3.11에 관련된 소식을 전해드렸는데, 저도 아직 3.11을 써보지는 못하고 이런저런 글을 읽다가 괜찮은 글이 있어 가져왔습니다.  
+
+새로운 기능에 대해서 깔끔하게 잘 요약+번역이 되어있어 도움이 되실거라 생각합니다.  
+  
+  
+[기사링크](https://heumsi.github.io/blog/posts/python311-new-features/?fbclid=IwAR2mIxnJGlWpkFAufMznwXe9N1LahyvfB8dscqaEQEfoKF15sTz6Dtrp96k&mibextid=cszuSN)  
+
+```{r ,out.width="50%"}
+knitr::include_graphics('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEickKZquPSoujo5pHqw1C1q7m4_kEMV27tJ-7lIt1sxNnzvPQMpKso_RVbnrnkq1x4rQ2Ybx8zmTy-LmL3K5Ye3fP_bfwTdMRSFhFRCGcLXLNNtlj4mEurgdSvz5msOKq1fmLGKVfeXxxVh9W_SzLCfK9M5HsviItUSLPy19qTWch9mMh5YWpmCjC0a/s320/311logo.png')
+
+```
+  
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### 재생에너지 충분하다는 정부, 사실일까  
+
+<br>  
+
+[기사링크](https://magazine.hankyung.com/business/article/202210315904b?fbclid=IwAR1DXyMuMS7QOUjbcUl6Qu-RFXccCXUrH-L4Gd6lMJ96cEQGgv2nh2JORLc&mibextid=cszuSN)    
+
+<br>
+
+삼성전자의 위력을 새삼 다시 느끼는 시기입니다.  
+
+삼성전자에서 RE100을 선언한 이후 언론들의 논지가 완전히 바뀌었습니다.  
+
+한두달 사이에 갑자기 재생에너지가 부족하다는 뉴스가 연일 쏟아지고 있습니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://img.hankyung.com/photo/202210/AD.31677240.1.jpg')
+
+```
+
+<br>
+
+늦었지만 지금이라도 움직일때가 된 것 같습니다.  
+
+주춤거린만큼 더 속도를 내어야 할 것입니다.   
+
+이미 유럽은 전력질주를 하고 있는 상태이니, 따라잡으려면 정말 말 그대로 모든 것을 걸어야 할 수도 있습니다.  
+
+
+<br>  
+
+### Most new solar panels retain 80% production after 30 years
+
+<br>
+
+[기사링크](https://www.pv-magazine.com/2022/11/08/most-new-solar-panels-retain-80-production-after-30-years/?utm_source=dlvr.it&utm_medium=facebook&fbclid=IwAR0zi_BIFoPHlFKlNymG-MVSmmCx_CjQuznfKP4kzws4m4eLSfJZXO5meH0&mibextid=cszuSN)  
+
+<br>
+
+태양광 패널이 30년간 사용해도 효율 저하가 20% 이내라는 연구결과가 나왔습니다.  
+
+최근들어 부쩍 증가한 환경론자들이 태양광발전의 증가로 인해 배출되는 폐태양광 패널의 위헙성을 걱정하던데 한시름 놓으셔도 될 것 같습니다.  
+
+30년의 수명이라면 어지간한 발전소 수명과 동일하고, 최근 20년동안 비용이 95%나 하락했으니 에너지 안보와 탄소중립을 한 번에 달성할 수 있는 좋은 방법이라는 것을 부인할 수는 없을 것입니다.
+ 
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.pv-magazine.com/wp-content/uploads/2022/11/Josh-Stein-2048x1363.jpg')
+
+```
+
+<br>  
+  
+구식 기술의 기득권이 강할 수록 새로운 기술에 대한 반감이 강해지는 법.  
+
+세상은 끊임없이 변하고 있고 인류는 계속해서 새로운 답을 찾아 나갑니다.   
+
+변화는 피할 수 있는 것이 아닙니다.  
+
+<br>
+
+
+### New French law will require parking lots to install solar panels 
+
+<br>
+
+[기사링크](https://www.engadget.com/france-new-law-parking-lots-solar-panels-100435214.html?fbclid=IwAR04sQMv0Jx5iO1ZityDxyeFqr5MELOeMftJRTPAjyoPEvL7jt6Vf1Rmsh4&mibextid=cszuSN)  
+
+<br>
+
+```{r}
+knitr::include_graphics('https://s.yimg.com/uu/api/res/1.2/Hn0iGthtFkS9z_uZLVb5rQ--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-11/ef2c2610-600e-11ed-bb7a-1ade96d2913b.cf.jpg')
+
+```
+
+<br>
+
+프랑스의 원전 소식만 나오면 실시간으로 옮겨놓던 언론들은 이런 소식엔 조용합니다.  
+
+뭔가 큰 이벤트 보다는 이런 사소하지만 실생활에 바로 와 닿을 수 있는 정책이 필요한 때입니다.  
+
+개인적으로 우리나라에 참 잘맞는 정책으로 도입했으면 하는 바램입니다.  
+
+기사 내용은 프랑스가 에너지 위기극복을 위해 태양광 발전을 대폭 증가하겠다는 내용입니다.  
+
+주요 정책내용은 아래와 같습니다.  
+
+- 80대 이상 주차하는 주차장 지붕은 태양광 패널을 의무적으로 설치해야 합니다.  
+
+- 80~400대 규모의 주차장은 '23년 7월부터 5년이내에, 400대 이상 주차장은 3년 이내에 의무 설치를 완료해야 합니다.  
+
+- 향후 고속도로, 철도, 농경지 태양광도 추가로 입법화 할 예정입니다.  
+
+참고로 추가로 프랑스 마크롱 대통령은 '22년 초 태양광 발전 100GW, 최근에 해상풍력 40GW를 설치할 계획을 발표했었습니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+강릉안인이 10월 31일자로 중앙급전 발전기로 등록되었습니다.  
+
+<br>
+
+*2022년 11월 09일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 광주 광산 연료전지 신설 등[+169.583MW]
+
+<br>
+
+*2022년 10월 31일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 강릉안인 1호기 신설[+1,040MW]
+- 비중앙급전발전기 : 신안 임자태양광 신설 등[+168.4MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
