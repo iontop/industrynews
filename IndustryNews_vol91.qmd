@@ -1,0 +1,361 @@
+---
+title: "Industry News"
+subtitle: "Vol. 91"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World 
+
+### Galactica
+
+메타가 과학논문을 생성할 수 있는 오픈소스 AI 도구를 공개했습니다.   
+
+프롬프트 입력만으로 논문을 만들어낼 수 있어 전문가들에게 도움이 될 수 있으나 오남용 우려도 제기되던 중 공개 2일만에 데모 서비스를 중지했습니다.  
+
+Galactica는 과학 논문을 쓰는데 필요한 데이터들을 찾아 연구자들을 돕는데 주안점이 있지만 이 도구로 아이디어를 계속 확장시키면 참고 문헌이나 공식등이 포함된 전체 연구 논문을 생성할 수도 있다고 합니다.    
+
+<br>
+
+[기사링크](https://www.cnet.com/science/meta-trained-an-ai-on-48-million-science-papers-it-was-shut-down-after-two-days/)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202211/147977_156182_5011.jpg')
+
+```
+
+<br>
+
+일단은 여러가지 부작용과 불완전한 부분으로 인해 서비스가 중단되었지만 다시 다듬어서 서비스가 재개된다면 이제 연구 논문도 AI가 쓰고 평가도 AI가 하는 세상이 도래하게 될 것입니다.  
+
+<br>
+
+### CES 2023 Innovation Awards
+
+예전에는 인프라코어가 있어서인지 CES관련 기사도 포털 뉴스에 뜨고 했는데 이젠 그마저도 없습니다.  
+
+관심있게 지켜보는 행사 중 하나인데 늘 그래왔지만 올해는 한국기업들의 선전이 더욱 빛났습니다.  
+
+세계 최대의 전자전시회 'CES 2023'를 주최하는 미국소비자기술협회(CTA)가 16일(현지시간) 28개 부문에 걸쳐 발표한 총 499건의 'CES 혁신상' 수상 제품과 기술 가운데 28.3%에 달하는 141건을 국내 기업이 수상한 것으로 발표되었습니다.    
+
+LG전자는 역대 가장 많은 총 28개의 CES 혁신상을 받았고, 특히 LG 올레드 TV는 12개 부문에 이름을 올려 역대 최다 수상 기록과 함께 11년 연속 수상 기록을 세웠다고 합니다.   
+
+<br>
+
+[CES 2023 Innovation Awards](https://www.ces.tech/Innovation-Awards/Honorees.aspx)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202211/147979_156183_724.jpg')
+
+```
+
+<br>
+
+이번엔 현대중공업 그룹도 총 9개를 수상했다고 합니다.  
+
+왠지 우리만 소외된 듯 해서 아쉬움이 남습니다.   
+
+아모레퍼시픽도 화장품 제조기로 상을 받았던데.....  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### COP27
+
+<br>  
+
+[CNN기사](https://edition.cnn.com/2022/11/19/world/cop27-egypt-agreement-climate-intl/index.html)      
+[REUTERS기사](https://www.reuters.com/business/cop/countries-agree-loss-damage-fund-final-cop27-deal-elusive-2022-11-20/)
+
+<br>
+
+지난 주 최대 뉴스는 COP27이었습니다.  
+
+물론 우리나라는 놀라울 만큼 조용했습니다.  
+
+도대체 어쩌다가 이런 온도차이가 발생하게 된 것인지 알 수 없지만, 어쨌던 우리나라도 특사를 보냈습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://ichef.bbci.co.uk/news/800/cpsprodpb/F057/production/_127672516_gettyimages-1244846346.jpg')
+
+```
+
+<br>
+
+(위 사진은 이번에 다시 당선된 브라질의 룰라 대통령입니다. COP27에 참석했고, 최고의 인기스타였습니다.)  
+
+이번 회담에서 200개국이 모여 의견을 모으는데 있어 가장 쟁점이 되는 아젠다는 크게 3가지 입니다.  
+
+- **손실과 배상**
+
+북반구 국가들이 탄소 배출의 책임을 일부 분담하자는 뜻에서 펀딩을 하는 중인데 유럽국가들이 가장 적극적이고, 미국은 발 뺌을 하는 중이며, 한국은 왜 내나 싶을 정도로 부끄러운 금액을 내겠다고 한 상태입니다.  
+
+
+- **모든 화석연료 사용의 단계적 중단**  
+
+당연히 중국과 인도가 가장 격렬하게 반대하고 있는 입장이라 이번에도 합의에 이르지는 못했습니다.  
+'단계적 중단'이 아닌 '단계적 감축'으로 마무리 되었습니다.  
+중국과 인도 모두 지금 죽을 힘을 다해서 재생에너지로 에너지 전환에 나서고 있습니다.  
+계속 이렇게 버틸 수 없다는 것을 잘 알기 때문입니다.  
+
+- **1.5도 목표 유지**  
+
+1.5도 유지도 당연히 중국과 인도의 반발이 가장 심합니다.  
+두 나라는 1.5도가 현실성 없다고 주장하며 반발하고 있어 추진 동력이 약화될 것이라는 전망이 있습니다.   
+이집트에서 공개된 초안은 전 세계가 지구 온도 상승을 2도보다 "훨씬 낮게" 유지하고 1.5도 이내 유지에 최선을 다하기로 한 파리협정 합의문보다 한발 물러난 것으로 보인다고 합니다.  
+
+
+<br>  
+
+### 한국 기후정책 점수 냈더니…전세계 ‘꼴찌에서 4등’  
+  
+
+<br>
+
+[기사링크](https://www.hani.co.kr/arti/society/environment/1067223.html?fbclid=IwAR0OKRAfx2lCP3OAEgwrfscbMIzyOQOveNfU1t59ZL1JrLD50R-BuF_9Uwo&mibextid=Zxz2cZ#ace04ou)  
+
+<br>
+
+COP27관련하여 국내 기사를 찾다가 본 기사입니다.    
+
+내가 못생겼다는 것은 알고 있었지만 정량적으로 평가되어 정말 못생겼다는 것을 확인한 기분입니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://img.hani.co.kr/imgdb/original/2022/1114/20221114503262.jpg')
+
+```
+
+
+<br>  
+  
+러시아에 밀리고 카자흐스탄 보다 겨우 앞서는 수준입니다.   
+
+경제규모에 비해 전환이 늦다고 전세계적으로 욕먹는 일본과 중국이 50위, 51위로 우리보다 10계단 위네요.  
+
+씁쓸하기 그지없는 기사입니다.  
+
+이런데도 아직도 정책싸움만 하면서 화석연료에 목을 매다니...
+
+<br>
+
+
+### Power Transition Trends 2022    
+
+<br>
+
+[Report링크](https://assets.bbhub.io/professional/sites/24/BNEF-Power-Transition-Trends-2022_FINAL.pdf)  
+
+<br>
+
+이렇게 잘 요약해서 정리한 다음 공짜로 배포하는 자료가 많은데 왜 아무도 안 보는 것일까요?  
+
+돈주고 컨설팅을 쓸 필요없이 이렇게 배포되는 자료만이라도 제대로 파보면 좋겠습니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('./vol91_001.jpg')
+
+```
+
+<br>  
+
+알고 있었지만 충격적인 결과입니다.   
+
+태양광만으로 2021년 총 신규 발전용량의 50%를 찍었습니다.  
+
+2011년 재생에너지만으로 신규 발전용량의 50%에 도달한 이후 10년만에 이젠 태양광만으로 신규 발전용량의 50%를 달성했습니다.  
+
+이걸보고도 Coal이나 Nuclear, Other-fossil에 투자를 해야 한다고 말하는 사람이 있다면 어떻게 이해해야 할 지 모르겠습니다.  
+
+<br>
+
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+여전히 변화가 없습니다. 
+
+에너지 전환이 여전히 세계 에너지 뉴스의 화두입니다.  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2022년 11월 16일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+* 발전기명 변경대상
+1) 신고리#3(7023) → 새울#1
+2) 신고리#4(7023) → 새울#2
+- 비중앙급전발전기 : 우드뱅크우영태양광 신설 등[+6.801MW] 
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
