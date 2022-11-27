@@ -1,0 +1,332 @@
+---
+title: "Industry News"
+subtitle: "Vol. 92"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World  
+
+<br>
+
+### Heartbeats Patternbased
+
+간만에 전해드리는 데이터 시각화 소식입니다.  
+
+동물의 심장박동을 시각화 한 것입다.  
+화면의 깜빡임이 각 동물의 심장박동수를 나타낸 것인데 타일의 각 동물을 클릭하면 동물의 기대수명, 심작박동 소리 등을 확인할 수 있습니다.  
+
+스파게티 그래프에만 익숙해진 저 같은 공돌이에겐 이런 시각화 결과물을 볼 때마다 감탄을 넘어 경외감마저 느껴지곤 합니다.  
+
+
+<br>
+
+[링크](https://heartbeats.patternbased.com)
+
+```{r ,out.width="75%"}
+knitr::include_graphics('./vol92_001.png')
+
+```
+  
+<br>
+
+
+### The shape of dreams
+
+시각화 이야기가 나와서 하나 더 소개합니다.  
+
+구글 검색 데이터를 토대로 7개국 사람들의 꿈의 형태를 시각화한 프로젝트입니다.   
+
+뱀이 나오는 꿈, 이가 빠지는 꿈 등 공통적으로 나온 꿈의 형태를 꽃잎 차트를 통해 시각화 했습니다.
+
+꿈을 통해 국가별 차이나 연결성을 발견할 수 있도록 한 점이 놀라웠습니다.  
+
+도대체 이런 생각을 하는 사람들은 어떤 사람들일지 궁금해 집니다.  
+  
+  
+[링크](https://the-shape-of-dreams.com/#/)  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('./vol92_002.png')
+
+```
+  
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### AGL begins construction of Broken Hill ‘grid-forming’ BESS in Australia  
+
+<br>  
+
+[기사링크](https://www.energy-storage.news/agl-begins-construction-of-broken-hill-grid-forming-bess-in-australia/)    
+
+<br>
+
+읽으면서 생각이 많았고, 읽으면서 다른 정보를 찾는 과정에서 놀라운 사실을 알게 된 기사입니다.  
+
+기사는 호주에서 관성없는 그리드를 대규모로 실증한다는 소식입니다.   
+
+신재생에너지가 커질수록 그리드 관성의 문제가 대두되어 신재생에너지 확대에 반대하는 사람들의 주요 논리였는데...
+
+조금 찾아보니 관성없는 그리드는 한국이 뒤쳐지기는 커녕 효성중공업에서 자체 역량으로 이미 개발을 한 기술이었습니다.  
+
+오래전 소개 해 드렸던 전력연구원의 김찬기 박사님의 HVDC 쿠셔닝 기술등으로 우리는 호주보다 더 쉽게 이를 구현할 수 있습니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.energy-storage.news/wp-content/uploads/2022/07/AGL-Broken-Hill-Solar-Plant-Looking-East_australia.jpg')
+
+```
+
+<br>
+
+국내의 기술전문가들이 이미 그리드 관성에 관한 문제를 돌파할 수 있는 능력을 가지고 있다는 뜻입니다.  
+
+게다가 한전은 이미 세계 최대 용량의 STATCOM을 효성에서 납품받아 운영 중이라는 것도 알게되었는데 이렇게 문제없이 잘 운영되고 있는데 재생에너지 기반의 전력망 구축이 무슨 별나라 기술로 생각하며 안된다고 하는 이들은 자국의 기술수준도 제대로 파악하지 못하고 있다는 뜻입니다.  
+
+한국정부가 계속해서 헛발질을 하는 가장 큰 이유가 전력연구원에서 연구를 하고 요소기술과 시스템 개발을 완료하면 사업화 단계에서 연구를 했던 사람들이 이끌어 가는 것이 아니라 비전문가들에게 권한을 주고 개발을 주도했던 기술자와 전문가들을 그 밑에 배치하게 되어 방향과 목표가 뭔지도 모르는 이들이 사업을 망치게 되기 때문이라고 분석하는 분도 계십니다.  
+
+우리회사도 놀라울 정도로 뛰어난 인재와 자원을 가지고 있음에도 에너지 전환 시점에서 제대로 된 방향을 잡지 못하는데 한전의 사정과 크게 다르지 않아 보입니다.  
+
+
+<br>  
+
+### 벼·전기 ‘동시에 2모작’···“서로 태양광 하겠대요”
+
+<br>
+
+[기사링크](http://weekly.khan.co.kr/khnm.html?mode=view&code=114&artid=202211181121121&fbclid=IwAR3HE9osIJPA4WVK3lS0y69Xyt9Xf1Xx_Z559z_yOM-gfp79KUBkMbUn9YE&mibextid=Zxz2cZ)  
+
+<br>
+
+영농형 태양광에 대한 해외 사례를 여러차례 소개시켜 드렸는데 이번엔 한국 소식입니다.  
+
+동서발전은 지역환원 사업의 일환으로 2019년 12월 이 마을 농지 3곳에 총 300㎾ 규모의 영농형 태양광을 설치했습니다. 인근 마을 몇곳에도 제안을 했지만 거절했다고 기사에 나와있네요.  
+
+지원을 해주면서 영농형 태양광을 해 주겠다는데도 반대를 한다니 놀라울 정도로 태양광에 대한 인식이 좋지 않다는 것을 알 수 있습니다.  
+ 
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://img.khan.co.kr/newsmaker/1504/1504_16.jpg')
+
+```
+
+<br>  
+  
+기사 중 일부를 발췌했습니다.
+
+*태양광 모듈은 한화큐셀에서 만든 4×8타입(셀이 4개씩 8줄로 된) 단면형을 쓴다. 지금은 발전량이 더 많고, 뒷면으로 일부 빛이 들어와 작물 성장에도 좋은 양면형 모듈을 권하는 쪽으로 바뀌고 있다. 모듈도 고정형보다는 태양을 바라보는 각도를 조절할 수 있는 형태가 더 좋다. 김창한 이사는 “(가변형은) 효율이 높아 3~9월까지는 일사량이 많아 (태양광 100㎾ 기준) 하루 평균 300~400kWh 정도로 발전량에 큰 차이가 없지만, 해가 낮아지는 겨울에는 모듈을 60도로 세워놓으면 50~100kWh 정도 차이가 난다”고 말했다. 각도 조절은 전기 생산에도 도움이 되지만 농작물 보호에도 중요하다. 비가 올 경우 모듈에서 흘러 떨어지는 낙숫물의 피해가 클 수 있다. 이때 모듈을 수직 형태로 세우면 거의 영향을 받지 않게 된다. 모듈에서 내려온 빗물을 집수해 갈수기에 활용하는 방법도 있다. *  
+
+거친 비를 피하는 용도로도 사용할 수 있다는 것은 새롭게 알았습니다.  
+
+동네 이장님의 기술 이해력이 정부 시책이나 대기업의 사업방향을 정하는 이들보다 더 뛰어난 것 같습니다.  
+
+<br>
+
+
+### World’s Biggest Nuclear-Fusion Project Faces Delays as Component Cracks   
+
+<br>
+
+[기사링크](https://www.bnnbloomberg.ca/world-s-biggest-nuclear-fusion-project-faces-delays-as-component-cracks-1.1851192?fbclid=IwAR0rcNdHuPD1fbUuGWDArw2GhqAWMD0-ry80FRDHgGBEM4a70sqrX7UyRVA&mibextid=Zxz2cZ)  
+
+<br>
+
+```{r}
+knitr::include_graphics('https://www.bnnbloomberg.ca/polopoly_fs/1.1851193.1669390793!/fileimage/httpImage/image.png_gen/derivatives/landscape_620/bc-world-s-biggest-nuclear-fusion-project-faces-delays-as-component-cracks.png')
+
+```
+
+<br>
+
+한국을 비롯하여 7개국이 참여중인 국제핵융합개발 컨소시엄인 ITER의 개발 과정에서 부품 2개가 깨져서 개발이 지연된다는 소식입니다.  
+
+안타깝게도 저 부품의 공급자가 한국회사라 합니다. `r emo::ji("sob")`  
+
+ITER 프로젝트는 2006년 시작되어 500MW 전력을 400 ~ 600초 동안 생산하는 목표로 25년 하반기 실험에 들어가야 하는데 저 부품때문에 예정일을 맞추기가 어려워졌습니다.  
+
+이 프로젝트가 시작된 2013년만 하더라도 예산이 6B 유로였는데 지금은 눈덩이처럼 불어나 45~65B 유로 수준이 되어버렸습니다.
+
+놀랍게도 이 와중에 [중국은 자체적으로 핵융합을 성공했다는 뉴스](https://www.globaltimes.cn/page/202211/1280184.shtml?fbclid=IwAR351UR25afIvuTBFIYzFSpSZ9vXXZZ9maLVHTeAn9zonsUG_zlBzB5O4KQ&mibextid=Zxz2cZ)를 내보냈습니다.
+
+누구의 말이 맞는지, 중국이 먼저 개발을 성공한 것인지 알 수 없는 상황이지만 핵융합 기술 개발에 천문학적인 금액이 소요되고 있다는 건 사실인 것 같습니다.  
+
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+2022년 11월 23일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 변동사항 없음
+- 비중앙급전발전기 : 화성 남양 연료전지 2단계 신설 등[+41.544MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
