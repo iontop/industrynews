@@ -1,0 +1,323 @@
+---
+title: "Industry News"
+subtitle: "Vol. 95"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World 
+
+### Top 10 Augmented Reality Companies to Rule the Metaverse Future  
+
+<br>
+
+[기사링크](https://www.analyticsinsight.net/top-10-augmented-reality-companies-to-rule-the-metaverse-future/)  
+
+<br>  
+
+
+```{r}
+knitr::include_graphics('https://www.analyticsinsight.net/wp-content/uploads/2022/12/Top-10-Augmented-Reality-Companies-to-Rule-the-Metaverse-Future-1-1.jpg')
+
+```
+
+<br>
+
+메타버스는 최근 대중적 인기가 시들하지만 앞으로 사람들간의 소통이나 놀이를 포함해 다양한 방면에서 활용될 기술이라는데는 전문가들이 동의합니다.  
+
+미국 기술매체 애널리틱스인사이트가 이런 관점에서 미래 메타버스를 지배할 관련 기술 회사 10군데를 뽑았는데 모두가 짐작할 만한 기업이 있는 반면 생각치도 못한 기업도 포함되어 있습니다.  
+
+- 메타 : 페이스북의 모기업인 메타를 빼놓을 수 없습니다. 페이스북은 지난해 회사 이름도 메타로 바꿨고 (물론 주가는 바닥을 헤매고 있지만...) 페이스북을 기반으로 확보한 플랫폼에 메타버스 기술의 도입하여 전세계인들이 더 쉽게 상호작용하는 길을 제공할 것이다라고 평하고 있습니다.  
+
+- 스냅 : 스냅은 스냅챗과 비트모지로 유명한 기업입니다. 이 회사는 메타버스에 더 많은 개인 기능을 제공하기 위해 다양한 렌즈와 아바타를 내놓을 예정이라고 합니다.
+
+- 텐센트 : 중국의 최대 엔터테인먼트 회사인 텐센트는 게임 개발 계열사인 티미스튜디오그룹을 통해 메타버스에 집중하고 있다고 합니다. 이 회사는 자사의 게임개발 부서인 ‘텐센트 게임스’를 통해 다양한 메타버스 전략을 추구하는 자회사들을 운영하는 중이라고 합니다. 
+
+- 마이크로소프트(MS) : MS는 메타와 협력해 메타버스 애플리케이션을 개발하고 있고 있으며, 퀄컴과는 메타버스를 위한 증강현실 칩셋을 개발하고 있다고 합니다. 너무 강력한 기업이라 기대조차 크지 않습니다.   
+
+- 나이키 : 이 회사가 의외라 이 기사를 가져왔습니다.  '나이키랜드'라는 가상 세계를 구축해 메타버스 게임을 제공하고 있고 여기서 크리에이터들이나 다른 기술 기반 브랜드들이 제품 이용자들을 늘릴 수 있는 도구를 제공하고 관리 솔루션도 제공하고 있다고 합니다.   
+
+- 에픽 게임스 : 비디오 게임과 소프트웨어 개발 회사로 알려져 있지만 최근 메타버스 개발에 100만달러(약 13억원)를 투자하겠다는 계획을 발표했습니다. 게임 개발자들에게 메타버스를 활용할 수 있는 길을 열고 있다고 합니다.  
+
+- 엔비디아 : 가상세계를 구축할 수 있는 플랫폼인 '옴니버스'를 만들었다고 하네요. (정말 많은 회사들이 별의 별것들을 다 만들고 있네요) 이를 통해 디지털 창작자가 3D 콘텐츠를 실시간으로 만들어낼 수 있으며, 가사세계에서 로봇을 훈련시키거나 제품을 디자인하고 건물이나 공장, 도시에 대해서도 디지털 트윈을 생성할 수도 있다고 합니다.  
+
+- 디센트럴랜드 :  3D 가상 세계 브라우저 기반 플랫폼입니다. (암호화폐 바닥에서는 한동안 핫한 이름이었습니다.) 사용자는 이더리움 블록체인을 사용하는 마나(MANA)  암호화폐로 플랫폼에서가상 토지를 구매할 수 있습니다. 메타버스를 콘텐츠 제작자나 기업을 위한 플랫폼으로 개발중인 가장 큰 회사 중 하나라고 하네요.  
+
+- 로블록스 : 초딩들이 그렇게 많이 사용한다는 그 로블록스 맞습니다. 이용자가 자신만의 디지털 세계를 만들 수 있는 개방형 게임 플랫폼입니다. 다양한 게임이 플랫폼에 있으며 일부는 게이머들이 서로 효과적이고 자유롭게 상호작용할 수 있는 가상 세계를 제공합니다.
+
+- 매직 리프 : 디지털 환경에서 이용자들이 상호작용할 수 있도록 웨어러블 기술을 제공하는 기업입니다. AR 안경에 대한 특허를 가지고 있고 기업을 위한 AR 플랫폼도 제공합니다.
+
+
+<br>
+
+### OpenAI’s attempts to watermark AI text hit limits.  
+
+전세계가 Open AI의 Chat GPT의 광풍에 정신을 못차리고 있습니다.  
+
+StackOverflow에선 Chat GPT로 생성한 답변을 올리지 못하도록 정책을 바꾸더니, 이제 Open AI에서도 Chat GPT를 이용하여 생성된 결과물에 워터마크를 넣겠다고 합니다.  
+
+물론 향후 유료화로 가기위한 발판이기도 하지만, 저런 원터마크가 없다면 이제 사람이 답변한 것인지 AI가 답변한 것인지 알 수 없는 세상이 도래한 것입니다.`r emo::ji("scream")`.    
+
+
+
+<br>
+
+[기사링크](https://techcrunch.com/2022/12/10/openais-attempts-to-watermark-ai-text-hit-limits/)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://techcrunch.com/wp-content/uploads/2022/12/Screenshot-2022-12-02-at-7.03.19-AM.webp')
+
+```
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### EU '탄소국경세' 도입 합의...'유럽판 IRA'에 韓 철강 '직격탄'
+
+<br>  
+
+[링크](https://www.newstree.kr/newsView/ntr202212140001?fbclid=IwAR2pypsrPOx320irxfPOMK2qv9aw_UxlZbemrXBT5Ao_4V5gPteQs3h4o7k&mibextid=Zxz2cZ)      
+
+<br>
+
+이미 예상이 된 일이었지만 유럽발 탄소국경조정제도(CBAM)이 이제 현실로 다가오게 되었습니다.  
+
+미국발 인프라법(Infrastructure & Job Act)과 인플레이션 감축법(Inflation Reduction Act; IRA)에 이어 유럽발 무역 압력도 시작되기 직전입니다.  
+
+몇 달 전 유럽의 Fit for 55에 관련된 소식을 전해드렸는데 우리가 원하는 것과 관계없이 이미 방향은 정해진채 흘러가고 있습니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.newstree.kr/data/ntr/image/2022/12/14/ntr202212140013.680x.0.jpg')
+
+```
+
+<br>
+
+경쟁사 소식들은 죄다 풍력이나 태양광 밖에 없고, 터빈에 관련된 소식이 없어 가져왔습니다.  
+
+세상은 점점 기계들과는 멀어지고 있는듯 합니다.  
+
+
+<br>  
+
+### The World Should Be 100% Powered By Renewable Energy Before Nuclear Fusion Is Commercially Competitive
+  
+<br>
+
+[링크](https://cleantechnica-com.cdn.ampproject.org/c/s/cleantechnica.com/2022/12/14/the-world-should-be-100-powered-by-renewable-energy-before-nuclear-fusion-is-commercially-competitive/amp/?fbclid=IwAR26YUqRcOQTiFkxQki5vuy-iWDSKOi2MmXo7MIxyby_a8q0VUHA02XUlOo&mibextid=Zxz2cZ)  
+
+<br>
+
+세상이 말도 안되는 속도로 바뀐다는 것을 체감하는 중입니다.  
+
+[핵융합 발전이 성공했다는 소식](https://www.npr.org/2022/12/13/1142208055/nuclear-fusion-breakthrough-climate-change?fbclid=IwAR0J2oPXPELYcCDUFLTxKHXAyjBuUoUTmjfFMl7OzaUhsnnhAOCmshttps://www.npr.org/2022/12/13/1142208055/nuclear-fusion-breakthrough-climate-change?fbclid=IwAR0J2oPXPELYcCDUFLTxKHXAyjBuUoUTmjfFMl7OzaUhsnnhAOCmszHZOr8&mibextid=Zxz2cZzHZOr8&mibextid=Zxz2cZ)을 들은지가 불과 며칠 전인데, 벌써 핵융합 발전이 상용화 될 때까지 신재생으로 버텨야 한다는 이야기가 나옵니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://cleantechnica-com.cdn.ampproject.org/i/s/cleantechnica.com/files/2019/10/Driving-on-Sunshine-Tesla-Model-X-Supercharging-Florida-CleanTechnica-e1623370357213.jpg')
+
+```
+
+<br>  
+  
+기사 내용은 핵융합 하려면 수십년 정도 더 필요하기 때문에 현재 에너지 전환에 기여할 수 있는 것이 별로 없다. 그러니까 핵융합이 상용화 되기 전까지는 가격이 낮아져 있는 Solar, Wind, Battery를 빠른 속도로 설치하여 탄소 중립을 이뤄야 한다는 내용입니다.  
+
+이젠 우리가 신재생이라 부르는 에너지들 대부분이 새로운 것이 아닌 고전적인 에너지가 되어가고 있습니다.  
+
+<br>
+
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+**신재생**과 **핵융합**의 위력이 세계 신문기사 헤드라인을 강타했습니다.  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+12월 7일자로 신한울 1호기가 들어왔습니다.  
+
+그런데 용량을 1400MW로 해뒀네요?  
+
+ *2022년 12월 07일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 신한울#1 신설 [+1,400.0MW]
+- 비중앙급전발전기 : 현대스틸산업(주) 태양광 발전소 신설 등[+192.996MW] 
+  
+  
+*2022년 12월 14일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 파워그린에너지 제2호 발전소 신설 등[+14.048MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

@@ -1,0 +1,302 @@
+---
+title: "Industry News"
+subtitle: "Vol. 94"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World  
+
+<br>
+
+### Competitive programming with AlphaCode
+
+두둥~ 딥마인드가 프로그램을 작성하는 코드 생성 인공지능(AI) 시스템 ‘알파코드(AlphaCode)’를 공개했습니다.
+
+알파코드는 프로그램 경연 대회에서 출제된 문제를 해결하는 수준의 컴퓨터 프로그램을 작성하는 수준으로 프로그래밍 대회 참가자의 상위 54% 내의 점수를 얻었습니다. 
+
+프로그래밍 경연에서 경쟁력 있는 수준의 성능에 도달한 최초의 코드 생성 AI가 탄생한 것입니다. `r emo::ji("clap")`  
+
+
+<br>
+
+[링크](https://www.deepmind.com/blog/competitive-programming-with-alphacode)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://assets-global.website-files.com/621e749a546b7592125f38ed/6224cb9fc2e3b0d6a0d98a3d_Fig_02_Blog_Final.svg')
+
+```
+  
+<br>
+
+딥마인드는 학습 후 알파코드는 할당된 문제의 34%를 해결했다고 밝혔으며, 성능을 더 테스트하기 위해 알파코드를 코드포스(Codeforces)에서 주최하는 온라인 코딩 대회에 참가시켰습니다.   
+
+참가자가 최소 5000명 이상인 대회에서 알파코드는 참가자의 45.7%를 능가했다고 합니다.  
+
+즉 대회애 참여한 프로그래머 평균은 되는 프로그래밍 실력을 갖췄다는 것입니다.  
+
+더욱 놀라운 점은 프로그램을 훈련 데이터베이스의 프로그램과 비교한 결과 코드나 논리의 많은 부분을 복제하지 않고 창의적으로 만들었다는 것을 발견했습니다.  
+
+이제 AI가 스스로 더 나은 AI를 만드는 일이 공상과학이 아닐 수 있습니다.  
+
+<br>  
+
+
+### ChatGPT: Optimizing Language Models for Dialogue
+
+이번 주의 가장 핫한 소식이라면 바로 챗 GTP가 아닐까 합니다.  
+
+일각에선 구글의 종말이라는 내용까지 언급하는 것을 보면 대단한 파장이 일어나고 있습니다.  
+
+챗GPT는 오픈AI의 대형 언어모델인 GPT-3의 뒤를 잇는 GPT-3.5를 기반으로 하는 대화형 텍스트 생성 모델입니다.  
+
+아직은 프로토타입이지만 사람처럼 상세한 텍스트를 생성할 수 있으며, 인터넷에서 가져온 방대한 양의 텍스트 샘플로 훈련하고, 대화형 인터페이스를 통해 정보를 제공합니다. 
+
+대화 형식으로 후속 질문에 답하거나 실수를 인정하기도 합니다. 또 잘못된 전제에 이의를 제기하거나 부적절한 요청을 거부하는 등 훨씬 똑똑해졌다는 평가를 받고 있습니다.     
+
+대부분의 AI 챗봇은 모든 새로운 요청을 백지 상태로 취급하고 이전 대화를 기억하거나 학습하도록 프로그래밍되지 않았지만 챗GPT는 사용자가 이전에 말한 내용을 기억할 수도 있습니다.  
+  
+  
+[링크](https://openai.com/blog/chatgpt/)  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202212/148277_156622_1351.png')
+
+```
+  
+<br>
+
+사용을 해보시면 섬뜩함마저 느껴지는 자연스러움을 느끼실 수 있습니다.  
+
+위 사진처럼 이제 코딩도 구글이나 Stackoverflow에서 검색하는 것이 아닌 Chat GTP에게 바로 원하는 내용을 이야기 하면 알아서 만들어 줍니다.  
+
+벌써부터 GTP가 거짓을 말하면 어떻게 구별하느냐는 우려가 생길 정도로 의존성이 대단합니다.  
+
+물론 한글도 지원합니다. 이제 검색의 시대가 저물어가고 있습니다.  
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Siemens Gamesa Loses UK Patent Dispute over GE Haliade-X Offshore Wind Turbine  
+
+<br>  
+
+[기사링크](https://www.offshorewind.biz/2022/12/01/siemens-gamesa-loses-uk-patent-dispute-over-ge-haliade-x-offshore-wind-turbine/)    
+
+<br>
+
+Siemens Gamesa와 GE의 싸움이 흥미진진하게 진행되고 있습니다.  
+
+본진인 미국에서 GE가 Siemens Gamesa에게 [패소](https://www.offshorewind.biz/2022/09/08/ge-banned-from-selling-haliade-x-offshore-wind-turbine-in-us-two-projects-exempted/)하여 GE가 이대로 밀리나 했는데, 유럽(런던)에서는 GE Haliade-X 해상 풍력 터빈 설계에 대한 Siemens Gamesa와의 특허 침해 분쟁에서 GE의 손을 들어주었습니다.
+
+이번 소송에서 Siemens Gamesa는 GE의 Haliade-X가 풍력 터빈용 로터 허브의 베어링 사용과 관련된 유럽 특허를 침해했다고 주장했습니다.
+
+GE는 침해를 부인하고 특허가 유효하지 않다고 말했습니다.
+
+일단 미국에서 싸우고 있는 특허분쟁과는 별개의 건이지만 두 업체의 특허 다툼이 치열해 지고 있어 추이를 지켜봐야 할 듯 합니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.enr.com/ext/resources/2022/06/22/haliade-X_above-front-2-1.jpg')
+
+```
+
+<br>
+
+
+### GE Releases New Option to Cut Emissions on Its Mobile Gas Turbines
+
+<br>
+
+[기사링크](http://weekly.khan.co.kr/khnm.html?mode=view&code=114&artid=202211181121121&fbclid=IwAR3HE9osIJPA4WVK3lS0y69Xyt9Xf1Xx_Z559z_yOM-gfp79KUBkMbUn9YE&mibextid=Zxz2cZ)  
+
+<br>
+
+GE Gas Power는 12월 6일 캘리포니아 주 유바 시티와 로즈빌에 있는 캘리포니아 수자원부(DWR) 부지에 있는 4대의 (새로운 기술이 적용된) TM2500 가스터빈을 설치했다고 밝혔습니다.   
+
+이번에 공급된 터빈은 산화질소(NOx)와 일산화탄소(CO) 배출량을 90% 이상 줄여 세계 은행 배출 기준을 능가하고 캘리포니아의 가장 엄격한 배출 기준 요건을 충족하는 것으로 알려졌습니다. 
+
+이번에 공급된 개선기술은 TM2500 가스터빈에 구현된 최초의 것이라고 알려졌습니다.  
+ 
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.powermag.com/wp-content/uploads/2022/12/fig2-roseville-gas-turbines-ge-tm2500.jpg')
+
+```
+
+<br>  
+  
+4대의 TM2500 가스터빈은 각각 총136MW로 최대 34MW의 전기를 생산할 수 있으며 각각의 시스템은 NOx 배출량을 2.5ppm(백만분율)으로 줄이는 시스템을 갖춰 캘리포니아 주의 배출 기준도 충족이 가능합니다.  
+
+환경규제가 강화되고 있다보니 이제 출력이나 성능은 기본이 되었고 이렇게 환경규제를 만족하는 터빈을 공급하는 것이 뉴스가 되어 나오고 있습니다.  
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+<없음>
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

@@ -1,0 +1,291 @@
+---
+title: "Industry News"
+subtitle: "Vol. 96"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World  
+
+<br>
+
+### Microsoft reportedly to add ChatGPT to Bing search engine
+
+Chat GPT로 인해서 [구글이 코드 레드까지 발동한 상황](http://www.casenews.co.kr/news/articleView.html?idxno=12606)에서 구글이 가장 우려했던 일이자, 사용자들이 가장 바랄 일이 수면 위로 떠 올랐습니다.  
+
+<br>
+
+[링크](https://www.theguardian.com/technology/2023/jan/05/microsoft-chatgpt-bing-search-engine)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://cdn.searchenginejournal.com/wp-content/uploads/2023/01/microsoft-bing-chatgpt-63b5ada78e5ca-sej-1520x800.webp')
+
+```
+  
+<br>
+
+네스케이스의 무지막지한 점유율을 익스플로러 끼워팔기로 한 번에 뺏았다가 구글에 뺏긴 마소가 자사 검색엔진인 빙(Bing)에 Chat GPT를 탑재한다는 소식입니다.    
+
+단 5일만에 100만 사용자를 끌어모은 Chat GPT인 만큼 빙 + 엣지 + Chat GPT 조합이라면 정말로 구글의 아성이 무너질 수도 있게다는 생각이 듭니다.  
+
+앞으로 흥미진진하게 전개 될 듯 합니다.  
+
+<br>  
+
+
+### Amazon to cut 18,000 jobs as layoffs expand in tech sector
+
+아마존 직원들의 연말을 우울했을 듯 합니다.  
+
+무려 18,000명의 해고 소식입니다.  
+
+당초 예상은 10,000명 정도였는데 2배가 증가한 수치입니다.  
+  
+  
+[링크](https://www.reuters.com/business/retail-consumer/amazon-lay-off-over-17000-workers-wsj-2023-01-04/)  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.reuters.com/resizer/XRrtrGhVPzr7Rs8SDLEwv5RK5DY=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/HEIBXFNKGRPFLH2KZOII47N5E4.jpg')
+
+```
+  
+<br>
+
+이번에 아마존 뉴스를 보면서 알게 된 놀라운 소식은 아마존의 총 직원수가 무려 150만명 `r emo::ji('open_mouth')` 이라는 겁니다. 
+
+15만명이 아닌 150만명 !!! 입니다. (그 중 30만명이 Full Time 근무자라 합니다. 이것만 해도 어마어마하네요.)  
+
+어찌되었건 빅테크 업체들에게는 힘든 한 해가 될 것 같습니다.  
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### 한국, 탄소중립은 가능한가…재생에너지 잠재량 분석  
+
+<br>  
+
+[기사링크](https://www.hankyung.com/economy/article/202212195852i?fbclid=IwAR1qhWi6RQJhqA5NthOh0D3b-ot0mLCBa9G4b80Xk84hdiuBlCkeTQha5dA&mibextid=Zxz2cZ)    
+
+<br>
+
+미국 NEXT가 조사한 '한국은 탄소중립을 달성하는 데 충분한 재생에너지 잠재량을 보유했는가?'에 대한 결과입니다.   
+
+결과는 기사의 헤드메시지로 충분히 전달된 것 같습니다.  
+
+**우리나라는 탄소중립을 달성하는 데 필요한 재생에너지 잠재량을 충분히 보유하고 있으며 온실가스 배출량을 정부 목표보다 추가 감축할 수 있다.**   
+
+**이를 위해서 재생에너지의 신속한 공급이 중요하며, 실제 재생에너지 설비 비용의 하락을 이끌어내는 것이 중요하다.**  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://img.hankyung.com/photo/202212/01.32282918.1.jpg')
+
+```
+
+```{r}
+#| label: 사단법인 넥스트 자체 잠재량 분석 연구
+knitr::include_graphics('https://img.hankyung.com/photo/202212/01.32282919.1.jpg')
+
+```
+
+
+<br>
+
+
+### Ex-GE engineer gets two years in prison after stealing turbine tech for China
+
+<br>
+
+[기사링크](https://www.theregister.com/2023/01/04/ge_turbine_china_prison/)  
+
+<br>
+
+복잡한 심정이 가득한 기사입니다.  
+
+기사의 샤오칭은 저와 신보령 Brush seal 문제를 함께 논의했던 GE의 엔지니어였습니다.  
+
+Seal 분야 전문가로 신보령 Seal 문제를 해결하기 위해 많이 도와준 사람인데 회의를 하러 Schenectady에 갔는데 회의에 참석하지 않고, 영문도 모른채 3일 동안 그를 기다리다가 호텔에서 아침 먹는 중 뉴스에서 체포되었다는 뉴스를 봤습니다.  
+ 
+몇 년 전 일인데 이제 형이 확정되었는가 봅니다.   
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://s.hdnux.com/photos/01/30/77/30/23328289/3/ratio3x2_2400.jpg')
+
+```
+
+<br>  
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+2023년 1월 4일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 썬스타트 대평2호 태양광발전소 신설 등[+175.765MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
