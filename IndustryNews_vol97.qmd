@@ -1,0 +1,305 @@
+---
+title: "Industry News"
+subtitle: "Vol. 97"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World 
+
+### Hi, future. Welcome, GPT-4.   
+
+<br>
+
+[GPT4](https://www.gpt-4.co)  
+
+<br>  
+
+연일 GPT3의 충격적인 성능과 관심이 쏠린 사이에 이제 GPT4까지 등장했습니다.  
+
+파라미터수가 무려 100조개!!! 인간의 시냅스 수와 동일한 숫자로 벌서부터 인간의 뇌 수준에 도달했다는 둥, 튜링테스트를 통과했다는 등의 온간 추측이 난무합니다.  
+
+더욱 무서운 것은 이 GPT를 만드는 OpenAI의 배후에는 마이크로 소프트가 있다는 것입니다.  
+
+오피스라는 난공불락의 기업용 소프트웨어에 GPT를 결합하는 그 순간부터 인공지능은 우리 삶 속으로 빠르게 침투할 것입니다.  
+
+<br>
+
+
+```{r}
+knitr::include_graphics('https://global.discourse-cdn.com/business7/uploads/openai1/original/3X/0/f/0f7cddfea4f198cb6260236de715ee450c65bcb2.jpeg')
+
+```
+
+<br>
+
+전문가라는 사람들이 미래를 예측하는 듯 이야기 하지만, 우리는 인공지능이 체스를 둘 수 없다고 생각했을 때도 있었고,  
+
+인공지능이 개와 고양이를 구별하지 못한다고 비웃을 때도 있었고, 인공지능은 직관의 놀이인 바둑을 둘 수 없다고 생각했던 적도 있었습니다.  
+
+이 모든 것이 빠른 속도로 깨어지고 있습니다.  
+
+어쩌면 레이 커즈와일이 '특이점이 온다'에서 이야기한 것처럼 2042년경 우리는 진짜 특이점을 볼 지도 모르겠다는 생각이 들었습니다.  
+
+<br>
+
+### 12 Countries That Produce the Best Engineers in the World  
+
+미국 투자 전문매체 인사이더몽키가 2021년 글로벌 혁신 지수 보고서와 SCI마고(SCImago) 저널 및 국가 순위 보고서의 평균 순위를 기준으로 세계 최고의 엔지니어를 배출하는 12개국을 선정했습니다.  
+
+다행히 한국이 있습니다! `r emo::ji("clap")`. 
+
+그런데 삼성전자 때문이랍니다. 세계에서 세번째로 큰 전자회사인 삼성전자가 있어 전자/전기 엔지니어 수급이 쉬워 8위에 올랐습니다.  
+
+1위인 미국은 GE, 록히드마틴, 구글, 마이크로소프트가 언급되었고, 2위인 중국은 GDP의 2.4%를 R&D에 쏟는 막강한 정부 지원과 세계 최고의 엔지니어 육성기관으로 중국과학원과 칭화대학교가 언급되었습니다.  
+
+독일은 3위로 전기와 기계엔지니어의 강국으로 소개되었고 지멘스와 SAP가 언급되었습니다. 6위에 랭크된 일본은 최고의 로봇생산국으로 언급되었습니다.  
+
+기계엔지니어로 조금 아쉬운 느낌을 받았습니다.  
+
+<br>
+
+[기사링크](https://www.insidermonkey.com/blog/12-countries-that-produce-the-best-engineers-in-the-world-1107253/)  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://imonkey-blog.imgix.net/blog/wp-content/uploads/2016/11/26120840/47332506_m-750x500.jpg')
+
+```
+
+<br>
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### The world is entering a new age of clean technology manufacturing, and countries’ industrial strategies will be key to success
+
+<br>  
+
+[링크](https://www.iea.org/news/the-world-is-entering-a-new-age-of-clean-technology-manufacturing-and-countries-industrial-strategies-will-be-key-to-success)      
+
+<br>
+
+IEA가 어마어마한 보고서를 내놓았습니다.  
+
+늘 푸념처럼 하는 말이지만 시간을 가지고 찬찬히 한 번 읽어봤으면 좋겠습니다.
+
+암튼 458페이지에 달하는 많은 분량 대부분에서 안타까움이 느껴졌습니다.  
+
+미국 유럽을 중심으로 기후변화, 에너지 전환을 목소리 높이고 있고 변화의 동력을 이끌어 가고 있으나, 현실에서 필요한 풍력, 태양광, 배터리 모두 중국이 압도적인 생산 우위에 있습니다.  
+
+이대로 가면 모든 에너지 기술의 주도권은 중국에 넘어갈 수 밖에 없다는 현실이 생생하게 나타나고 있습니다.  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://iea.imgix.net/e497e5d1-6811-45e5-8492-7e5aff4bf3b5/GettyImages-1310488699.jpg')
+
+```
+
+<br>
+
+ESS에서의 우위를 스스로 포기했고, Heat Pump는 관심조차 없고, 풍력과 태양광은 정치적 희생물이 되어버린 한국의 현실이 안타깝게 느껴졌습니다.   
+
+그나마 남아있는 수소에서는 시장과 기술을 선점할 수 있기를 기대해 봅니다.  
+
+
+<br>  
+
+### China seen accelerating wind, solar power installation under 5-year plan, reaching 2030 renewable target ahead of time
+  
+<br>
+
+[링크](https://www.scmp.com/business/article/3205828/china-seen-accelerating-wind-solar-power-installation-under-five-year-plan-reaching-2030-renewable)  
+
+<br>
+
+중국 정부 소식지나 다름없다는 South China Morning Post의 기사입니다.  
+
+중국이 2030년까지 달성할 계획이었던 재생에너지 목표를 2025년에 달성할 예정이라 합니다.  
+
+인정하기 싫지만 아주 특별한 이벤트가 없는 한 에너지 전환의 승자는 중국이 될 것 같다는 생각이 듭니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/canvas/2023/01/06/36829c05-48c4-4a19-976a-a1a633e3e736_6648a82f.jpg?itok=U49BESZD&v=1672990647')
+
+```
+
+<br>  
+
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+예년보다 따뜻했던 유럽의 겨울과 우크라이나의 선전에 힘입어 우크라이나-러시아 전쟁이 에너지 전환의 트리거가 되었습니다.    
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 1월 11일 적용 발전설비 용량변경 
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 영월에코윈드 풍력발전기 신설 등[+86.469MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

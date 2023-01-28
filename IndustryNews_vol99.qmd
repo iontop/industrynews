@@ -1,0 +1,356 @@
+---
+title: "Industry News"
+subtitle: "Vol. 99"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World 
+
+### MusicLM: Generating Music From Text   
+
+<br>
+
+[Music LM](https://google-research.github.io/seanet/musiclm/examples/)  
+
+<br>  
+
+내가 느끼는 감정을 음악으로 옮길 수 있다면 얼마나 좋을까라는 생각이 이제 실현되기 직전입니다.  
+
+구글에서 Music LM을 발표하였습니다.  
+
+아직 사용해볼 수는 없지만 몇가지 샘플을 올려두었습니다.  
+
+이제 영화를 비롯한 각종 영상매체에서 음악감독이라는 직업이 사라질 수도 있겠구나 하는 생각마저 듭니다.  
+
+<br>
+
+
+```{r}
+knitr::include_graphics('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdFRqUq5R0CwA7eaE0qAXStL2AAZw3LNOxus3NYoz_JkbWSXz1ydyb839s0Z5qPk_wTGgAYL4B_XZBQRXaSsYtb9RYZZpf8kB8UjhwbGMZBhqswxse110R2OaVc4szGTvcSqZLm4hSCQ3howGlmEMoJxhvonK3MWkp49RquIhciqCJ349fCv6KxvUl/s16000/image4.png')
+
+```
+
+<br>
+
+
+
+### ‘Robot Lawyer’ Yanked From Courtroom After Legal Outcry   
+
+결국 하나씩 현실로 나타나고 있습니다.  
+
+사실 법이라는 영역은 AI가 가장 쉽게 접근할 수 있는 분야 중 하나인데, 강한 기득권을 가진 집단이라 섣불리 들어서지 못했을 뿐입니다.   
+
+스타트업 [DoNotPay](https://donotpay.com)의 CEO 죠슈아 브라우더는 AI 변호사가 법정에서 과속 위반 딱지 사건을 변호할 계획에 대해 캘리포니아 변호사 협회로부터 기소 위협을 받고 변론를 포기했다고 샌프란시스코 스탠다드가 25일(현지시간) 보도했습니다.  
+
+AI 변호사는 전화를 통해 실시간으로 법원의 주장을 듣고 피고에게 응답해야 할 사항을 알려주는 방식으로 변호할 예정이었습니다.  
+
+*원래 DoNotPay가 만든 AI 변호사는 AI 챗봇을 사용해 법률 서비스를 제공하는 모바일 애플리케이션이었습니다.* 
+
+
+<br>
+
+[기사링크](https://sfstandard.com/business/robot-lawyer-yanked-from-courtroom-after-legal-outcry/)  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1600/d579b84567a3277eafef9710327dc68f.png')
+
+```
+
+<br>
+
+DoNotPay는 오는 2월 세계 최초로 AI 변호사가 실제 미국의 법정 소송에서 교통 법규 위반 혐의자를 변호한다고 발표했으며, 패할 경우 피고에게 벌금을 지불하겠다고 약속했으나 변호사 협회의 협박(?)으로 포기한다고 트위터를 통해 밝혔습니다.  
+
+브라우더는 "여러 주 변호사 협회가 우리를 위협했다. 지방검찰청 송치, 기소, 실형까지 가능하다는 얘기까지 나왔다"고 말했습니다.
+
+한 주 변호사 협회 관계자는 일부 주에서는 무단 법 집행이 카운티 교도소에서 최대 6개월까지 처벌받을 수 있는 경범죄라고 언급했다고 말했고, 조지 카르도나 캘리포니아 변호사 협회 수석 재판 고문은 "우리는 정기적으로 잠재적인 위반자에게 그들이 민사 또는 형사 법원에서 기소될 수 있음을 알린다. 이는 전적으로 법 집행에 달려 있다"고 말했다고 합니다.  
+
+DoNotPay의 챗봇을 경계하는 변호사들은 이 기술이 윤리적 법적 관행을 규율하는 주법 및 전문 규범에 위배될 수 있다고 지적하고 있으나 얼마나 더 막을 수 있을지 궁금해집니다.  
+
+저비용, 고품질의 서비스가 제공되는 것이 면허와 배타적인 독점으로 뭉쳐온 그들만의 리그에 어떤 영향을 끼칠지 궁금합니다.
+
+<br>
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### Kenya plastic bag ban: Three fruit sellers arrested in Nairobi
+
+<br>  
+
+[링크](https://www.bbc.com/news/world-africa-51546277)      
+
+<br>
+
+비닐 봉지를 사용했다는 죄목으로 감옥에 가게 된 케냐 과일상인 소식입니다.  
+
+우연히 이 뉴스를 접하고 충격을 먹었습니다.  
+
+우리는 생소하고 야생동물이 뛰어다닌다고 생각하는 케냐라는 나라가 비닐봉지 사용에 대해서 저정도로 강력한 규제를 하고 있습니다.  
+
+우리가 얼마나 환경에 무심한지, 환경에 대한 규제에 거부감이 얼마나 큰지 다시 한 번 느낄 수 있었습니다.  
+
+더 놀랍게도 이 뉴스는 무려 2년전 소식입니다.  
+
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://nypost.com/wp-content/uploads/sites/2/2020/02/kenya-plastic-bag-arrest-01.jpg?quality=75&strip=all')
+
+```
+
+<br>
+
+사하라 이남 아프리카에선 무려 35개국이 비닐봉지를 금지하고 있다고 합니다.   
+
+이 지역의 공항 검색대를 거치려면 치양과 비누를 담는 작은 비닐 봉투를 제외하고는 모두 압수당한다고 합니다.  
+
+사용 뿐만 아니라 제조, 유통에 이르는 모든 과정이 규제됩니다.  
+
+케냐의 경우, 비닐봉지를 제조, 수입, 판매하다가 적발되면 최대 4만 달러의 벌금 혹은 최대 4년의 징역형을 받는다고 합니다.  
+
+물론 이 과정이 순탄치는 않습니다.  
+
+이러한 이들의 노력을 무너뜨리기 위해 소위 선진국이라는 곳의 입김이 곳곳에서 작용하고 있습니다.  
+
+몇년 전 케냐-미국 무역협정 시 미국의 조건 중 하나가 비닐봉지 사용이 가능하게 해 달라는 것이었습니다.  
+
+누가 더 환경을 생각하는지, 누가 더 선진인지... 생각이 많아지는 기사였습니다.  
+
+
+<br>  
+
+### Microsoft is one of the world’s biggest solar buyers—here’s why
+  
+<br>
+
+[링크](https://www.emergingtechbrew.com/stories/2023/01/19/microsoft-is-one-of-the-world-s-biggest-solar-customers-here-s-why)  
+
+<br>
+
+최근 기업들의 PPA(Power Purchase Agreement)가 활발하게 이루어지고 있는 느낌입니다.  
+
+밝힐수는 없지만 이런 제의를 해 온 회사도 있고, 우리와 PPA관련 논의를 하고 싶어하는 회사도 있고, 우리도 준비하고 있는 것으로 알고 있습니다.  
+
+바야흐로 어떤 전기를 쓰느냐가 중요한 시기가 도래했습니다.  
+
+농담삼아 오디오를 하시는 분들이 수력발전으로 만든 전기가 더 부드러운 음색을 들려준다고 했는데...  
+
+이젠 진짜 현실에서 전기를 생산하는 원천이 중요하게 되어버렸습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.sanity.io/images/bl383u0v/production/e29ab0eee0ce0f9e87da8ae2c132258faba78164-6000x4000.jpg')
+
+```
+
+<br>  
+
+놀랍게도 메타만 해도 3.6GW의 태양광 발전소를 가지고 있다고 합니다. (설치 용량기준인 것으로 보입니다.)  
+
+마이크로소프트는 작년기준 550MW 규모의 태양광 발전소를 가지고 있고 PPA를 맺은 공급량은 무려 8GW가 된다고 합니다.  
+
+이렇게 빠른 속도로 변화하는 가운데 기회를 포착하고 재빨리 움직여야 하는 것은 회사 뿐만 아니라 개인에게도 필요합니다.  
+
+몇년 전에 전력거래 사업을 한다면 얼마나 비웃었을까요? 불과 몇년만에 놀라울 정도의 변화가 일어나고 있습니다.  
+
+<br>
+
+
+### Turkey aims to produce hydrogen at $2.40/kg by 2035
+  
+<br>
+
+[링크](https://www.pv-magazine.com/2023/01/26/turkey-aims-to-produce-hydrogen-at-2-40-kg-by-2035/?fbclid=IwAR0okUfzXoKjO59DF_ZDgUeTdK_Nhcy9YCN3AM1ONCs5z5cLMdEnKYi9D4g&mibextid=Zxz2cZ)  
+
+<br>
+
+튀르키예(기사에는 여전히 예전 국가명인 터키로 해두네요... 영어는 Türkiye가 맞는데... 하여간...)가 2035년까지 kg당 3달러 이하의 가격으로 수소를 생산하겠다는 목표를 세웠다고 합니다.  
+
+대규모 태양광에서 얻어지는 저렴한 전기 + 수전해 기술 수입으로 해보겠다고 합니다.  
+
+튀르키예조차도 우리보다 더 높은 계획을 세우고 있네요. (참고로 한국은 2040년 kg당 3000원, 충전소 공급가격 기준, 목표)
+
+결과야 어떻게 되든 무엇을 하겠다는 의지가 다른다는 것은 느낄 수 있습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.pv-magazine.com/wp-content/uploads/2021/09/Hydrogen_supply_system_at_DLR_Cologne.jpg')
+
+```
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 1월 27일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 안좌스마트팜앤쏠라시티2 PV 신설 등[+243.9MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

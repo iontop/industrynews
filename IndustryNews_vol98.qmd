@@ -1,0 +1,323 @@
+---
+title: "Industry News"
+subtitle: "Vol. 98"
+author: "안준호"
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: cosmo
+    fontsize: 0.9em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+
+## From the New World  
+
+<br>
+
+### Google’s DeepMind might release ChatGPT competitor Sparrow this year
+
+ChatGPT에 맞서는 구글의 대항마가 나왔습니다.  
+
+테크레이더는 17일(현지시간) 딥마인드가 지난해 9월 개발한 AI 챗봇 ‘스패로우(Sparrow)를 ‘ChatGPT’의 라이벌로 조만간 출시한다고 보도했습니다.  
+
+스패로우는 기존 AI 챗봇보다 사용자 질문에 대해 그럴듯한 답변을 더 잘 생성할 수 있고, ChatGPT에 없는 인용 출처를 제공하는 기능을 갖출 예정이라 합니다.  
+
+답변의 정확성을 향상시키기 위해 강화학습과 사용자 피드백을 결합했고, 챗봇이 올바른 응답을 할 때까지 반복적으로 작업을 수행하고 사용자들은 챗봇이 생성한 여러 개의 답변 중에서 가장 정확하다고 생각하는 답변을 선택하도록 되었있다고 합니다.  
+
+또 사용자가 스패로우에게 특정 주제에 대한 정보를 검색하도록 요청하면, 챗봇이 직접 구글링을 해 정보를 찾고 검색한 웹사이트 링크와 함께 답변을 제공합니다.   
+
+스패로우에는 편향되고 유해한 답변의 위험을 크게 줄이는 기능도 포함되어 있습니다. 아마 ChatGPT에서 발현된 우려를 의식한 듯 합니다.  
+
+
+<br>
+
+[링크](https://www.techradar.com/news/googles-deepmind-promises-chatgpt-rival-soon-and-it-could-be-better-in-one-key-way)
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://articles-img.sftcdn.net/f_auto,t_article_cover_xl/auto-mapping-folder/sites/3/2023/01/sparrow-google.jpg')
+
+```
+  
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://cdn.mos.cms.futurecdn.net/GWE9tK6gS3aMmVkpEKCAci-1920-80.jpg.webp')
+
+```
+
+<br>
+
+이제 MS는 OpenAI의 ChatGPT, 구글은 Sparrow가 대결을 벌이게 되었습니다.  
+
+조만간 애플이나 아마존도 이에 맞서는 무엇인가가 나올 듯 한데... 벌써부터 기대 되는 대결입니다.  
+
+<br>  
+
+
+### Top 100 AI Companies to Watch Out for in 2023
+
+전문 매체 애널리틱스 인사이트(Analytics Insight)가 '2023년 주목해야 할 100대 AI 기업'을 최근 소개했습니다.  
+
+투자를 위해서 눈여겨보셔도 좋고, 기술 동향을 파악하기 위해서 이 회사들에 관심을 가져도 좋을 것 같습니다.  
+
+물론 정확한 선정 과정이나 기준을 밝히지 않았고 잘 알려진 기업들도 빠져있고 또 서방국가 위주이라, '순위'로 보기에는 무리가 있습니다.    
+
+실제로 미국과 영국을 제외한 국가에서는 17개 기업 밖에 이름을 올리지 못했습니다.  
+
+(약간 놀라운 것이 GE가 아닌 [GE Research](https://www.ge.com/research/)가 이름을 올렸다는 것입니다.)  
+
+인도가 IT 강국답게 6개를 포함시켰으며, 중국에서는 알리바바와 자율주행 기업 호라이즌 로보틱스(디핑시엔) 두 곳만이 이름을 올렸습니다.  
+
+국내 기업은.... 단 하나도 이름을 올리지 못했습니다.  `r emo::ji("scream")`  
+
+
+[링크](https://www.analyticsinsight.net/top-100-ai-companies-to-watch-out-for-in-2023/)  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202301/149052_157756_1319.jpg')
+
+```
+  
+<br>
+
+
+--- 
+
+<br>  
+
+## 새로운 소식들
+
+<br>  
+
+### 'Red flag for green power' | South Korea slammed for Samsung snub after renewables downgrade  
+
+<br>  
+
+[기사링크](https://www.rechargenews.com/energy-transition/red-flag-for-green-power-south-korea-slammed-for-samsung-snub-after-renewables-downgrade/2-1-1387703)    
+
+<br>
+
+제목이 모든 것을 말해줍니다.  
+
+국내 기업들 어쩌냐고 해외언론이 걱정해주고 있습니다.  
+
+놀라울만 합니다. 이 정도 경제규모에 이 정도 기술력을 가진 국가가 발표한 계획이 전세계가 나가는 방향을 거슬러 가고 있으니...  
+
+기사 중 한 문장을 발췌하였습니다.  
+
+**“This will require the government to provide the right policy incentives and market environment for affordable and clean renewables to thrive in Korea. However, the current electricity plan cannot meet the corporate renewable demand, let alone its 2030 climate target."**  
+
+
+<br>  
+
+```{r}
+knitr::include_graphics('http://res.heraldm.com/content/image/2021/06/21/20210621000002_0.jpg')
+
+```
+
+<br>
+
+앞으로 점점 더 걱정입니다.  
+
+[문무바람](https://www.e2news.com/news/articleView.html?idxno=244780)같은 국내 최초 부유식 해상풍력 프로젝트를 해외 업체들이 들어와서 하고 있는데,   
+
+정작 우리들은 해상풍력을 못한다고 하고 있으니...   
+
+'국내 최초' 라는 타이틀은 우리가 가져야 할 것이라고 생각하는데, 너무 큰 욕심일까요?   
+
+
+<br>
+
+
+### ‘풍력터빈 1위’ 베스타스, 한국에 3억달러 투자
+
+<br>
+
+[기사링크](https://www.korea.kr/news/policyNewsView.do?newsId=148910765)  
+
+<br>
+
+복잡한 심정이 가득한 기사입니다.(2) 지난 주에도 똑같은 말로 시작했는데...  
+
+완도금일 해상풍력은 베스타스가 가져간 모양입니다.  
+
+풍력발전은 LCR(Local Content Requirement)라고 하여 50%이상 국산화가 되어야 유리한 평가를 받을 수 있는데 아마 그 일환으로 투자하는 듯 합니다.    
+
+국내업체인 우리가 놓쳤고, LCR을 맞추기 위해 구색 맞추기 투자를 하는 것으로 보이는데... 과연 이걸 실적이라 생각해서 정부가 홍보하는지 모르겠습니다.   
+
+공평한 대결도 좋지만, 국내산업 육성도 생각해줬으면 합니다.  
+
+풍력이 미래라고 보는 국가에서 밀어주는 세계 1위 업체와의 대결이 공평한가도 한 번 생각해 주었으면 합니다.  
+
+<br>  
+
+```{r}
+knitr::include_graphics('https://www.korea.kr/newsWeb/resources/attaches/2023.01/19/12(2).jpg')
+
+```
+
+<br>  
+
+완도금일에 대해서 뒷말들이 나오고 있는 상황인데... [국내 최대 해상풍력 사업자 선정 ‘뒷말’ 무성](https://www.asiatoday.co.kr/view.php?key=20221114010007360) 한 번 지켜보시죠.   
+
+<br>
+
+--- 
+
+<br>  
+
+## 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+
+2023년 1월 18일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 충주수력#5,6 비중앙급전발전기 전환[-12.0MW]
+- 비중앙급전발전기 : 해창만 수상태양광 신설 등[+131.608MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
