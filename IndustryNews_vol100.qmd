@@ -1,0 +1,420 @@
+---
+title: "100th"
+subtitle: "Industry News"
+description: "Vol. 100"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## 🎉 100번째 Industry News!!! 🎉 {.unnumbered .unlisted}
+
+<pre>
+
+
+</pre>
+
+## PART 1. 데이터분석, 인공지능
+
+### Google is asking employees to test potential ChatGPT competitors, including a chatbot called ‘Apprentice Bard’   
+
+<br>
+
+[기사링크](https://www.cnbc.com/2023/01/31/google-testing-chatgpt-like-chatbot-apprentice-bard-with-employees.html)  
+
+<br>  
+
+코드레드를 내렸던 구글에서 이제 Chat Bot을 장착할 예정이라 합니다. 
+
+현재 시험 중인 Chat Bot의 이름은 "Apprentice Bard" (구글 번역기가 견습 음유시인이라고 알려줍니다.)  
+
+본격적인 생성 인공지능간의 대결이 시작되려는 시점입니다.  
+
+지금은 별 것 아닐지 몰라도 어쩌면 먼 훗날 2023년을 기점으로 인류의 삶이 바뀌었다고 기록될지 모르겠다는 생각이 듭니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://image.cnbcfm.com/api/v1/image/107186674-1675186101045-gettyimages-1459457883-ussuesgoogleforabusingmonopolyinadtechnology008.jpeg')
+
+```
+
+<br>
+
+이뿐만 아닙니다.  
+
+딥마인드에서는 AdA라고 불리는 적응형 AI까지 준비하고 있습니다! `r emo::ji("scream")`  
+
+<br>
+
+{{< video https://youtu.be/UHUr_iTThxk >}}
+
+<br>
+
+영상[^1]을 보고 뭐지?라고 생각하시겠지만... 놀랍게도 인간이 학습시킨 것이 아닌 스스로 학습하여 게임을 하는 것입니다.  
+
+[^1]: WoW! Quarto가 드디어 Ver 1.2부터 비디오 링크도 지원합니다!  
+
+극단적으로 인간의 개입없이 스스로를 개발시킬 수 있다는 이야기입니다.  
+
+chat GPT, 알파고와 같은 기존 인공지능은 어쨋든 인간을 통한 학습이라는 과정이 필요했고, 이 때문에 새로운 일을 해야할 때마다 새로운 학습이 필요했습니다.  
+
+하지만 적응형 AI는 그 상황에 맞게 스스로 학습을 하기 시작합니다.  
+
+<br>
+
+
+### 네이버, '챗GPT'에 대항할 '서치GPT' 상반기 출시한다   
+
+<br>
+
+[기사링크](https://www.aitimes.com/news/articleView.html?idxno=149259)  
+
+<br>  
+
+한국인들 가만히 있을 수 없지요. `r emo::ji("smile")`    
+
+한국의 구글, 네이버도 검색에 생성 인공지능을 도입하겠다고 발표했습니다.  
+
+기사 일부를 발췌해 봅니다.  
+
+*최수연 네이버 대표는 3일 진행한 실적발표 컨퍼런스 콜에서 서치GPT 테스트를 위해 일반 사용자들이 참가하는 베타 서비스 오픈을 검토하고 있다며 이같은 계획을 발표했다.*  
+
+*최 대표는 서치플랫폼 사업에 대해 설명하던 중 "최근 많은 주목을 받는 생성 인공지능(AI)에 대한 대응책도 준비하고 있다"고 말했다.*   
+
+*그는 또 "생성 AI의 단점인 신뢰성·최신성 부족과 영어 기반 모델을 번역함으로써 생기는 정확성 저하 등 문제를 네이버는 풍부한 사용자 데이터와 노하우로 해결할 수 있다. 상반기 중에 네이버만의 업그레이드된 검색 경험인 '서치 GPT'를 선보이는 것이 목표"라고 전했다.*  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202302/149259_158005_5333.jpg')
+
+```
+
+<br>
+
+### Dreamix: Video Diffusion Models are General Video Editors
+
+<br>
+
+[Dreammix](https://dreamix-video-editing.github.io/)  
+
+<br>  
+
+영상편집을 정말 별거 아니게 만들 분위기를 풍기는 놈이 나타났습니다.  
+
+말 그대로 정말 꿈을 뒤섞어 줄 만합니다.  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://dreamix-video-editing.github.io/static/images/architecture_finetune.png')
+
+```
+
+<br>
+
+발전속도가 빨라도 너무 빠르다는 생각이 들 정도입니다.  
+
+이런 기술이 매주 새롭게 나오고 있으니...
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Global Low-Carbon Energy Technology Investment Surges Past $1 Trillion for the First Time
+
+<br>  
+
+[링크](https://about.bnef.com/blog/global-low-carbon-energy-technology-investment-surges-past-1-trillion-for-the-first-time/)      
+
+<br>
+
+금액단위를 '$billion'을 쓰는 것도 부담스러웠던 것이 몇 년전인데 이제 Trillion을 써야 하는 때가 왔습니다.  
+
+처음으로 저탄소 에너지 기술투자액이 Trillion에 도달했습니다.  
+
+달러인데 조단위입니다! `r emo::ji("open_mouth")`  
+
+말 그대로 전세계가 돈을 쏟아부으면서 에너지 전환에 온 힘을 쏟고 있습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://assets.bbhub.io/professional/sites/24/BNEF11.png')
+
+```
+
+<br>
+
+이러한 막대한 투자금액을 마냥 웃으며 바라볼 수 없는 이유는 바로 **중국**입니다.  
+
+시설투자의 90% 이상은 중국입니다.  
+
+이 상태로 지속되면 어찌될까요?   
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://assets.bbhub.io/professional/sites/24/BNEF21.png')
+
+```
+
+<br> 
+
+빠르면 수 년내 변변찮은 에너지 기자재 공급능력이 없는 국가는 모두 중국에 의존할 수 밖에 없게 될 것 같습니다.  
+
+<br>  
+
+### 카카오, 제주 오피스 사용 전력 재생에너지 전환…'RE100' 달성  
+  
+<br>
+
+[링크](https://zdnet.co.kr/view/?no=20230201123453&fbclid=IwAR0T_OqCurGtukxmXLHPyuUmNGWfWXPOICDHgEjecU-yx7YWnOdGVASDClc&mibextid=Zxz2cZ)  
+
+<br>
+
+카카오가 RE100을 달성했다는 낚시성 제목이 있어 들어갔더니.... 역시나....
+
+사실을 가장 잘 전달하는 제목을 뽑은 기사로 가져왔습니다.  
+
+결론적으로 제주 오피스에 한정하여 RE100을 달성했다는 소식입니다.
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://image.zdnet.co.kr/2022/04/04/1fbd416fc062aef61ad2812cf91a72ca.jpg')
+
+```
+
+<br>  
+
+*사업 운영 과정에서 이용하는 전체 전력 사용량을 2030년까지 60%, 2040년까지 100% 친환경 에너지로 전환할 계획이다.*   
+
+아직 갈 길이 멀지만, 이렇게 하나씩 나아가는 모습은 응원하고 싶습니다.  
+
+<br>
+
+
+### Germany launches tender for 1,950 MW of large-scale solar
+  
+<br>
+
+[링크](https://www.pv-magazine.com/2023/01/27/germany-launches-tender-for-1950-mw-of-large-scale-solar/?fbclid=IwAR09XJmH84bkJecRr46Uxbsa4X_xOctOVAjaIZG2rm61KC2IJu0lQnQb97w)  
+
+<br>
+
+기사의 헤드메시지가 놀랍습니다!  
+
+*Germany’s Federal Network Agency (Bundesnetzagentur) has opened the first round of a 5,850 MW tender for ground-mounted solar. The ceiling price has been raised to €0.0737 ($0.080)/kWh.*  
+
+입찰 최고가가 8센트입니다. 0.08달러...   
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.pv-magazine.com/wp-content/uploads/2022/04/9655865997_b142ba57f0_o-2048x1365.jpg')
+
+```
+
+우리돈으로 환산하면 kWh당 100원 정도 되는군요.  
+
+이 수준이면 독일 소매 전기값의 30% 수준이고, [한국의 가정용 전기값](https://cyber.kepco.co.kr/ckepco/front/jsp/CY/E/E/CYEEHP00101.jsp)과 동일합니다.  
+
+참고로 한국의 태양광 입찰가는 SMP + 1REC 기준으로 155.2원 (2022년, 육지기준) 수준입니다.  
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 2월 1일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 수원열병합 설비용량 변경(43.2MW → 38.9MW)[-4.3MW] 
+- 비중앙급전발전기 : 주식회사 보원케미칼1태양광 발전소 신설 등[+8.216MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
