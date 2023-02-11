@@ -1,0 +1,355 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 101"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Microsoft’s new Bing chatbot is fun but sometimes more cautious than ChatGPT   
+
+<br>
+
+[기사링크](https://www.cnbc.com/2023/02/08/microsoft-bing-vs-openai-chatgpt.html)  
+
+<br>  
+
+Chat GPT가 탑재된 Bing이 서비스를 시작했습니다.  
+
+이에 발맞춰 저는 어제 iOS safari 검색엔진을 bing으로 바꾸는 것을 마지막으로 모든 검색엔진을 bing으로 넘어왔습니다.  
+
+구글의 시대가 이렇게 빠르게 저물어갈 줄은 생각도 못했습니다.  
+
+막상 bing을 사용해보니 chat GPT가 아니더라도 생각보다 괜찮은 검색 성능에 만족스럽습니다.  
+
+아직 국내 앱스토어에는 bing app을 설치할 수 없다고 나오지만, 구글의 점유율에 균열이 가고 있다는 것은 틀림없는 사실인듯 합니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://image.cnbcfm.com/api/v1/image/107190673-1675820042535-gettyimages-1246873542-MICROSOFT_EVENT.jpeg')
+
+```
+
+<br>
+
+
+
+### Alphabet shares dive after Google AI chatbot Bard flubs answer in ad   
+
+<br>
+
+[기사링크](https://www.reuters.com/technology/google-ai-chatbot-bard-offers-inaccurate-information-company-ad-2023-02-08/)  
+
+<br>  
+
+구글이 빙에 대항하기 위해 하루 뒤 곧바로 발표했던 bard가 차라리 공개하지 않은 것만 못한 결과를 가져왔습니다.  
+
+구글의 역량을 우습게 보지 말라고 호언장담했던 전문가들의 응원이 무색하게 되어버렸고,  
+
+주가는 9%가 떨어지는 등 곤혹스러운 상황을 맞이하고 있습니다.  
+
+이번 실수로 구글이 무너지지는 않겠지만, 기존 프로그램에 자연스럽게 붙이는 마소의 능력은 다시 한 번 대단하다는 생각이 듭니다.  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://metro.co.uk/wp-content/uploads/2023/02/67496449-0-image-a-177_1675929999375.jpg')
+
+```
+
+<br>
+
+구글은 공개 showcase 영상을 삭제해버렸네요.  
+
+[관련기사](https://www.dexerto.com/tech/google-bard-ai-showcase-deleted-2055588/)  
+
+매우 부끄럽긴 하겠지만... 삭제할 필요까지야 있나 싶은데, 이 영상이 여기저기 돌아다니는 것이 싫었나 봅니다.  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.dexerto.com/_next/image/?url=https%3A%2F%2Feditors.dexerto.com%2Fwp-content%2Fuploads%2F2023%2F02%2F08%2FGoogle-Bard-AI-1024x668.jpg&w=2048&q=75')
+
+```
+
+<br>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### [안병억의 유러피언 드림] 29. 미국과 ‘유럽’의 친환경산업 보조금 전쟁
+
+<br>  
+
+[링크](https://www.etoday.co.kr/news/view/2220132)      
+
+<br>
+
+- 미국 / IRA : 친환경산업에 500조 지원  
+
+- EU / 주권펀드 : 1100조 경제회생기금 중 37%인 407조를 전환, 유럽주권펀드 신설로 신재생 기술 주도  
+
+- 한국 ???
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://img.etoday.co.kr/pto_db/2023/02/600/20230208180106_1850199_701_528.jpg')
+
+```
+
+<br>
+
+
+
+### Michael Liebreich wants existing low-carbon technologies to be scaled up much faster  
+  
+<br>
+
+[링크](https://www.economist.com/by-invitation/2023/02/07/michael-liebreich-wants-existing-low-carbon-technologies-to-be-scaled-up-much-faster?fbclid=IwAR1pMv7rU0DRFr6BJNJBOWmvssp5Dd2-qtbMUa9ixfswl4PXDxM0-K6LkwA&mibextid=Zxz2cZ)  
+
+<br>
+
+이코노미스트에 Micheal Kiebreich가 기고한 글입니다.  
+
+Micheal Kiebreich가 누구지? 하고 찾아보니 놀랍게도 BloombergNEF 창간 멤버입니다! `r emo::ji("open_mouth")`  
+
+전체 내용은 핵융합 발전은 아직 시간이 더 필요하니, 우선 사용가능한 신재생(풍력, 태양광)을 더 빠르게 보급해야 한다가 주요 골자입니다.  
+
+세계적인 트렌드와 한국의 상황이 달라서 그런지, 보는 시각이 상당히 다릅니다.  
+
+이 분의 주장을 보면...
+
+"기저부하는 죽었다" (기저부하 개념을 잊어라) `r emo::ji("right_arrow")` 한국은??? 도리어 기저부하를 늘리는데??? `r emo::ji("scream")` 
+
+"풍력과 태양광은 전세계 대부분 지역에서 가장 싼 발전원이다." `r emo::ji("right_arrow")` 한국은??? 연료비가 공짜인데 비싸다는데??? `r emo::ji("scream")`  
+
+"피크부하를 담당하는 가스발전을 배터리가 대신 할 것이다." `r emo::ji("right_arrow")` 한국은??? ESS를 스스로 포기했는데??? `r emo::ji("scream")`
+
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.economist.com/cdn-cgi/image/width=1424,quality=90,format=auto/media-assets/image/20230114_BID002.jpg')
+
+```
+
+<br>  
+
+
+### 지난해 태양광 수출 전년대비 38% ↑
+  
+<br>
+
+[링크](http://www.todayenergy.kr/news/articleView.html?idxno=257444&fbclid=IwAR3rfM1cHj0dJAKBNw5cY0FUo_6InLASfWEvfaySqNmEQ3pCbaWLRju4Drw&mibextid=Zxz2cZ)  
+
+<br>
+
+참 아이러니한 기사입니다.  
+
+신재생 에너지 기업들의 어려움은 한 번도 관심을 가지지 않더니, 수출액이 증가했다는 소식은 이렇게 다뤄줍니다.  
+
+어려운 국내 상황에서도 좋은 기술력을 갖춘 기업들이 많이 나왔으면 좋겠습니다.  
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 2월 8일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 팔봉흑석 태양광발전소1호 신설 등[+169.656MW]
+
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
