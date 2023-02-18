@@ -1,0 +1,349 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 102"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Artificial Intelligence Successfully Piloted The X-62 VISTA  
+
+<br>
+
+[기사링크](https://theaviationist.com/2023/02/14/artificial-intelligence-successfully-piloted-the-x-62-vista/)  
+
+<br>  
+
+디스토피아를 보여주는 영화에서나 등장했던 인공지능이 움직이는 군사용 무기들이 속속 등장하고 있습니다.  
+
+이번엔 전투기 입니다.  `r emo::ji("small_airplane")` 
+
+이번에 사용한 전투기는 미 공군 주력 기종인 F-16을 기반으로 한 모델로, 최신 시뮬레이션 프로그램과 모델 추적 알고리즘, 시뮬레이션 자율 제어 시스템 등 록히드 마틴 등의 AI 시스템이 탑재된 것으로 알려졌습니다.   
+
+17시간 정도 비행을 했다고 알려졌는데 사람이 탑승하지 않으면 더이 상 인간을 고려한 제한사항이 사라지기 때문에 말도 못하는 성능을 보여줄 듯 합니다.  
+
+대단하다는 생각보다 뭔가 섬찟한 느낌이 먼저 듭니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://theaviationist.com/wp-content/uploads/2023/02/X-62_VISTA_AI_testing_1-678x381.jpg')
+
+```
+
+<br>
+
+
+
+### R vs Python   
+
+<br>
+
+{{< video https://youtu.be/4lcwTGA7MZw >}}
+
+<br>
+
+데이터 사이언스의 오래된 떡밥을 IBM이 던졌습니다.  
+
+역시나 댓글이 장난 아닙니다.  
+
+프로그래밍 안 해봤으면 R, 다양하게 쓰려면 Python, 시각화가 필요하면 R 쓰라는군요.  
+
+이것 말고도 줄리아와 비교한 것도 있으니 한 번 보시면 좋습니다.  
+
+<br>
+
+{{< video https://youtu.be/NF5InxVP3ZQ >}}
+
+<br>
+
+R과 Julia에 애정을 가지고 있지만 과연 Python의 아성을 무너뜨리는게 가능할까 싶습니다.  
+
+차라리 Julia라면 어쩌면 먼 훗날 가능할지도 모르겠지만요...  
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Corporate Climate Responsibility Monitor 2023  
+
+<br>  
+
+[링크](https://carbonmarketwatch.org/publications/corporate-climate-responsibility-monitor-2023/)      
+
+<br>
+
+관련 기사들이 참 재미있습니다. 국내에서는 '기업 기후 책임 모니터 2023'으로 검색하시면 관련 기사를 보실 수 있습니다.   
+
+일단 크게 다뤄지지도 않지만, 애써 무게감을 축소시키려는 논조가 읽혀집니다.  
+
+협력사 RE100까지 강제하는 애플조차 최고점을 받지 못했고, 신재생 에너지 직접 구매 계약을 어마어마하게 하고 있는 구글과 마이크로소프트도 비슷한 평가를 받았습니다.  
+
+국내기업 중 유일하게 이름을 올린 삼성전자의 평가가 '최하위권'입니다.  
+
+삼성전자는 가장 낮은 평가를 받은 4개 기업 중 하나였습니다.   
+
+우리나라에서 가장 잘 나가는 삼성전자가 이 정도라면 나머지는 암담한 수준일 것입니다. 
+
+앞으로 갈 길이 멀어보입니다.  
+
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://image.fnnews.com/resource/media/image/2023/02/13/202302131608472704_l.jpg')
+
+```
+
+---
+
+<br>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How pessimism about renewables was proved wrong.<br><br>Incumbent German electricity suppliers said in 1993 that renewables could never provide more than 4% of electricity.<br><br>In 2022 50% of German electricity was from renewables, mainly wind and solar. <a href="https://t.co/xs3Lwenb7u">pic.twitter.com/xs3Lwenb7u</a></p>&mdash; Jan Rosenow (@janrosenow) <a href="https://twitter.com/janrosenow/status/1625113031616200708?ref_src=twsrc%5Etfw">February 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br>
+
+1993년 독일은 신재생에너지가 4%이상 공급할 수 없다고 생각했었습니다. 2022년 독일은 이미 50%가 넘는 전력을 신재생으로 공급하고 있습니다.  
+
+<br>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Solar is on a tear! <a href="https://t.co/xz7Krq1BGQ">pic.twitter.com/xz7Krq1BGQ</a></p>&mdash; Laurent Segalen (@MegaWattXinfo) <a href="https://twitter.com/MegaWattXinfo/status/1625526884208414724?ref_src=twsrc%5Etfw">February 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br>
+
+IEA는 불과 2006년 이후 줄기차게 신재생 에너지 공급량 예상치를 높여가고 있지만 현실은 그들이 상상한 그 이상이 되어 버렸습니다.  
+
+<br>
+
+---
+
+
+### China’s Wind and Solar Are Now Almost Enough to Power Every Home   
+  
+<br>
+
+[링크](https://www.bloomberg.com/news/articles/2023-02-14/china-s-wind-and-solar-are-now-almost-enough-to-power-every-home)  
+
+<br>
+
+지난 주 가장 충격적인 기사 중 하나였습니다.  
+
+중국이 빠르게 신재생에너지를 공급하고 있다는 것은 알고 있었지만 이 정도일 줄은 몰랐습니다.  
+
+항상 이야기 하지만 세계의 패권을 가진 미국과 중국이 에너지 전환이 완료되는 그 시검, 우리는 원하던 원치않던 에너지 전환을 해야 할 것입니다.  
+
+뒤늦게 끌려간다면 고통의 길이 될 것이고, 빠르게 앞장서서 나간다면 기회의 길이 될 것입니다.  
+
+*Wind and solar output jumped 21% last year to 1,190 terawatt-hours of electricity, the National Energy Administration said at a briefing on Monday.*  
+
+*That’s not far off total residential power consumption of 1,340 terawatt-hours, the NEA said, which was a 14% increase on the prior year as more people spent time at home because of the government’s stringent virus restrictions.*
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://assets.theedgemarkets.com/solar%20panel%20%20%20_20230125125606_bloomberg_0.jpg?MTLbj6p.GetNR_eezD1UTOj7GNN9yh33')
+
+```
+
+<br>  
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 2월 15일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 남부 태양광 발전소 신설 등[+23.567MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
