@@ -1,0 +1,357 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 104"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Carboncounter.com  
+
+<br>
+
+[기사링크](https://www.carboncounter.com/)  
+
+<br>  
+
+MIT의 Trancik Lab에서 차량의 생애 전주기(생산과 유지를 모두 포함)을 고려한 라이프사이클 마일당 CO2 배출과 유지비용을 비교해서 계산할 수 있게 해준 온라인 사이트입니다.    
+
+<div id="ytplayer"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '315',
+      width: '560',
+      videoId: 'Dh0FzB6Jvo8'
+    });
+  }
+</script>
+
+어쩌면 쉽게 와 닿지 않는 탄소배출량을 누구나 쉽게 볼 수 있도록 만든 탁월한 데이터 시각화 방법으로 보입니다.
+
+뭔가 거창한 것보다 이렇게 어려울 수 있는 내용을 쉽고 직관적으로 전달하는 것이 더 중요하고 대단한 것 같습니다.
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://d3jn14jkdoqvmm.cloudfront.net/wp/wp-content/uploads/2021/01/25195837/차량의생애주기이산화탄소배출과비용을비교해보자-evpost-00.jpg')
+
+```
+
+<br>
+
+
+
+### Happy 23rd Birthday R!  
+
+<br>
+
+**R이 23살이 되었습니다.**
+
+2000년 2월 29일이 생일이니 딱 23살이 되었습니다.
+
+최근 몇 년 사이에 python에 밀려나고 있는 모습이 아쉽지만, 끊임없이 개선되고 있습니다.
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://www.r-consortium.org/wp-content/uploads/sites/13/2023/02/R-Version-1.0.0.png')
+
+```
+
+<br>
+
+[“Top 40” New CRAN Packages](https://www.r-bloggers.com/2023/02/january-2023-top-40-new-cran-packages/) 를 보시면 여전히 새롭고 유용한 패키지가 쏟아지고 있습니다. 
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Corporate Climate Responsibility Monitor 2023  
+
+<br>  
+
+[링크](https://electrek.co/2023/03/01/tesla-unlimited-overnight-charging-30-month/)      
+
+<br>
+
+진짜 미국은 일론 머스크 없었으면 어떻게 되었을까 싶은 생각이 듭니다.  
+
+에너지 전환을 하나씩 실제로 보여주는 머스크는 개인적인 호불호를 떠나 정말 대단한 사람입니다.  
+
+텍사스 주의 잉여 풍력발전으로 밤에 무제한 충전이 가능하게 만든 요금제입니다.  
+
+우리나라에선 불가능하죠. (앗! 제주도는 가능할 수도 있겠네요. 이거 현대차에서 한 번 시도해 주었으면 좋겠네요.)   
+
+머스크라는 사람은 24시간 흘러다니는 공짜 에너지를 어떻게 균일하게 분배할지, 그것을 어떻게 사업화 시킬지 너무나도 잘 알고 있습니다.   
+
+미친듯이 부러운 상황입니다.  
+
+커테일이니 그리드 관성이니 이야기하며 안 된다는 논리를 펼칠 노력의 반이라도 이렇게 유용하게 쓸 방법을 고민해 주면 좋겠습니다.  
+
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2023/03/Tesla-Electric-Unlimited-Home-Charging.jpg?w=1500&quality=82&strip=all&ssl=1')
+
+```
+
+---
+
+<br><center>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tesla Electric will be introducing a new program offering customers in Texas this July unlimited overnight home charging for $30 per month <a href="https://t.co/tMVEEvsUtm">pic.twitter.com/tMVEEvsUtm</a></p>&mdash; Drive Tesla 🇨🇦 (@DriveTeslaca) <a href="https://twitter.com/DriveTeslaca/status/1631078820030840833?ref_src=twsrc%5Etfw">March 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br></center>
+
+---
+
+
+### Unique study: birds avoid wind turbine blades   
+  
+<br>
+
+[링크](https://group.vattenfall.com/press-and-media/newsroom/2023/unique-study-birds-avoid-wind-turbine-blades)  
+
+<br>
+
+풍력발전이 시작되면서 우리나라에 새의 생명을 소중하게 생각하는 사람들이 무척 많다는 것을 느꼈습니다.  
+
+(물론 어업종사자들을 걱정하시는 분들도 정말 많으시더군요.)  
+
+새의 생명을 소중히 여겨 해상풍력이 안된다고 하신 분들께서 반색하실 만한 소식입니다.  
+
+아래 한 문장으로 요약이 되겠네요.  
+
+*During the study, not a single collision between a bird and a rotor blade was recorded, even though birds are at risk of coming into contact with turbine blades.*
+
+연구동안 한 마리도 블레이드에 부딪치지 않았다고 합니다. 
+
+*The herring gulls and kittiwakes showed horizontal avoidance further away from rotor blades, 90–110 metres and 140–160 metres respectively, while the gannets and great black-backed gulls only exhibited avoidance behaviour at 40 and 50 metres from the tips of rotor blades.*
+
+심지어 종별로 피하는 패턴까지 기술해 두었습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://group.vattenfall.com/contentassets/ff5c85ed51fc4b868ef1971662022640/vattenfall_biodiversity_black_legged_kittiwake-hero.jpg')
+
+```
+
+<br>  
+
+이런 연구에 펀딩이 된다는 것도 놀랍고, 이런 연구에 레어더 데이터와 3차원 이미지를 결합하여 2년이 넘는 시간동안 매진하는 것도 놀랍습니다.  
+
+우리도 새의 생명을 걱정하는 많은 분들이 계시니 본격적으로 이런 연구가 진행되면 좋겠습니다.  
+
+한국 근해에 사는 바닷새들의 생명도 소중하니까요...  
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 3월 2일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : TSP 상개 태양광 발전소 신설 등[+13.5MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
