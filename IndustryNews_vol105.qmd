@@ -1,0 +1,336 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 105"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### A look at the budding market for the text that prompts AI systems   
+
+<br>
+
+[기사링크](https://techcrunch.com/2023/03/09/a-look-at-the-budding-market-for-the-text-that-prompts-ai-systems/)  
+
+<br>  
+
+생성 인공지능(AI)으로 좋은 글이나 그림을 얻을 수 있는 명령어를 사고파는 '프롬프트 마켓'이 증가 추세라고 합니다.
+
+지난해 7월 1개에 불과하던 온라인 프롬프트 마켓 플레이스가 최근 14개로 늘어났고, 매달 증가하는 추세입니다. 어찌보면 당연한 일인데...   
+
+대표적으로 [chatX](https://chatx.ai/blog/prompts/best-chatgpt-prompts-for-copywriting/)와 같은 웹사이트가 있는데 이곳에서는 [DALL-E 2](https://openai.com/product/dall-e-2), [Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F), [Stable Diffusion](https://stablediffusionweb.com), [NeutronField’s](https://neutronfield.com/infos/about) 등 이미지 생성에 필요한 프롬프트는 물론 [chatGPT](https://chat.openai.com)에서 좋은 글을 도출해낼 수 있는 프롬프트까지 거래되고 있습니다.   
+
+이제 조만간 생성형 AI관련 자격증이 대단히 유망하다는 찌라시 기사들이 쏟아질것이고, 생성형 AI로 떼돈을 벌었다는 유튜브 영상이 나돌아 다닐 듯 합니다.  
+
+기술의 본질을 이해하기 위한 노력보다는 어찌하든 낚아보려는 이들과 변화의 근원에는 관심없이 일단 돈을 번다니까 뛰어드는 이들의 콜라보가 이러한 기술진보의 성과를 퇴색시키지 않았으면 합니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://techcrunch.com/wp-content/uploads/2023/03/chatx.png')
+
+```
+
+<br>
+
+
+
+### ChatGPT is now available in Azure OpenAI Service   
+
+<br>
+
+[기사링크](https://azure.microsoft.com/en-us/blog/chatgpt-is-now-available-in-azure-openai-service/)  
+
+<br>  
+
+너무나도 뻔해서 놀랍지도 않은 뉴스입니다.   
+
+기업용 클라우드 서비스에 ChatGPT, DALL E-2, Codex를 모두 쓸어담아 기업특색에 맞게 커스터마이징하여 사용할 수 있게 했습니다.  
+
+글을 쓰다가 문득 Azure 점유율이 궁금해서 찾아봤는데.... 놀랍게도 2위네요.  
+
+더욱 무서운 것은 분기별 매출액이 50%씩 성장한다는 점입니다. 
+
+게다가 2021년까지만 하더라도 아마존 AWS의 점유율이 40%에 달했는데 그걸 뺏아오고 있습니다.  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.wpoven.com/blog/wp-content/uploads/2022/09/Cloud-IaaS-market-share-2022.png')
+
+```
+
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7aef177b-557f-4544-aa26-746ac23def5d.png')
+
+```
+
+<br>
+
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### EU, 탄소거래가 사상 첫 t당 100유로 돌파
+
+<br>  
+
+[기사링크](https://www.der-postillon.com/2023/02/windkraft-21.html?m=1)      
+
+<br>
+
+독일어 기사이인데 사진만 보셔도 아....! 하고 이해가 될 것입니다.  
+
+**"Windkraft 21" **라고 이름지어진 프로젝트인데 지하터널에 풍력발전기를 설치하는 프로젝트 입니다.  
+
+이 프로젝트는 뮌헨에서 진행되고 있으며, 도심에서 토지를 소비하지 않고 풍력발전을 하기 위한 방안으로 제시된 것입니다.  
+
+이로 인해 높은 토지 비용을 감소 시킬 수 있을 뿐만 아니라 지하에 설치함으로써 유지보수 비용도 줄일 수 있습니다.  
+
+도심 곳곳에 있는 지하철, 터널 등을 이용할 수도 있고, 소음에 대한 민원도 없습니다.  
+
+안된다는 말 대신 이러한 새로운 시도를 해 보는 모습이 참 부럽습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlc4VdMbd_ICu_sQTqRtIgciZCkggZ46vMl-V2KB5e41rtMstIfqgAB5GMISfZiYfw0TkmyCv5QioPEDS1vbltNXv4hXfqc16EEw0phqNa8d_6WNP4kBPAvneJxSSGuM1vku4kQV7MydZo2efd6BxkwCjBRxYG36eAochRvPCJBgmLCES8IAOFhS8l/s1500/Windraeder-unterirdisch.jpg')
+
+```
+
+<br>
+
+
+
+### Study shows symbiotic effect of heat pumps and residential solar.   
+  
+<br>
+
+[기사링크](https://www.pv-magazine.com/2023/03/09/study-shows-symbiotic-effect-of-heat-pumps-and-residential-solar/)  
+
+<br>
+
+Heat pump와 태양광을 결합하여 운영하면 가정의 전기요금을 62% ~ 84%까지 줄일 수 있다는 연구결과입니다.   
+
+우리는 아직 Heat pump와 태양광이 낯설기만 한데 해외는 발빠르게 움직이고 있습니다.  
+
+밀집주거형태인 아파트이기 때문에 어쩌면 더 빠르게 변환이 가능할 수도 있는데 아무런 움직임도 느껴지지 않아 아쉽습니다.  
+
+각 아파트마다 정부지원하에 Heat Pump와 태양광 발전을 연계하고, 주차장이나 건물 옥상에 태양광을 의무설치하고 간헐성을 극복하기 위한 ESS를 설치하는 정책을 논의조차 하지 않는 것일까요?  
+
+심지어 대형 발전소조차도 빠른 응답을 위한 발전단과 ESS연계를 고민하는데... 이미 상용화된 Heat pump와 태양광 발전 연계를 왜 아무도 해보려 하지 않을까요?  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.pv-magazine.com/wp-content/uploads/2023/03/FIGURE-10-SAVINGS-MADE-BY-HOUSEHOLDS-WITH-SOLAR-PV-AND-HEAT-PUMPS-IN-2022-2048x1548.png')
+
+```
+
+<br>  
+
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 3월 8일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 장선008 태양광 발전소 신설 등[+6.6MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
