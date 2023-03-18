@@ -1,0 +1,406 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 106"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Midjourney Version5 발표    
+
+<br>
+
+[MidJourney](https://www.midjourney.com/)  
+
+<br>  
+
+이미지 생성 인공지능 Midjourney가 최신 버전을 발표했습니다.     
+
+최신버전은 구글 클라우드의 AI 슈퍼 클러스터에서 구글 TPU v4를 기반으로 훈련되었으며, 신경망 구조를 수정하고 미적 기법을 변경한 것이 특징이라 합니다.  
+
+이전 대비 두 배 높은 해상도도 지원가능하며, 1024x1024를 기본해상도로 제공합니다.  
+
+아래 비교 영상을 보면 소름끼칠 정도인데... 놀라운 것은 이번 버전 개발에 5개월밖에 소요되지 않았다는 것입니다.  
+
+
+<div id="midjourney"></div>
+
+특히나 그리는데 어려움을 겪었던 사람 손을 잘 그릴 수 있도록 개선되었다고 합니다.   
+
+사용법은 어려워졌으나 세밀한 부분 (조명, 분위기 등)까지 조절이 가능해 졌습니다.  
+
+이런 놀라운 일이 더이상 놀랍게 느껴지지 않고 있습니다.   
+
+놀람이 일상이 되어 버린 느낌입니다.  
+
+<br>
+
+
+
+### Introducing Microsoft 365 Copilot — your copilot for work  
+
+<br>
+
+[MicroSoft Copilot](https://news.microsoft.com/reinventing-productivity/)  
+
+<br>  
+
+Coding을 하지 않으시는 분들은 낯설수 있지만 Copilot은 등장이후 개발자들에게 열렬한 환영을 받으며 등장한 자동으로 Coding을 해주는 서비스 입니다.  
+
+chatGPT의 Coding 전용버전이라 이해하시면 쉽습니다.  
+
+원하는 기능을 텍스트로 묘사하면 AI가 기능을 구현할 수 있는 Code를 짜줍니다.  
+
+개발자들 사이에서는 예전에는 구글없이 어떻게 코딩하지? 라고 생각했다면 이젠 [Copilot없이 어떻게 코딩하지?](https://github.blog/2023-02-14-github-copilot-for-business-is-now-available/)라고 할 정도입니다.  
+
+그걸 이제 Office 제품에도 적용하겠다는 것입니다!  
+
+<br>
+
+<div id="office"></div>
+
+<br>
+
+정말 놀라운 것 중 하나가 'Business Chat'이라는 새로운 기능인데, 예를 들어 '회사 제품 개발이 어떻게 되고 있지?'라고 Teams 채팅창에 넣으면 캘린더, 이메일, 문서, 모임, 약속, 연락처를 뒤져서 현재 상황을 보고해 줍니다! **WOW!!!**  
+
+
+별것아닌 서비스도 묶고 엮어 기업용 소프트웨어로 멋지게 만들어 내는 MS가 자체만으로도 멋진 서비스들을 독점에 가까운 Office와 엮는다고 생각하니, 앞으로 몇년사이 순식간에 세상이 변해버릴 것 같습니다.  
+
+예전에 엑셀을 사용하지 못한 이들을 늙은이라 불렀다면, 이젠 조만간 생성AI를 잘 사용하지 못하는 우리도 늙은이가 될 수 있습니다.  
+
+<br>
+
+<div id="copilot"></div>
+
+<br>
+
+<script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'midjourney', 'office', and 'copilot' elements with YouTube players after the API code downloads.
+    var player1, player2, player3;
+    function onYouTubePlayerAPIReady() {
+        player1 = new YT.Player('midjourney', {
+            height: '315',
+            width: '560',
+            videoId: 'i8BYiQsPLfY'
+        });
+
+        player2 = new YT.Player('office', {
+            height: '315',
+            width: '560',
+            videoId: 'S7xTBa93TX8'
+        });
+        
+        player3 = new YT.Player('copilot', {
+            height: '315',
+            width: '560',
+            videoId: 'TOsRhrSXohY'
+        });
+    }
+</script>
+
+
+<br>
+
+### China's answer to ChatGPT? Baidu shares tumble as Ernie Bot disappoints   
+
+<br>
+
+[기사링크](https://www.reuters.com/technology/chinese-search-giant-baidu-introduces-ernie-bot-2023-03-16/)  
+
+<br>  
+
+이 와중에 중국 기업들은 진퇴양난에 빠져 있습니다.  
+
+3월 16일 Baidu는 예정대로 중국의 ChatGPT라고 불리는 "Ernie Bot"를 공개했습니다만...  
+
+행사에서 시연 영상이 녹화된 영상인 것으로 알려지면서 행사 중에만 주가가 10% 폭락했습니다.  
+
+CEO이자 창업자인 Robin Li는 아직 준비가 된 상태가 아니며, 시장이 요구하기 때문에 공개를 서둘렀다고 설명했다고 합니다.  
+
+이럴거면 왜 했지?? 라는 의문이 생기네요. `r emo::ji("question")`   
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://www.reuters.com/resizer/05vBhSnRIs3_GlObCFNqv8moy8I=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/6MUILE4YRFICJEJYZD7NOOCOGM.jpg')
+
+```
+
+<br>
+
+일각에서는 중국은 Chat GPT와 같은 생성 AI 개발이 불가능할 수도 있다는 의견이 있습니다.  
+
+기술적인 어려움이 아닌 정치적인 상황인데, Baidu가 중국형 Chat GPT를 만든다고 했을 때 부터 chat CCP(Chinese Communist Party, 중국공산당)이 되는 것 아니냐는 비아냥이 있었습니다.  
+
+생성 AI의 결과물에 대해 정치적인 내용을 걸러내도록 규제하고 있다보니 상업화가 불가능할 수도 있다는 의견입니다.  
+
+어쩌면 중국이 여기서 끝일수도 있겠다는 생각이 들기도 합니다.  
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Economists’ Statement on Carbon Dividends  
+
+<br>  
+
+[링크](https://www.wsj.com/articles/economists-statement-on-carbon-dividends-11547682910)      
+
+<br>
+
+이런 기사를 읽을 때면 인류는 어떻게든 답을 찾는다는 믿음이 더욱 굳건해집니다.  
+
+정치적 견해에 관계없이 경제학자로서 전세계 3623명의 경제학자들이 서명에 참여한 전례없는 선언문입니다.  
+
+벤 버냉키, 앨러 그린스턴, 자넷 옐런 등... 우리가 아는 그 분들도 여기에 있습니다.  
+
+노벨사 수상자는 수두룩하고, 폴 볼커 연방준비은행 수장도 여기에 서명했습니다.  
+
+선엄문을 요약하면 아래와 같습니다.
+
+  1. 기후변화 문제를 해결하기 위한 **가장 효과적인 정책 방안은 탄소세**이다.  
+
+  2. 탄소세율은 탄소 감축 목표를 달성할 때까지 **지속적으로 인상**해야한다.  
+
+  3. 탄소세 도입과 함께 다른 세금을 낮춰줌으로써 세수 중립을 달성해야한다.  
+
+  4. 탄소세와 동시에 다른 비효율적인 탄소 관련 규제는 없앨 필요가 있다.(**재생에너지 인허가** 규제 등)  
+  
+  5. 자국의 국가 경쟁력을 확보하기 위해 **탄소국경조정세**를 마련할 필요가 있다.  
+
+  6. 탄소세로 거둔 세수는 모든 국민에게 동일하게 나눠야한다.  
+
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://images.wsj.net/im-47736/?width=860&size=1.5&pixel_ratio=1.5')
+
+```
+
+<br>
+
+최근 한국의 행보를 보면 구한말 세계정세를 모른채 우왕좌왕 하는 듯한 모습을 답습하는 듯 하여 가슴이 아픕니다.  
+
+<br>
+
+
+### Africa Grid Information
+  
+아프리카 그리드 망을 나타내는 좋은 자료가 있어 가져왔습니다.   
+
+어떤 시사점을 발굴하여 말씀드리기엔 내공이 부족합니다.  
+
+하지만 많은 기회가 있을 것이고, 앞으로 큰 관심을 가져야 할 곳이라 가져와봤습니다.  
+
+<br>  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('./vol106_africagrid.jpg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 3월 15일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 울주 햇빛상생 연료전지 신설 등[+144.3MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
