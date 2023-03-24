@@ -1,0 +1,329 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 107"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### GitHub Copilot X: The AI-powered developer experience   
+
+<br>
+
+[기사링크](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/)  
+
+<br>  
+
+영원히 무너지지 않을 것 같았던 구글이 Open AI + Microsoft에 의해서 급격하게 무너져 내리고 있습니다.  
+
+이번에 공개된 Copilot CLI는 이제 Command line조차 무의미하게 만들어 버렸습니다.  
+
+무슨 명령어를 쳐야 하는지 구글로 검색하는 것이 아니라 그냥 내가 원하는 것을 문장으로 쳐 넣으면 됩니다.  
+
+검색엔진인 빙으로 구글과 싸우는 것이 아니라, 아예 판을 뒤집어 버린 것입니다.
+
+구글보다 검색을 더 잘하는 방법을 찾는 대신, 검색이 필요없는 세상을 만들어 버린 것입니다.  
+
+**남이 잘 하는 것보다 잘하기 위해 노력하는 것보다 내가 잘하는 것으로 승부하도록 만들어버렸습니다.**  
+
+구글이 과연 버틸 수 있을지 궁금합니다.  
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://github.blog/wp-content/uploads/2023/03/Copilot-CLI-1.png')
+
+```
+
+<br>
+
+
+### Bing Chat for macOS   
+
+<br>
+
+[기사링크](https://github.com/nedpark/bing-chat-macos?fbclid=IwAR3_Pi2iFbStpYD47RVv_yLoLfuwJe4akNts-ANKhTRESaiPuhNH5lQoz6o)  
+
+<br>  
+
+박종욱이라는 분께서 만들어서 공개한 것인데... 설명이 매우 유쾌합니다.  
+
+Bing Chat에게 일을 시켜서 Edge가 아닌 곳에서 쓸 수 있게 하다니... `r emo::ji('thumb')`  
+
+페북에 올린 내용을 그대로 옮겨봅니다.  
+
+*Bing Chat을 쓰려면 Edge 브라우저를 써야만 하는데, 메모리도 많이 쓰이고, 한글 입력도 문제가 발생하고,..  *  
+
+*Safari를 주로 쓰는 상황에선 User-Agent 매번 바꿔서 접속하기도 귀찮고..*  
+
+*그래서 Safari의 웹킷 엔진을 사용해 빠르고 가볍게 Bing Chat만 띄우는 macOS용 앱 하나 만들었습니다.*  
+
+*오픈소스로 공개된 이 코드들은 100% chatGPT와 Bing Chat에게 시켜서 만들어낸 코드입니다.*  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://github.com/nedpark/bing-chat-macos/raw/main/screenshot.png')
+
+```
+
+
+<br>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### New global solar capacity additions hit 191 GW in 2022, says IRENA
+
+<br>  
+
+[기사링크](https://www.khan.co.kr/environment/environment-general/article/202303192001001?fbclid=IwAR06MlAiyqpHHgBH4Yc_RHJccQJvDeQa1UeKAehUeCPlNaTsaGQVQ8PsV9c)      
+
+<br>
+
+[IRENA](https://mc-cd8320d4-36a1-40ac-83cc-3389-cdn-endpoint.azureedge.net/-/media/Files/IRENA/Agency/Publication/2023/Mar/IRENA_RE_Capacity_Statistics_2023.pdf?rev=b357baf054584e589c8ab635140d0596)에서 발표한 보고서입니다.  
+
+이젠 놀랍지도 않은 재생에너지의 성장입니다.  
+
+2022년도 태양광만 무려 191GW가 설치되었습니다! 재생에너지는 295GW가 신규 설치되었고, 누적 발전용량은 3372GW를 넘겼습니다. 
+
+성장세가 꺾일줄 모르고 증가하고 있습니다.  
+
+IRENA 조사결과 한국이 10위의 태양광 발전(누적) 국가입니다. 
+
+중국, 일본등에 비해서 많이 부족하지만 그래도 잘 따라가고 있습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.pv-magazine.com/wp-content/uploads/2023/03/Irena_Wind_Photovoltaik_Monitoring-e1679406297551-1024x512-1.jpg')
+
+```
+
+<br>
+
+
+
+### It’s just a start. But the world is beginning to learn how to decouple economic growth from CO2 emissions.   
+  
+
+<br>
+
+상당히 흥미로운 트윗이 있어 가져왔습니다.  
+
+경제성장과 탄소배출량이 반비례(디커플링)하는 국가들을 보여주는 것입니다.  
+
+경제성장을 위해 탄소배출량을 줄일 수 없다는 기존의 상식이 깨어져가고 있습니다.  
+
+대부분의 유럽국가들은 이미 디커플링이 시작되었습니다.  
+
+체코가 정말 놀랍고, 독일은 성장한만큼 탄소배출량을 줄이는 신기에 가까운 모습을 보여주고 있습니다.
+
+<br><center>  
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s just a start. But the world is beginning to learn how to decouple economic growth from CO2 emissions. <a href="https://t.co/HSHo3aqYYF">pic.twitter.com/HSHo3aqYYF</a></p>&mdash; Science Is Strategic (@scienceisstrat1) <a href="https://twitter.com/scienceisstrat1/status/1637884614109716481?ref_src=twsrc%5Etfw">March 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br></center>  
+
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 3월 22일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 지구에너지7호 태양광 신설 등[+13.845MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
