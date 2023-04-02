@@ -1,0 +1,327 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 108"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### ChatDoctor: A Medical Chat Model Fine-tuned on LLaMA Model using Medical Domain Knowledge    
+
+<br>
+
+[GitHub](https://github.com/Kent0n-Li/ChatDoctor?fbclid=IwAR1b4kOJsbOfScxiw7ZDdV72rOGcLs403mboEuqCdfMJXhnN7pmNdnMhFYU)  
+
+<br>  
+
+올 것이 오고 있다는 느낌입니다. 
+
+Meta가 LLaMA 모델을 세상에 풀어놓으니 이런 서비스들이 쏟아져 나오고 있습니다.  
+
+오늘 소개해 드리는 ChatDoctor는 이름 그대로 의료분야에 특화된 ChatBot입니다.  
+
+공개된 [PDF](https://www.arxiv-vanity.com/papers/2303.14070/) 를 보시면 상세한 설명이 있고 그 퀄리티가 놀라운 수준입니다.  
+
+앞으로 인간을 대체하지 못한다던 예술분야가 무너졌으니, 이제 축적된 지식을 활용하는 의료, 법률쪽이 무너지는 것은 순식간일 것입니다.  
+
+현재 면허를 가진 이들이 법의 울타리 안에 있어서일 뿐... 어쩌면 이미 무너졌을 수도 있겠다는 생각이 듭니다.  
+
+조만간 카카오 병원, 네이버 로펌이 생길 듯 합니다.  
+
+
+```{r, out.width="75%"}
+knitr::include_graphics('./chatDoctor_kor.jpg')
+
+```
+
+<br>
+
+
+
+### Google - Pix2Struct  
+
+<br>
+
+[GitHub](https://github.com/google-research/pix2struct)  
+
+<br>  
+
+OCR 업체들 다 망하게 만들 구글의 작품입니다.  
+
+이미지를 보여주면 이미지를 분석해서 그 결과를 텍스트로 나타내주는 기능인데 문제는 OCR 모듈없이 OCR을 구현해 낸다는 것입니다.  
+
+여기까지는 뭐 그럴 수 있다고 해도, GitHub에 가서 코드를 보면 Python으로 135줄짜리 model.py 파일로 이걸 만든겁니다.  
+
+여기에 주석빼면 100줄도 안되는 코드로 모든 파일의 코드를 다 합쳐도 1000줄이 될까말까입니다.  
+
+인간의 머리로 생각하는 알고리즘을 아득히 넘어서는 일들이 이제 마구 생겨나고 있습니다.  
+
+게다가 이런것들이 공개되고 있습니다.  
+
+**ChatDoctor도 그렇고 누구나 볼 수 있고 쓸 수 있게 공개해주는데도 못 받아먹는 제 자신이 서글퍼지는 때입니다.** `r emo::ji("sob")`  
+
+<br>
+
+```{r, out.width="100%"}
+knitr::include_graphics('https://s3.amazonaws.com/moonup/production/uploads/1678713353867-62441d1d9fdefb55a0b7d12c.png')
+
+```
+
+<br>
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### 1H 2023 Energy Storage Market Outlook  
+
+<br>  
+
+[기사링크](https://about.bnef.com/blog/1h-2023-energy-storage-market-outlook/?fbclid=IwAR14uyuwJIdFlIoBXzvOpumwzVnb_bcaw5EP2232qAsUCbCuptkvZV74X0A)      
+
+<br>
+
+2022년 한 해동안 35GWh의 에너지 저장장치가 설치되었고, 이는 전년 대비 65%의 성장으로 역대 최고치라는 보고서 내용입니다.  
+
+결국 재생에너지의 성장이 에너지 저장장치의 수요를 가져오고 있습니다.  
+
+오래 전 인간 게놈프로젝트를 시작할 때 불가능하다고 이야기 했지만 기술의 발달에 힘입어 13년만에 완료했습니다.  
+
+어쩌면 지금은 불가능해보이는 탄소중립도 이런 속도의 수확가속의 법칙에 따라 증가한다면 우리가 예상하는 시점보다 훨씬 더 빠르게 달성할 수 있을 듯 합니다.  
+
+늘 이야기하지만 인류는 항상 답을 찾아냅니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://assets.bbhub.io/professional/sites/24/storage1.jpg')
+
+```
+
+<br>
+
+
+### [탄소중립 기본계획] 산업부문 낮추고 전환부문에 떠넘겨
+
+<br>
+  
+[기사링크](http://www.e2news.com/news/articleView.html?idxno=251947&fbclid=IwAR2qGpkjAc9LoFQnLPGOyVTdisDZ68j49H0hR25kvlJbffaq2jgKkbpo2qQ)  
+
+<br>
+
+탄소중립 녹색성장위원회에서 이번 정부의 기본계획을 발표했습니다.  
+
+2030년 NDC 40%는 그대로 유지한 상태에서 산업부문을 3.1%p 낮추고, 전환부문을 1.5%p 상향조정하였습니다.  
+
+기업들의 부담을 줄인다는 의미인데 당장의 어려움은 피할 수 있겠지만 결국 닥쳐올 RE100, 탄소조정국경세 등에 대응해야 하는 환경과는 동떨어진 듯 합니다.  
+
+전환부문을 1.5% 상향조정하는 방법도 구체적이지 않은데 RE100에 대응할 수 없는 원전 발전 비중은 '21년 대비 5%p 높인 32.4%로 제시한 반면 당장 절실하게 필요한 재생에너지 부문은 21.6% + $\alpha$로 제시하였습니다.  
+
+지금부터 걸어야 할 길은 끝이 보이지 않고 쉽지 않은 길이지만 돌아갈 수 없는 길이기에 현실을 직시하고 다 함께 방법을 찾는 것이 필요합니다.  
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('http://www.e2news.com/news/photo/202303/251947_105475_4434.jpg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 3월 29일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 구래주민 풍력발전기 신설 등[+24.235MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
