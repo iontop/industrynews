@@ -1,0 +1,349 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 110"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Release R ver.4.3.0 (Aleady Tomorrow)    
+
+<br>
+
+[Change in R 4.3.0](https://cran.r-project.org/bin/windows/base/NEWS.R-4.3.0rc.html)  
+
+<br>  
+
+[Download](https://cran.r-project.org/src/base/R-4/)
+
+<br>
+
+2023년 4월 21일자로 R 4.3.0 version이 release되었습니다.  
+
+예전같으면 벌써 설치해서 달라진 기능을 하나씩 테스트 해 보고 있었을테지만 이번에는 그렇게 하지는 못하고 소식만 전해드립니다.  
+
+생각보다 달라진 부분이 많습니다. 설치했다가 안되는게 있으면 어쩌나 싶어 일단은 하나씩 읽어보고 있는 중입니다.
+
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://d33wubrfki0l68.cloudfront.net/4c225a746adf370007cb34057d9ccfaf28bdf4ed/eb67d/blog/whats-new-r43/featured.jpg')
+
+```
+
+<br>
+
+
+
+### 1X Raises $23.5M in Series A2 Funding led by OpenAI  
+
+<br>
+
+[기사링크](https://1xtech.medium.com/1x-raises-23-5m-in-series-a2-funding-led-by-openai-6040af4f3f4f)  
+
+<br>  
+
+chatGPT를 개발한 OpenAI가 노르웨이 로봇기업인 1X Technology에 약 300억원을 투자했다는 소식입니다.  
+
+1X는 이번 투자금을 활용하여 노르웨이와 북미에 출시한 휴머노이드 EVE 생산을 확대하고 새로운 이족보행 휴머노이드 NEO를 개발할 예정입니다.  
+
+이번 투자는 OpenAI가 대규모 언어모델(LLM)을 물리적 세계와 연결하려는 시도로 보입니다.   
+
+이 투자를 시작으로 OpenaAI에서 개발한 AI를 탑재한 휴머노이드 로봇이 등장할 가능성이 높아지게 되었습니다.  
+
+
+<br>
+
+<br>
+
+<div id="1x_eve"></div>
+
+<br>
+
+<script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'midjourney', 'office', and 'copilot' elements with YouTube players after the API code downloads.
+    var player1; //, player2, player3;
+    function onYouTubePlayerAPIReady() {
+        player1 = new YT.Player('1x_eve', {
+            height: '315',
+            width: '560',
+            videoId: '20GHG-R9eFI'
+        });
+
+        //player2 = new YT.Player('office', {
+        //    height: '315',
+        //    width: '560',
+        //    videoId: 'S7xTBa93TX8'
+        //});
+        
+        //player3 = new YT.Player('copilot', {
+        //    height: '315',
+        //    width: '560',
+        //    videoId: 'TOsRhrSXohY'
+        //});
+    }
+</script>
+
+<br>
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### California senate transport committee passes solar parking canopy and highwayside law  
+
+<br>  
+
+[기사링크](https://pv-magazine-usa.com/2023/04/12/california-senate-transport-committee-passes-solar-parking-canopy-and-highwayside-law/?fbclid=IwAR1pVo-saSzbUFsv3tJdJo3SUbHs5ru03ndtnN0X8vsUDIZkCbaC4Ptwb6U)      
+
+<br>
+
+얼마전 EU에서 비슷한 법안이 통과된 것을 알려드렸는데 이번에는 미국 캘리포니아에서도 주차장이나 고속도로에 태양광 발전소를 설치하는 법안이 통과되었습니다.  
+
+놀랍게도 캘리포니아 상원 교통위원회에서 11:0의 표결 결과로 통과된 것입니다!  
+
+즉 정파에 관계없이 모두 찬성했다는 의미입니다. (이런 걸 보면 진짜 대단한 것 같습니다. `r emo::ji("+1")`  )  
+
+현재 캘리포니아는 2045년까지 100% 청정에너지를 목표로 하고 있으며, 이를 위해서는 110GW의 신규 태양광 발전이 필요할 것으로 예상하고 있습니다.  
+
+이번에 통과된 법안의 주요 내용으로 주차장 위에 태양광 캐노피를 설치하는데 필요한 자재에 대한 판매세를 면제하고, 주정부가 고속도로 통행권을 태양광, 에너지 저장 및 송전 인프라에 사용할 수 있도록 한 것입니다.   
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://pv-magazine-usa.com/wp-content/uploads/sites/2/2021/04/Walmart201.jpg')
+
+```
+
+<br>
+
+
+### EPA releases new emissions rules: 60% EV by 2030, saves US trillions
+
+<br>
+  
+[기사링크](https://electrek.co/2023/04/12/epa-releases-new-emissions-rule-60-ev-by-2030-saves-us-trillions/?fbclid=IwAR3rrib8SVMpf8Pf3lkthaTvVcd9Fvs8gzg4b1923xHKSu4yaPOZTD8jMBg)  
+
+<br>
+
+기사의 시작부터 묵직하게 시작합니다.  
+
+EPA에서 2030년까지 자동차의 60%를 전기차로 바꾸겠다는 계획을 발표했습니다.  
+
+이번 시행규칙을 통해서 CO2뿐만 아니라 NOx, PM2.5, VOC, SOx를 포함한 다른 여러 오염물질에 대한 배출도 규제에 들어가게 됩니다.  
+
+기사 내용 중에는 오염물질 배출에 대한 규제 외에도 최소 8년 8만 마일을 보증하는 배터리를 공급하고 상태를 확인할 수 있는 온보드 배터리 상태 모니터를 설치할 것을 규정하고 있습니다.  
+
+처음 넷제로가 나왔을 때 2050년 탄소중립이 불가능할 것처럼 느껴졌는데, 최근 각 국의 행보를 본다면 넷제로가 아니라 카본 네거티브도 2050년 전에 가능하지 않을까 하는 희망을 가지게 합니다.  
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2023/04/Closeup_of_EPA_Bldg._Washington_D.C._IMG_4757-e1681285512781.jpg?w=1500&quality=82&strip=all&ssl=1')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 4월 19일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 고덕청정에너지 연료전지 신설 등[+52.9MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
