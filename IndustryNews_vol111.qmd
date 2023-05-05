@@ -1,0 +1,404 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 111"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### We integrated ChatGPT with our robots   
+
+<br>
+
+<div id="gpt_robot"></div>
+
+<br>
+
+곧 다가올거라 생각했지만 생각보다 일찍, 그것도 보스턴 다이나믹과의 결합으로 나타났습니다.  
+
+보스턴 다이나믹의 Spot에 ChatGPT를 결합한 영상이 올라왔습니다.  
+
+2분도 채 안되는 동영상이지만 향후 우리의 200년을 바꿀지도 모르겠다는 생각이 문득 들었습니다.  
+
+로봇들이 앞으로 어떤 방식으로 개발될지가 예상됩니다.  
+
+<br>
+
+
+### explor     
+
+<br>
+
+[GitHub](https://juba.github.io/explor/?fbclid=IwAR06mC6zaN0FxY3so8ZoMCkVrIvU1p3Z7Pg-txVqskxCNWFrRAoF0tcY8Q0)  
+
+<br>  
+
+Python이 아닌 R에서 이 정도의 Package를 볼 수 있다니.... 놀라울 따름입니다.  
+
+PCA를 비롯한 다변수 분석(Multivariate anlysis, 다변량 분석)에 특화된 패키지 인데 Interactive한 구성으로 멋지게 만들어 두었습니다.  
+
+R 사용자 입장에서 반갑고 기분이 좋아 소개 드립니다.  
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://raw.github.com/juba/explor/master/resources/screencast_0.3.gif')
+
+```
+
+
+<br>
+
+### Amazon Bedrock  
+
+<br>
+
+[Amazon Bedrock](https://aws.amazon.com/ko/bedrock/)  
+
+<br>  
+
+조금 된 뉴스인데 이제 생각이 나서 공유드립니다.  
+
+OpenAI를 앞세워 Azure로 Cloud시장을 공략하려는 Microsoft에게 일격을 가한 뉴스입니다.  
+
+지금까지 Cloud시장은 AWS로 천하통일이 된 것이나 다름없는 상태에서 ChatGPT, Copilot 등의 OpenAI 서비스를 탑재한 Azure가 무서운 속도로 시장을 빼았는 중이었습니다.  
+
+기업입장에서는 Azure를 쓰려니 그동안 투자한 AWS가 아깝고, AWS를 유지하려니 Azure의 서비스가 너무 막강했었죠.  
+
+그렇다고 둘 다 사용하기에는 운영비용이 너무 많이 들고....  
+
+이 와중에 AWS가 OpenAI를 상대하기 위해 각 분야의 Start-up으로 연합군을 구성했습니다.  
+
+- Open AI의 Image generator에 대항하기 위해서 Stability.ai의 Stable Diffusion  
+
+- Open AI의 Chat GPT에 대항하기 위해서 ANTHROPIC의 Claude  
+
+- 다중언어 LLM인 AI21labs의 Jurassic-2 + Amazon 자체 LLM인 Titan 
+
+이렇게 구성한 후 이 서비스를 Bedrock으로 발표했습니다.  
+
+(웃기는것이 이 서비스 이름을 뭘로 지을까 고민하다가 'foundation'의 동의어가 무엇인지 chatGPT에 물어서 받은 답이 'Bedrock'이라고 합니다.)  
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://images.idgesg.net/images/article/2021/02/aws-ai-and-ml-services-01-100877886-large.jpg')
+
+```
+
+<br>
+
+MS도 설마 아마존이 연합군을 구성해서 대항할 것이라고 생각하지 못한 모양입니다.  
+
+아마존이 그만큼 급박했다는 것으로 해석할 수도 있고, 반대로 굉장히 영민하게 대응한 것으로 해석할 수도 있습니다.  
+
+그나저나 이제 구글만 힘들어 졌습니다.  
+
+제대로 된 Cloud도 없고... Bard도 시원찮고... 손 놓고 당하고 있지는 않겠지만 구글이 이렇게 될 줄은 정말 아무도 몰랐을 것입니다.  
+
+<br>
+
+<script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'midjourney', 'office', and 'copilot' elements with YouTube players after the API code downloads.
+    var player1; //, player2, player3;
+    function onYouTubePlayerAPIReady() {
+        player1 = new YT.Player('gpt_robot', {
+            height: '315',
+            width: '560',
+            videoId: 'Y1-s37zrm1M'
+        });
+
+        //player2 = new YT.Player('office', {
+        //    height: '315',
+        //    width: '560',
+        //    videoId: 'S7xTBa93TX8'
+        //});
+        
+        //player3 = new YT.Player('copilot', {
+        //    height: '315',
+        //    width: '560',
+        //    videoId: 'TOsRhrSXohY'
+        //});
+    }
+</script>
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Tesla’s battery-storage sales are growing way faster than EV sales
+
+<br>  
+
+[기사링크](https://www.canarymedia.com/articles/energy-storage/teslas-battery-storage-sales-are-growing-way-faster-than-ev-sales?fbclid=IwAR0U_27Wv9WhvWapR-MJWgJEzmFnHYKt7o-QtHYhsY9g9gdsoWM8G8kgewg)      
+
+<br>
+
+'23년 1/4분기 테슬라의 ESS Battery 판매가 무려 3.9GWh !!! 더욱 놀라운 것은 '22년 대비 360% 성장 !!! 매출액은 $15.3B (거의 2조원)    
+
+미국 전체도 아닌 테슬라만의 실적입니다.  
+
+이 와중에 자동차 판매 성장은 34%, 매출액은 $23.3B (거의 30조원) !!!  
+
+년간 매출이 아닌 분기 매출입니다.  
+
+이렇게 무서운 실적 성장이 가능한 이유는 시장이 이것을 원하고 있기 때문입니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://img.canarymedia.com/content/uploads/tesla-storage-deployments.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&q=80&w=1168&s=8dc55ad76d0b1e2cf5c9ab0e5cf5be55')
+
+```
+
+<br>
+
+이야기가 좀 길어지지만 얼마 전에 열린 [에너지포럼](https://m.ekn.kr/view.php?key=20230428010007599&fbclid=IwAR0U_27Wv9WhvWapR-MJWgJEzmFnHYKt7o-QtHYhsY9g9gdsoWM8G8kgewg) 이야기를 하고 가야 할 것 같습니다.  
+
+소위 전문가들이라는 양반들이 에너지 전환과 주력 기술에 대한 인식이 없으니 죄다 중국에 빼앗겨 버리는 상황에 다다랐습니다.  
+
+에너지포럼에서 한 패널이 전기차에 필요한 리튬 등의 핵심광물의 수요가 휴대폰에 비해 수천~수만배에 달해서 이렇게 빨리 전기차가 보급될지 몰랐다고 했습니다.  
+
+미국도 별반 다르지 않고 전기차로의 전환이 늦을거라 IEA등에서 예상했으나 실제는 엄청나게 빠른 변화를 겪었습니다. 다행히 테슬라 덕분에 자국 시장은 지킬 수 있게 되었습니다.  
+
+미국에서 테슬라가 처음 등장했을 때, 미국의 레거시 자동차 제작사, 석유 메이저 업체, 디트로이트 자동차 노조, 자동차와 석유 광고 수입이 필요했던 언론, 그리고 거기에 동조한 정치권으로 부터 엄청난 공격을 받았습니다.  
+
+차이라면 우리나라 태양광 업체는 이러한 공격에 견디지 못했지만, 테슬라는 살아남았다는 것이죠.
+
+지금은 풍력이 어쩌면 이 상황인 것 같습니다. 내부에서 쏟아지는 자조적인 비판, 재생에너지에 대한 부정적 여론을 만들기에 급급한 언론과 정치권까지... 다시 한 번 선택의 기로에 선 느낌입니다.  
+
+<br>
+
+
+### The California Duck Curve   
+  
+
+[CASIO](https://www.caiso.com/TodaysOutlook/Pages/default.aspx#section-current) 
+
+<br>
+
+기저부하 없이도 전력망 운영이 가능하다는 것을 캘리포니아가 보여주고 있습니다.  
+
+Duck curve의 배부분은 점점 넓어져서 이제 Cannon curve라는 단어까지 등장했습니다.  
+
+이제는 기저부하용 발전소를 어떻게 지을 수 있는가가 아니라 ESS로 감당해야 할 단시간 출력 응동을 어떻게 할지를 고민할 시간이 되었습니다.  
+
+(아마 더 긴시간동안 출력 응동을 위한 ESS가 필요해 질 것 같습니다.)
+
+그리고 몰랐던 사실인데 지금은 밤 시간에 TR(Transformer)을 중지할 수가 있는데 전기차 충전 등 야간 전력 수요가 늘어나면서 쉬지 않고 운전해야 해서 문제가 생길 수도 있다고 합니다.  
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/343577501_583748620205142_2473186830664260993_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=ZwFt4ylrnzgAX_pNkN9&_nc_oc=AQnUFND8OJ2UXM2S2zHKWIq0CMLtmCPxzvPA0KOau5ZGMKZWuKBarQtHjCopnT5osjU&_nc_ht=scontent-gmp1-1.xx&oh=00_AfB7IwqU57J3grcpmQRLT6JZJIM7VVjSnN-ed427ZQ8hqA&oe=6451E874')
+
+```
+
+<br>
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 4월 26일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 청주열병합 폐지 등[-58.3MW]
+- 비중앙급전발전기 : 여수 수소연료전지 신설 등[+23.3MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>

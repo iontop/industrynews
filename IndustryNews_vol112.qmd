@@ -1,0 +1,393 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 112"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Quarto 1.3 is officially released   
+
+<br>
+
+[Quarto 1.3](https://quarto.org/docs/blog/posts/2023-04-26-1.3-release/)  
+
+<br>  
+
+2023년 4월 26일자로 Quarto 1.3 version이 release되었습니다.   
+
+Quarto는 설치할 때마다 애를 먹이는 관계로 업데이트하지 않고 기능만 죽 살펴봤습니다.  
+
+특별히 매력적인 기능이 없어 한동안 지금쓰는 버전(1.2.329)를 사용할 듯 합니다.  
+
+기능을 설명해둔 페이지를 보니 아래 기능들이 가능해 졌습니다.  
+
+1. 코드에 주석 달기  
+
+2. 다중 포맷 게시 ( @fig-001 참조)
+
+3. Jupyter shell을 가져오기 ( @fig-002 참조)
+
+4. Quarto를 Confluence에 게시  
+
+1번은 딱히 필요성을 느끼지 못하겠고, 2번은 상당히 반가운 소식입니다만 지금은 쓸 일이 없을 것 같습니다.  
+
+하지만 주피터 노트북이 광범위하게 많이 사용되고 있으니 아마 다른 사용자들은 반길듯 합니다.  
+
+3번은 앞으로 상당히 많이 쓰일 것 같습니다.  
+
+특히 다른 사람들의 노트북의 내용을 가져올 때 매우 유용할 듯 합니다.  
+
+아직 사용해보지 않아서 주피터와 어느정도 결과물을 주고 받을 수 있을지 모르겠지만 이번 버전의 주요 변화가 주피터와의 통합(?)을 해 보려는 시도인 것으로 느껴집니다.  
+
+4번은 Confluence를 아직 경험해보지 않아서 잘 모르겠습니다.  
+
+저도 한 번 써보고 이야기 해야 할 것 같습니다.  
+
+<br>
+
+```{r, out.width="75%"}
+#| fig-cap: multy-format
+#| label: fig-001
+knitr::include_graphics('https://quarto.org/docs/output-formats/images/other-format.png')
+
+```
+
+<br>
+
+```{r, out.width="75%"}
+#| fig-cap: jupyter-embed
+#| label: fig-002
+knitr::include_graphics('https://quarto.org/docs/blog/posts/2023-03-17-jupyter-cell-embedding/embed.png')
+
+```
+
+<br>
+
+
+
+### Chegg is a harbinger of AI’s disruptive force  
+
+<br>
+
+[기사링크](https://www.ft.com/content/b11a30be-0822-4dec-920a-f611a800830b?ftcamp=traffic/partner/feed_headline/us_yahoo/auddev)  
+
+<br>  
+
+[chegg 주가](https://finance.yahoo.com/quote/CHGG?p=CHGG&.tsrc=fin-srch)
+
+<br>  
+
+[chegg.com](https://www.chegg.com)
+
+<br>
+
+ChatGPT의 파괴적인 힘에 의한 선구적인(?) 희생자가 배출되었습니다.  
+
+대학교재의 연습문제 풀이를 제공하는 Chegg라는 서비스가 5월 1일 하루만에 50%가 하락했습니다.  
+
+올해들어 64%가 주저앉은 비운의 회사입니다.  
+
+알바생들이 문제를 풀어 올리면 보상을 하는 방식으로 서비스를 제공했는데 ChatGPT(GPT-4)에 비해 떨어지는 수준이라는 것이 알려지면서 회사가 사라질 판입니다.  
+
+chatGPT 같은 서비스가 어디부터 영향을 주는지 알 수 있는 대목입니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://investorplace.com/wp-content/uploads/2019/07/CHGG1600.jpg')
+
+```
+
+
+<br>
+
+
+
+### Microsoft could offer private ChatGPT to businesses for “10 times” the normal cost 
+
+<br>
+
+[기사링크](https://mybroadband.co.za/news/software/490265-microsoft-launches-chatgpt-powered-bing-chat-to-everyone.html)  
+
+
+<br>
+
+우리회사도 chatGPT 사용에 주의하라는 메일을 받으셨을 것입니다.  
+
+기업들이 너도나도 chatGPT를 통한 기밀 유출에 신경을 쓰면서 금지하는 방향으로 움직이자, MS가 재빠르게 기업용 프라이빗 chatGPT를 출시한다는 소식입니다.  
+
+요즘 MS를 보면 2.3조달러짜리 기업이 맞나 싶을 정도로 기민하게 움직입니다.  
+
+chatGPT로 승기를 잡은데 만족하거나 어기적 거리는 것이 아니라 이전보다 더욱 매섭게 몰아붙이고 있습니다.  
+
+기업용 chatGPT는 Azure나 Office와 같은 기업용 소프트웨어에 묶어서 나올테니 그 위력이 더욱 대단할 것 같습니다.  
+
+정말 무시무시한 속도로 바뀌고 있습니다.
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://cdn.arstechnica.net/wp-content/uploads/2021/02/microsoft-800x533.jpg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### “한국 배출권거래제 뼈대만 있어…유럽 규제 타깃될 가능성”. 
+
+<br>  
+
+[기사링크](https://www.hani.co.kr/arti/society/environment/1090458.html?fbclid=IwAR1IrPCKsiWAShN7OjPBIFPKbqGDZqEGVN4lF8P69sK7PHX6nLOCcdP-PUE)      
+
+<br>
+
+*“현재 한국의 배출권거래제도는 뼈대만 갖췄을 뿐, 실제로 기업들이 탄소감축 이행 방안을 도입·확대하는 방향으로 가도록 장려하거나 압박하지 못하고 있다. 유럽의 제도 시행에 긴밀하게 발맞추기 위해선 변화가 필요하다. (올해 4차 계획 수립을 앞두고 있는) 배출권거래제에서 당장 해야 할 개혁이 무엇인지 고민하는 것이 중요하다.”*  
+
+미국사람이 유럽의 탄소배출권에 대해 한국이 준비가 되지 않음을 알려주는 소식입니다.   
+
+안타깝게도 어느날 갑자기 한국은 에너지 전환, 넷제로 등이 정치적인 이슈가 되어버렸고, 진영논리에 빠져버렸습니다.  
+
+그나마 멈춰있는 것이라면 다행이겠지만 빠른 속도로 역주행 하고 있는 상황이 펼쳐지고 있어 안타깝습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://flexible.img.hani.co.kr/flexible/normal/640/480/imgdb/original/2023/0503/20230503503439.jpg')
+
+```
+
+<br>
+
+
+### Why Does Nuclear Power Plant Construction Cost So Much?
+
+<br>
+  
+[기사링크](https://progress.institute/nuclear-power-plant-construction-costs/?fbclid=IwAR2EiJpEBRtsb6MSnn7Ak8Ro-0dFm2B_zYHVmo1LepFtj48cWYTPmrQuv5U)  
+
+<br>
+
+화려하진 않지만 직관적으로 메시지를 전달하는 기사입니다.  
+
+원자력 발전이 왜 비싸지는지에 대한 내용을 잘 담고 있습니다.  
+
+결국은 건설비가 비싸다는 것인데... 이 기사에 한국을 언급했는데 좋은 내용은 아닙니다.  
+
+*“South Korea’s outlier status has led some experts to speculate that the cost data (which the utility provides without an independent audit) may not be reliable.”*  
+
+한국에서 제시한 비용 보고서는 독립된 감사결과가 없어서 비용 계산이 제대로 되었는지 의문스럽다는 것입니다.  
+
+결국 기사에서 이야기 하는 것은 Proven된 모델을 사용하여 Duplicate로 여러 발전소를 짓는 것이 가장 저렴하다는 것입니다.  
+
+또한 규정을 명확하게 하고 예측 가능하게 변경함으로써 비용과 시간이 소요되는 현장 재작업과 관련된 비용 초과를 막을 수 있다고 덧붙였습니다.  
+
+참고로 미국의 Vogtle 3,4호기의 경우 수십억 달러를 추가 지출하고 수년간의 공기 지연 끝에 준공되었고, VC Summer 2,3호기의 경우 수십억 달러를 더 지출했는데도 결국 중간에 포기했습니다.  
+
+결론(Conclusion)이전에 나오는 기사를 발췌합니다.  
+
+지금의 기술과 안전규제로는 싸게 만들 수 없다는 것입니다... 물론 누군가는 안전규제를 없애서라도 더 싸게 만들고자 하겠지만...
+
+*We can build reactors for cheaper than we currently do. We can unlock the benefits of learning by doing, and complete nuclear plants on-time and on-budget. But a nuclear reactor is likely to remain an especially complex and expensive capital project, and at our current current technology and safety requirements is unlikely to result in significantly reduced electricity costs.*
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://progress.institute/wp-content/uploads/image-12.png')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
