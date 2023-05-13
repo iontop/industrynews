@@ -1,0 +1,335 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 113"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### 리걸테크 기업 인텔리콘, 법률추론 상담 AI '법률GPT' 출시   
+
+<br>
+
+[기사링크](https://www.hankyung.com/it/article/202305092939i)  
+
+<br>  
+
+[LawGPT](http://www.lawgpt.kr)
+
+<br>
+
+예상과 달리 카카오나 네이버 같은 거대 IT업체가 아닌 곳에서 LLM(Large Language Model)을 이용한 법률상담 서비스를 시작했습니다.  
+
+5월 말 서비스 예정으로 여러 매체에서 홍보 기사를 쏟아내 주고 있습니다. 
+
+(그런데 보내준 홍보자료를 그대로 기사화 한 것인지 토씨하나 틀리지 않습니다. 이걸 기사라 할 수 있는 것인지...)  
+
+어찌되었건 AI로 인하여 가장 큰 영향을 받게 된다던 법률과 의료 분야가 이제 서서히 열리고 있는 느낌입니다.  
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://img.hankyung.com/photo/202305/01.33393404.1.png')
+
+```
+
+
+<br>
+
+### ChatGPT - Web browsing and Plugins are now rolling out in beta (May 12) 
+
+<br>
+
+[openAI - Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes?fbclid=IwAR2_HIIhufZ6hv488SxL3mpLqNrltCTrXKUIZP2ExkDamXxqAbi7sOUi2eg)  
+
+<br>  
+
+여긴 정말 하루가 한달인 곳입니다.  
+
+며칠 전 [구글 I/O 2023](https://io.google/2023/intl/ko/)에서 수많은 이야기가 쏟아지자마자 곧바로 openAI에서는 5월 12일자로 ChatGPT Plus 유저는 플러그인과 웹 브라우징을 사용할 수 있는 베타를 쓸 수 있게 해 주었습니다.  
+
+이제 점점 흥미로운 싸움이 되어가고 있습니다.  
+
+<center> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re rolling out web browsing and Plugins to all ChatGPT Plus users over the next week! Moving from alpha to beta, they allow ChatGPT to access the internet and to use 70+ third-party plugins. <a href="https://t.co/t4syFUj0fL">https://t.co/t4syFUj0fL</a> <a href="https://t.co/Mw9FMpKq91">pic.twitter.com/Mw9FMpKq91</a></p>&mdash; OpenAI (@OpenAI) <a href="https://twitter.com/OpenAI/status/1657128759659745280?ref_src=twsrc%5Etfw">May 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</center>
+
+`r emo::ji("boom")` **워낙 방대한 내용이 다뤄졌고 유명하여 이미 대충 들으셨겠지만 올해** [구글 I/O 2023](https://io.google/2023/intl/ko/)  **는 정말 한 번 들어볼 가치가 있습니다.**  
+
+밀리고 있는 구글이 전력을 다하고 있구나 하는게 느껴지는 것이 많습니다.  
+
+혹시 영상이 길어 불편하시다면 chatGPT의 힘을 빌어 볼 수 있습니다. [YoutubeDigest](https://chrome.google.com/webstore/detail/youtubedigest-summarize-u/agjkjablkiapmpbeglmdcmhnihlofija?hl=ko)를 이용하면 ChatGPT AI를 사용하여 YouTube 동영상을 요약해줍니다.  
+
+OpenAI에게 쫓기는 구글의 계획을 듣기 위해 OpenAI를 사용하는겁니다!   
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Terabase Energy Launches Terafab Automated Field Factory to Accelerate the Deployment of Solar Power Plants
+
+<br>  
+
+[기사링크](https://www.terabase.energy/post/terabase-energy-launches-terafab-automated-field-factory-to-accelerate-the-deployment-of-solar-power-plants)      
+
+<br>
+
+이건 진짜 소름돋는 뉴스였습니다.  
+
+일반인들은 모르겠지만 발전소 짓는데 설치에 얼마나 많은 숙련된 인력과 설치 오류로 인한 손실이 발생하는지 알고 있는 발전업계 엔지니어들에게는 충격적인 소식입니다.  
+
+태양광 발전소 건설을 자동화하게 된다면 정말 사람이 필요없어지고, 공기는 더 단축될 것이고, 태양광 발전의 발전단가는 더욱 떨어지게 될 것입니다.  
+
+[Terabase Energy](https://www.terabase.energy)에서 태양광 설치 자동화 시스템(Terafab)을 출시했다는 소식입니다.   
+
+이미 텍사스에 400MW규모 태양광 발전소 중 10MW에 해당되는 구역에서 실증을 했다고 합니다.  
+
+Terafab은 올 3분기부터 상용화 될 예정이라 합니다.  
+
+그 동안 많은 뉴스를 접하면서도 태양광 패널은 규격화되어 있어 자동화가 가능할 것이라는 생각을 한 번도 못한 것이 부끄럽습니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://uploads-ssl.webflow.com/611c17d734cf778803d17013/645e61e8e16e865c70c73891_Terabase_Terafab_Teaser_Press_Shot-p-1600.jpg')
+
+```
+
+<br>
+
+
+
+
+### 원자력 강국 프랑스가 "풍력 공급망 시급" 외친 이유   
+  
+
+[기사링크](https://news.mt.co.kr/mtview.php?no=2023050801505171020&type=1) 
+
+<br>
+
+매번 기사의 논조가 바뀌어 정신이 없습니다.  
+
+이번 기사에서 눈에 띄는 부분이 있습니다. 
+
+**수입에 의존하지 않을 수 있는데다 연료 비용이 '제로'이며, 지난 20년간 기술발전으로 간헐성이 개선된 재생에너지가 막대한 양의 수입 가스를 단기간에 대체할 수 있는 대안**  
+
+**풍력과 같은 기저부하 재생에너지와 에너지 효율의 결합이 공급 안보를 위한 그린 에너지의 비결이 될 것**  
+
+어느덧 풍력이 기저부하를 담당하는 위치로 언급되고 있습니다.   
+
+2주전 캘리포니아주는 재생에너지만으로 100% 전력 수요를 담당했다는 소식을 전해 드렸습니다. 
+
+이제 서서히 기저부하라는 말이 사라지는 시대가 오고 있습니다.  
+
+<br>
+
+```{r ,out.width="100%"}
+knitr::include_graphics('https://thumb.mt.co.kr/06/2023/05/2023050801505171020_2.jpg/dims/optimize/')
+
+```
+
+<br>
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(shape = 'circle',
+                          minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 5월 10일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 동해금속 김천공장 태양광 신설 등[+81.8MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
