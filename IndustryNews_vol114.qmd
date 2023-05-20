@@ -1,0 +1,365 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 114"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Color coding your data in {gt} 0.9.0   
+
+<br>
+
+[gt 0.9.0](https://posit.co/blog/color-coding-your-data-in-gt-0-9-0/)  
+
+<br>  
+
+예전에 한번 소개해 드린 적이 있는 Table을 만드는 강력한 패키지인 gt가 업데이트 되었습니다. 
+
+이전에도 기능이 대단했는데 이젠 더 대단해졌습니다.  
+
+Version이 아직 1.0이 아닌데..... 패키지를 만든 [서주영 교수](https://jooyoungseo.github.io)의 덕력이 느껴집니다.  
+
+이러다가 1.0이 되면 도대체 뭘 넣으려고 하는지 궁금합니다.  
+
+이번에 업데이트 된 기능은 [블로그](https://posit.co/blog/new-formatting-functions-in-gt-0-9-0/)에 잘 정리되어 있습니다.  
+
+그래프는 [ggplot](https://ggplot2.tidyverse.org), 표는 gt로 귀결되는 느낌입니다.    
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://posit.co/wp-content/uploads/2023/05/GT-Templates-2.jpg')
+
+```
+
+<br>
+
+
+
+### 8 ChatGPT tools for R programming   
+
+<br>
+
+[기사링크](https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html)  
+
+
+간만에 R 소식이 많아서 User로서 뿌듯합니다. `r emo::ji("sob")`  
+
+R 프로그램밍을 위한 chatGPT Tool이 어떤 것이 있는지 소개해 주는 기사입니다.  
+
+8가지 Tool을 소개해 주는데 사용해 본 것이 하나도 없습니다.  
+
+입문하는 과정이라면 이런 툴이 정말 큰 도움이 될 것입니다.  
+
+<br>
+
+```{r, out.width="75%"}
+#|fig-cap: Results when asking RTutor to create a bar chart
+knitr::include_graphics('https://images.idgesg.net/images/article/2023/04/rtutor_03-100940260-large.jpg')
+
+```
+
+
+<br>
+
+
+
+### Datawrapper 
+
+<br>
+
+[Datawrapper](https://www.datawrapper.de)  
+
+
+<br>
+
+무려 뉴욕타임즈나 워싱턴 포스트가 쓴답니다.  
+
+게다가 노코드 툴입니다.  
+
+간단한 데이터 시각화를 빠른 시간내에 해주고 다양한 형태로 시각화를 제공하는 등 여러가지 장점이 많습니다.  
+
+웹사이트를 방문하여 둘러보니 꼭 이 툴을 사용하지 않더라도 데이터 시각화 레퍼런스로 활용하는 것만 해도 큰 도움이 될 것 같습니다.  
+
+엑셀로도 그리는 간단한 그래프조차 못 그리는 한국의 언론사들이 적극 도입하길 바랍니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('./no_japan.png')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Examining Supply-Side Options to Achieve 100% Clean Electricity by 2035 
+
+<br>  
+
+[Report](https://www.nrel.gov/docs/fy22osti/81644.pdf)      
+
+<br>
+
+NREL(National Renewable Energy Laboratory)이 내어 놓은 보고서입니다.  
+
+보고서 내용도 깔끔하고 상당히 흥미로운 내용이 많습니다.  
+
+가장 인상깊은 부분이 재생에너지 사용으로 인한 사회적 탄소비용이라는 것을 평가하여 나타냈습니다.  
+
+재생에너지를 사용함으로써 발생하는 신규 송전 및 기타 인프라 개발에 대한 제한으로 인한 비용이 결국 대기질 개선으로 인한 혜택으로 상쇄된다고 평가했다는 것입니다.  
+미국이 조만간 국가단위 RE100을 실행할 것 같은 예감이 듭니다.  
+
+<br>  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('./NREL_fig32.png')
+
+```
+
+<br>
+
+
+### What do we do when the wind does not blow, and the sun does not shine?
+
+<br>
+  
+[기사링크](https://www.telegraph.co.uk/business/2023/05/16/what-we-do-when-wind-does-not-blow-and-sun-does-not-shine/)  
+
+<br>
+
+영국 Telegraph의 기사하나를 가져왔습니다.  
+
+결론은 기술의 혁신과 정부의 적절한 정책으로 재생에너지 보급이 예상을 뛰어넘어 발전원이 주축이 되었고, 장주기 저장장치도 10년 이내에 해결될 것 같다는 내용입니다.  
+
+이런 차분한 해설과 납득할만한 기사가 우리나라도 많아졌으면 좋겠습니다.  
+
+어떤 발전원이 없어져야 한다가 아니라 이런 기술의 개발이 필요하다는 식으로 기사를 풀어갑니다.  
+
+가스는 점점 줄어들겠지만 탄소 포집 기술이 개발되고 그 비용도 줄일 것이니 재생에너지 발전이 어려울 때는 여전히 사용이 가능할 것이라 보고 있습니다.  
+
+수소는 지금은 전기분해 비용이 많이 들지만 지난 10년간 태양광, 풍력, 리튬 배터리와 같은 학습곡선과 규모의 경제를 따를 경우 극적으로 저렴해 질 것으로 예상하고 있습니다.  
+
+원자력은 80%는 핑크 수소를 만들기 위한 전원장치로 사용하고 20%는 필요할 때 그리드에 전원을 공급하는 목적으로 사용하는 것이 좋을 것이라 의견을 내었습니다. 
+
+기사를 읽으면서 알게 된 [하이뷰 파워](https://highviewpower.com)라는 업체는 철구조물(베셀형태)에 며칠동안 극저온 압축공기를 이용하여 에너지를 저장할 수 있는 기술을 이미 상용화 하였고, 맨체스터에 50MW/300MWh, 요크셔에 200MW/2.5GWh를 저장하는 시설을 건설하고 있다고 합니다.  
+
+
+<br>
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.telegraph.co.uk/content/dam/business/2023/05/16/TELEMMGLPICT000312349627_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+**강릉안인 2호기가 드디어 중앙급전발전기로 등록되었습니다. 그동안 고생 많으셨습니다!** `r emo::ji("tada")`
+
+*2023년 5월 20일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 강릉안인2호기 신설[+1,040.0MW]
+- 비중앙급전발전기 : 태화8호 태양광발전소 신설 등[+28.6MW]
+
+
+*2023년 5월 17일 적용 발전설비 용량변경*
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 디아이씨 태양광발전소 신설 등[+24.1MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
