@@ -1,0 +1,374 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 115"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Pi, your personal AI   
+
+<br>
+
+[hey pi](https://heypi.com/talk)  
+
+<br>
+
+HER이라는 영화를 볼 때 충격으로 다가왔는데... 놀랍게도 이 모든 것이 현실로 나타나고 있습니다.  
+
+대필 편지 작성은 이미 시작되었고, 음성으로 답해주는 것도 가능해졌습니다.  
+
+5월 초에 런칭된 **pi** 라는 서비스인데 약간 소름이 돋을 정도로 자연스럽습니다.  
+
+iOS앱으로는 더 자연스럽다는데 아직 국내에서는 다운받지 못하는 것 같습니다.  
+
+(제가 못찾은 것일수도 있으니 혹시 찾으시면 알려주세요!)  
+
+gpt 3.5나 gpt 4를 사용하는 것이 자체 엔진을 사용한다고 합니다. `r emo::ji("+1")`    
+
+하루하루가 무서울 정도로 빠르게 변하고 있습니다.  
+
+공상과학영화가 이젠 드라마가 되어버리는 세상입니다.  
+
+<br>
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.newdvdreleasedates.com/images/posters/her-2013.jpg')
+
+```
+
+
+<br>
+
+### Holograms that say hello. 
+
+<br>
+
+[LOOKING GLASS](https://lookingglassfactory.com/liteforms)  
+
+<br>  
+
+이번엔 홀로그램입니다.  
+
+홀로그램기술과 chatGPT가 결합된 반려(?)기계 겸 개인비서가 등장했습니다.  
+
+Looking Glass는 헤드셋없이 3D 디지털 콘텐츠를 재현할 수 있는 디스프레이의 대표업체라고 하는데 홀로그램과 커뮤니케이션 하는 방법을 몇 년간 연구했는데 chatGPT가 등장하면서 완성이 되었다고 합니다.  
+
+제품은 단순한 도형(큐브같은)부터 동물, 인간 형상까지 구현이 가능하고 홀로그램을 학습시켜 고유의 성격을 부여할 수 있는 기능이 포함되어 있다고 합니다.  
+
+개인용은 $399이며, 기업에서 리셉션이나 키오스크에 사용할 수 있는 32인치, 65인치 버전도 준비되어 있다고 합니다.  
+
+상세 내용은 6월에 열리는 [AWE2023](https://www.awexr.com/usa-2023)에서 공개할 것이라 하니 한 번 지켜보시죠.  
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://petapixel.com/assets/uploads/2023/05/looking-glass-liteforms.jpg')
+
+```
+
+<br>
+
+관련 홍보영상을 찾아보면 Looking glass CEO가 나와 큐브와 이야기 하면서 특이점(singularity)가 근처(near)까지 왔다는 이야기를 하는데 예전에 한 번 이야기 했듯 레이 커즈와일의 저서 "특이점이 온다"에서 이야기 했듯 정말 2042년에 특이점이 올 수도 있겠다는 생각이 듭니다.   
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### EU 전력시장 개혁안의 주요 내용과 기회 요인은?
+
+<br>  
+
+[기사링크](https://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=410&CONTENTS_NO=1&bbsGbn=242&bbsSn=242&pNttSn=202764)     
+
+<br>
+
+정말 대내외적으로 어려운 상황입니다.  
+
+VESTAS가 국내에 투자한다고 할 때는 너도나도 보도하더니 아래와 같이 LCR(Local Content Requirement)이 폐지될 수 있다는 소식과 투자가 취소될 수 있다는 내용은 너무나도 조용하게 지나가 버렸습니다.  
+
+링크 걸어드린 EU전력시장 개혁안을 보시면 어떤 방향으로 가는지 뚜렷하게 보입니다.  
+
+**1. 재생에너지 확대를 위해 PPA 도입을 장려하고,**  
+
+**2. PPA제도를 유럽시장 전반에 적용함과 동시에 리스크를 완화하기 위해 기업이 PPA로 전환할 때 발생할 경제적 불이익에 대하여 지원할 수단을 마련하자입니다.**  
+
+이와 동시에 잠재적 경쟁자가 될 수 있는 우리나라에는 아래 뉴스와 같이 목줄을 움켜잡고 있습니다.  
+
+잘 생각하여 과감하게 나가야 할 때인데, 너무 아쉽습니다.  
+
+<br><center>
+
+<div id="jtbcnews"></div> 
+
+</center><br>  
+
+아래 두 뉴스기사를 보면 더욱 더 가슴이 답답해져 옵니다.  
+
+EU까지 가세하여 압박하고 있는데 지금 우리가 당하고 있다는 것을 느끼지도 못하는 분위기입니다.  
+
+<br>
+
+[한-EU, 그린 파트너십 체결...포괄적 기후환경 협력강화](https://www.gukjenews.com/news/articleView.html?idxno=2725697)  
+
+<br>
+
+[녹색보호주의에 거세지는 무역장벽 ‘파고’…EU CBAM 2026년 본격 시행](https://news.g-enews.com/ko-kr/news/article/news_all/2023052311161160960e6e8fd97b_1/article.html?md=20230524081442_U)
+
+<br>
+
+
+
+
+### Solar power investment to exceed oil for first time, says IEA chief   
+  
+
+[기사링크](https://www.ft.com/content/990d3ce2-cdc1-4496-ac34-9ba20e0dcaa4) 
+
+<br>
+
+IEA에 자주 들락거리면서 그들의 논조를 자주 공유드리곤 했습니다.  
+
+그 이유가 그들의 논조가 전통적인 에너지원을 옹호하는 쪽이라 가급적 양쪽간 균형있는 의견을 전달드리고자 했던 목적이었는데 이제 IEA조차 논조가 바뀌고 있습니다.  
+
+<br><center>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;We can keep 1.5C alive”<a href="https://twitter.com/hashtag/SolarPower?src=hash&amp;ref_src=twsrc%5Etfw">#SolarPower</a> investment to exceed <a href="https://twitter.com/hashtag/Oil?src=hash&amp;ref_src=twsrc%5Etfw">#Oil</a> for first time, says <a href="https://twitter.com/hashtag/IEA?src=hash&amp;ref_src=twsrc%5Etfw">#IEA</a> chief<br><br>&quot;We will soon start to see a very different <a href="https://twitter.com/hashtag/Energy?src=hash&amp;ref_src=twsrc%5Etfw">#Energy</a> system emerging&quot;<a href="https://twitter.com/hashtag/EnergyTransition?src=hash&amp;ref_src=twsrc%5Etfw">#EnergyTransition</a> <a href="https://twitter.com/hashtag/RenewableEnergy?src=hash&amp;ref_src=twsrc%5Etfw">#RenewableEnergy</a> <a href="https://twitter.com/hashtag/WindWaterSolar?src=hash&amp;ref_src=twsrc%5Etfw">#WindWaterSolar</a> <a href="https://twitter.com/hashtag/WWS?src=hash&amp;ref_src=twsrc%5Etfw">#WWS</a><br> <a href="https://t.co/8qFZWNID9r">https://t.co/8qFZWNID9r</a></p>&mdash; Prof. Peter Strachan (@ProfStrachan) <a href="https://twitter.com/ProfStrachan/status/1661822762782957577?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</center><br>
+
+Financial Time에 실린 일러스트 중 하나입니다.  
+
+간단하게 내가 사업을 한다면 어떤 사업을 할 지, 어디에 돈을 투자해야 할지 명확하게 보일 것입니다.  
+
+```{r ,out.width="100%"}
+knitr::include_graphics('./ft_001.png')
+
+```
+
+<br>
+
+<script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'midjourney', 'office', and 'copilot' elements with YouTube players after the API code downloads.
+    var player1, player2, player3;
+    function onYouTubePlayerAPIReady() {
+        player1 = new YT.Player('jtbcnews', {
+            height: '315',
+            width: '560',
+            videoId: 'cLyTqIGM7S4'
+        });
+
+        player2 = new YT.Player('office', {
+            height: '315',
+            width: '560',
+            videoId: 'S7xTBa93TX8'
+        });
+        
+        player3 = new YT.Player('copilot', {
+            height: '315',
+            width: '560',
+            videoId: 'TOsRhrSXohY'
+        });
+    }
+</script>
+
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(shape = 'circle',
+                          minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
