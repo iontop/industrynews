@@ -1,0 +1,305 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 116"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Japan Goes All In: Copyright Doesn’t Apply To AI Training   
+
+<br>
+
+[기사링크](https://technomancers.ai/japan-goes-all-in-copyright-doesnt-apply-to-ai-training/?fbclid=IwAR3vqb2KtaSGSUQmjcfN8QERAt2cZiFK9OUaaCSA7BSWxFzQCC9jdoVpeME)  
+
+<br>  
+
+최근 방사능 오염수 `r emo::ji("skull")`방류문제로 더더욱 꼴보기 싫은 일본 소식입니다.      
+
+일본 정부 인공지능 학습에 사용되는 데이터에 대해서 저작권을 강제하지 않겠다고 합니다.  
+
+늙은 이미지의 일본에서 발표한 것치곤 상당히 놀라운`r emo::ji("open_mouth")` 소식인데...  
+
+비영리 목적이든 상업적 목적이든, 복제를 한 것이든 아니든, 불법사이트에서 얻은 것이든 아니든 AI가 모든 데이터를 사용할 수 있게 허용하겠다고 합니다.  
+
+일본 문부과학성 장관이 직접 이야기 한 것으로 AI 데이터 셋에 사용되는 자료에 대해서는 자유를 허용하겠다는 대담한 정책을 발표했습니다.  
+
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://technomancers.ai/wp-content/uploads/2023/05/Tokyo.jpg')
+
+```
+
+<br>
+
+
+
+### JPMorgan is developing a ChatGPT-like A.I. service that gives investment advice  
+
+<br>
+
+[기사링크](https://www.cnbc.com/2023/05/25/jpmorgan-develops-ai-investment-advisor.html)  
+
+
+결국 이런게 나올 줄 알았습니다.  
+
+미국 투자은행인 JPMorgan에서 chatGPT 기술을 기반으로 주식을 분석하고 골라주는 인공지능 서비스를 제공할 예정이라 합니다.  
+
+이제 애널리스트들은 뭘 해야 할까요?  
+
+JPMorgan은 이 서비스를 위해 1500여명의 Data scientist들과 Machine learning engineer들이 GPT 기술을 활용하여 테스트하고 있다고 밝힌 바가 있습니다.  
+
+이 서비스는 **IndexGPT**로 명명될 것이고 주식을 골라주는 AI프로그램이 되어 LLM(대규모 언어모델)에 기반한 금융자문 서비스를 내놓는 첫번째 금융회사가 될 것입니다.  
+
+금융부터 법률, 의료까지 기존 성공한 사람들의 직업이 AI에 의해 빠르게 무너져 내리고 있습니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://image.cnbcfm.com/api/v1/image/107236185-1683271118894-gettyimages-955794488-CHINA_JPMORGAN_SUMMIT.jpeg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Eye-popping new cost estimates released for NuScale small modular reactor 
+
+<br>  
+
+[기사링크](https://ieefa.org/resources/eye-popping-new-cost-estimates-released-nuscale-small-modular-reactor)      
+
+<br>
+
+SMR은 공장에서 찍어내듯 만들 수 있고 설치가 비교적 간단하기 때문에 발전단가가 낮아질 것으로 기대했는데 NuScale과 the Utah Associated Municipal Power Systems (UAMPS)가 발표한 내용에 따르면 가격이 거의 두배가 올랐습니다.  
+
+'21년까지만해도 \$58/MWh이었던 제작비용이 갑자기 \$89/MWh까지 치솟았습니다.  
+
+\$89도 IRA법안으로 인한 \$30지원을 받는 것임을 감안한다면 실제 가격은 \$119까지 거의 두배가 오른 것입니다.  
+
+일단 주요 원인으로 인플레이션으로 인한 공급망 차질과 원자재 가격으로 올랐다고 하는데 일시적인 상승요인일지, 대형 원전과 같이 계획과 달리 시간과 비용이 지속적으로 상승할지 눈여겨 봐야 할 것 같습니다.  
+
+<br><center>  
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Somehow I missed this. The cost of the first <a href="https://twitter.com/NuScale_Power?ref_src=twsrc%5Etfw">@NuScale_Power</a> <a href="https://twitter.com/hashtag/nuclear?src=hash&amp;ref_src=twsrc%5Etfw">#nuclear</a> <a href="https://twitter.com/hashtag/SMR?src=hash&amp;ref_src=twsrc%5Etfw">#SMR</a> has soared - instead of $55 or $58/MWh, suddenly it&#39;s $89/MWh - and that&#39;s AFTER the US taxpayer picks up $4bn of the $9.3bn construction cost (43%). Shocked I am! <br>HT <a href="https://twitter.com/bayart_pierre?ref_src=twsrc%5Etfw">@bayart_pierre</a><a href="https://t.co/GLBcKARCm1">https://t.co/GLBcKARCm1</a></p>&mdash; Michael Liebreich (@MLiebreich) <a href="https://twitter.com/MLiebreich/status/1663839600706564099?ref_src=twsrc%5Etfw">May 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</center><br>
+
+
+### It also includes an "accelerated case" where growth reaches 500GW this year
+
+<br>
+
+이쯤되니 이젠 IEA가 멍청한 것인지, 아니면 진짜 전문가들이 예상조차 할 수 없을 정도로 빠르게 성장하는 것인지 헷갈리고 있습니다.  
+
+지난 주에도 말씀드린 IEA가 또 다시 대차게 까이고 있습니다.  
+
+전통적인 발전원을 옹호하는 쪽에 있다가 재생에너지에 대한 전망을 긍정적으로 하면서 이제 달라졌나했는데, 불과 6개월 전 예측보다 무려 24%를 넘어서는 재생에너지가 공급되었습니다.  
+
+이제 년간 재생에너지 설치 용량이 0.5TW가 되었습니다.  
+
+탄소중립이 어려울 것 같았는데 요즘 움직임을 보면 예전 우리의 목표가 너무 느슨했던 것이 아닌가 하는 생각이 들 정도입니다.  
+
+
+<br><center>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow – the world will add a record 440GW of new renewable capacity this year, says <a href="https://twitter.com/IEA?ref_src=twsrc%5Etfw">@IEA</a> update<br><br>That&#39;s 24% more than it said just six months ago – and double what it expected in 2020<br><br>It also includes an &quot;accelerated case&quot; where growth reaches 500GW this year 🤯 <a href="https://t.co/0r9LaBFV9M">pic.twitter.com/0r9LaBFV9M</a></p>&mdash; Simon Evans (@DrSimEvans) <a href="https://twitter.com/DrSimEvans/status/1664148320380387329?ref_src=twsrc%5Etfw">June 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</center>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
