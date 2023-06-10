@@ -1,0 +1,378 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 117"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### AlphaDev discovers faster sorting algorithms   
+
+<br>
+
+[기사링크](https://www.deepmind.com/blog/alphadev-discovers-faster-sorting-algorithms)  
+
+<br>
+
+무서운 속도로 우리들의 예상이 현실이 되어가고 있습니다.  
+
+AI가 발전한다면 어쩌면 인간들이 생각치도 못한 알고리즘을 짤 수 있지 않을까? 라고 생각했는데... Google 산하 Deepmind가 실현해냈습니다.  
+
+Deepmind가 **AlphaDev**를 사용해 더 빠른 정렬 알고리즘(sorting algorithm)을 발견했다고 발표했습니다.
+
+이 사건은 AI가 전에 없던 새로운 알고리즘을 발견해 인간의 기술 수준을 뛰어넘을 수 있다는 것을 보여준 점에서 주목할만 합니다.  
+
+새롭게 발견된 정렬 알고리즘은 프로그래밍 언어인 C++의 표준 라이브러리에 기본 알고리즘으로 추가되었는데 이는 지난 10여년 없었던 일입니다. (10년만에 새로운 알고리즘이 추가 된 것입니다.)  
+
+정렬과 같이 매일 수조 번씩 수행되는 기본 알고리즘은 성능을 최대한 높이는 것이 무엇보다 중요하지만 더 이상 개선하기 어려운 한계에 이른 것으로 여겨져 왔는데 한낱 인간의 생각이었음이 밝혀졌습니다.  
+
+AlphaDev는 AlphaGo를 이긴 AlphaZero처럼 규칙만 알려주면 스스로 학습하는 강화학습 형태의 AI입니다. 
+
+어쩌면 이제부터 알고리즘은 인간의 영역을 벗어난채 AI가 만들어 주는대로 사용해야 하는 첫 번째 날이 될 수도 있을 것이란 생각이 듭니다.  
+
+
+<br>
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://assets-global.website-files.com/621e749a546b7592125f38ed/64807d68d425bdd22cc43233_Copy%20of%20alphadev_01_06_crops_crop5_0114%20(1).png')
+
+```
+
+
+<br>
+
+### cohere
+
+<br>
+
+[Cohere](https://cohere.com)  
+
+<br>  
+
+Microsoft가 투자한 OpenAI에 쫓기는 Google이 투자한 회사를 하나 소개합니다.  
+
+이번에 유니콘(기업가치 10억달러 이상 비상장기업) 대열에 합류한 cohere는 Alphabet(Google 모회사) 출신 연구들이 2019년 설립한 캐나다 소재의 AI Start-up입니다.  
+
+이 바닥에서는 chatGPT와 유사한 대화형 AI Model을 개발하여 OpenAI 경쟁사로 알려지길 바라는 모양새입니다. (사실 지금은 OpenAI와 비교가 좀....)
+
+다만 OpenAI와 달리 처음부터 기업에 특화된 대규모 언어모델에 집중하여 기업시장을 노리고 있습니다. (Microsoft가 매우 싫어하겠군요.)  
+
+[Bloomberg 기사](https://www.bloomberg.com/news/articles/2023-06-08/ai-startup-cohere-raises-270-million-in-round-backed-by-oracle-nvidia)에 따르면 cohere가 약 22억달러(2조8500억원)의 기업가치를 인정받으면서 기업용 생성 AI 개발을 위한 투자금 2억7000만달러(약 3500억원) 유치에 성공했다고 보도했습니다.  
+
+이번에 투자받은 금액은 지금까지 유치한 투자금 1억7500만달러를 크게 웃도는 규모로 총 유치 금액도 4억4500만달러로 늘어났습니다.   
+
+이번 펀딩에는 엔비디아, 오라클, 세일즈포스 등 미국 대기업도 포함되었는데 이들 기업의 구체적인 투자 규모는 알려지지 않았다고 합니다.  
+
+과연 cohere가 Microsoft + OpenAI의 아성에 도전할 수 있을지 흥미롭습니다.  
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202306/151607_161124_1043.png')
+
+```
+
+<br>
+
+### Microsoft Is Bringing OpenAI’s GPT-4 AI model to US Government Agencies
+
+<br>
+
+[기사링크](https://www.bloomberg.com/news/articles/2023-06-07/microsoft-offers-powerful-openai-technology-to-us-government-cloud-customers#xj4y7vzkg)  
+
+<br>  
+
+Google이 Microsoft의 밥그릇을 노리고 있다는 소식을 cohere를 소개하면서 말씀드렸습니다.  
+
+이번엔 Microsoft가 Palantir의 밥그릇을 노리는 소식입니다.  
+
+MS가 미정부 기관에 공급중인 Azure Government에서 OpenAI의 GPT-4, GPT-3를 사용할 수 있게 했다는 소식입니다.  
+
+이제 기업뿐만 아니라 정부기관까지도 AI가 스며들고 있습니다.  
+
+최근 상승세(주가)를 타고 있는 Palantir가 어떻게 움직일지 주목됩니다.  
+
+참고로 Palantir는 Paypal Mapia라 불리는 Paypal member 중 한 명인 Peter Thiel이 설립한 AI software 회사입니다.  
+
+아.. Elon Musk도 Paypal member 중 한 명입니다.  
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202306/151595_161110_4928.jpg')
+
+```
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### 분산에너지 활성화 특별법안
+
+<br>  
+
+[법안정보](https://opinion.lawmaking.go.kr/mob/nsmLmSts/out/2111769/detailR)     
+
+<br>
+
+지난 5월 국회를 통과한 분산에너지 활성화 특별법에서 출력제한에 대한 보상문제가 빠졌다는 소식이 들려오고 있습니다.  
+
+출력제한에 대한 보상이 없이 분산에너지를 어떻게 운영할 것이며, 잘 운영하는 사업자에 대한 보상은 어떻게 할지 궁금합니다.  
+
+이 법안을 찬찬히 살펴보면 앞으로 우리회사가 어떻게 사업방향을 가져가야 할지 보입니다.  
+
+일단 500MW이하는 모두 **분산**이라는 이름이 허용되고 여기에는 SMR도 포함됩니다.  
+
+또한 분산에너지 사용량을 할당하여 정부가 분산에너지 의무설치자와 설치의무지역을 지정하게 됩니다.  
+
+즉 지자체에서 분산 에너지를 일정 수준이상 지어야 한다는 뜻입니다.  
+
+주민 반발만 없다면 분산에너지로 SMR을 지울 수도 있습니다. 일단 대충 20%정도를 분산전원 발전 비중으로 보는 분위기입니다.  
+
+전력계통영향평가는 전력계통 조사 평가에 대한 것인데 한전 외 배전망 운영자가 등장할 가능성도 있습니다.  
+
+'분산에너지 특화지역'이라는 것도 생기는데 분산에너지 사업자는 전력시장을 거치지 않고 전력을 판매할 수도 있고, 전력 소비자는 분산 에너지 사업자와 한전 중 전력공급자를 선택할 수 있게 됩니다.  
+
+<br>
+
+<br>
+
+
+
+### LG전자 RE100 가입…재생에너지 전환‧탄소중립 ‘잰걸음’   
+  
+
+[기사링크](https://www.electimes.com/news/articleView.html?idxno=320994&fbclid=IwAR3OuwGsuXZ9nTDiHIQ75-aY8ZOUKeiIjmvbSREZqJxrmGvDHEmWtU6yI8w) 
+
+<br>
+
+RE100이 이제 LG전자까지 왔습니다.  
+
+창원에 [LG smartpark를 지으면서 지붕형 태양광 발전을 하고 GS EPS와 PPA를 맺을 때](https://live.lge.co.kr/lg-smart-park-gs/)부터 움직임이 다르다는 생각을 했었습니다.   
+
+LG전자도 사업을 해야 하니 결국 고객사의 요구를 들어줘야 하고 ESG경영도 생각해서 내린 결정인 것 같습니다.  
+
+이제 RE100에 참여한 국내 기업은 33개사가 되었습니다.  
+
+삼성전자는 통합보고서 제출 시 국내 공장 재생에너지 사용량을 명시하지 않아 곤혹을 치뤘는데...
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://cdn.electimes.com/news/photo/202306/320994_520731_1142.jpg')
+
+```
+
+<br>
+
+### Assard Razzouk의 팩폭 트윗
+
+설명이 필요없습니다.  
+
+현재 에너지 업계의 흐름을 데이터로 두들겨패는 트윗입니다.  
+
+5번째 슬라이드에서 보여주는 **Actual Solar Deployment**가 인상적입니다.  
+
+올해 [IEA는 2024년 태양광 설치 용량은 310GW로 예측](https://www.pv-magazine.com/2023/06/05/global-solar-additions-to-hit-310-gw-in-2024-says-iea/?fbclid=IwAR1z5l5o2ufF7Q5Ol5rlhfr7KK4SOTP7WLsBXhlCS7i_xXiE3nwZ216sqoU)했는데 재생에너지로 개종한 IEA가 얼마큼 잘 맞출지 기대해 보겠습니다.   
+
+<br><center>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The renewables revolution is unfolding live, fast and furiously. <br><br>&quot;It&#39;s exponential, global, and this decade&quot;: look at the data and do the math<br><br>THREAD</p>&mdash; Assaad Razzouk (@AssaadRazzouk) <a href="https://twitter.com/AssaadRazzouk/status/1667079204607868929?ref_src=twsrc%5Etfw">June 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</center><br>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(shape = 'circle',
+                          minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 6월 1일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 내포그린에너지 열병합 신설[+495.0MW]
+- 비중앙급전발전기 : 양보1 태양광발전소 신설 등[+23.5MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
