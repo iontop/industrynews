@@ -1,0 +1,337 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 118"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Mercedes-Benz takes in-car voice control to a new level with ChatGPT   
+
+<br>
+
+[기사링크](https://media.mercedes-benz.com/article/323212b5-1b56-458a-9324-20b25cc176cb)  
+
+<br>  
+
+지금까지는 다들 차에 있으나 제대로 쓰지 않았던 음성명령이 달라질 것 같습니다.  
+
+벤츠에서 음성명령을 chatGPT와 연동하겠다고 합니다.    
+
+일단 설치부터 멋집니다! 음성 명령으로 “Hey Mercedes, I want to join the beta programme” 말하면 무선을 통해 설치가 됩니다!!!  
+
+이런거 너무너무 단순하지만 멋진 아이디어인데... 우리는 이런 걸 왜 먼저 생각해내지 못할까요?  
+
+암튼 이걸 시작으로 이제 자동차시장을 양분하고 있는 Android Auto와 Apple CarPlay 시장에 변화가 생길 듯 합니다.  
+
+그나저나 Google은 Bard를 데리고 오면 될 것 같은데, Apple은 Siri를 어떻게 할 지 궁금해집니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://api.media.mercedes-benz.com/jsonapi/image/deliver/8124694b-835f-4260-9c9b-61b5a2d8eb44/1024')
+
+```
+
+<br>
+
+
+
+### Meta’s Open-Source LLM Will Be 100% Free – Here’s Why…  
+
+<br>
+
+[기사링크](https://www.knowyourmobile.com/ai/meta-open-source-llm/)  
+
+그대로 망해버릴줄 알았던 Meta가 Open-source라는 정책을 앞세워 빠르게 경쟁자들을 압박하고 있습니다.  
+
+LLaMA에 이어 LLM(Large Language Model)까지 Open-source로 누구나 사용할 수 있도록 했습니다.  
+
+OpenAI의 chatGPT, Google의 Bard가 모두 closed-source라 Open-source라는 정책이 제대로 먹혀들고 있습니다.  
+
+이미 open-source로 공개한 LLaMA 덕분에 주가도 회복하고 AI시장에서 입지를 굳힐 수 있었는데 추격하는 입장에서 open-source 전략이 유효하다고 판단한 듯 합니다.  
+
+과거 데이터 분석쪽에서는 Google이 개발한 Tensorflow와 Meta(당시 Facebook)에서 개발한 PyTorch가 주력으로 올라설 수 있었던 원동력이 되었던 것이 Open-source 정책이었는데, 이제 언어모델에서 2막이 시작되려 하는 모양새입니다.  
+ 
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://www.knowyourmobile.com/wp-content/uploads/2023/06/meta-open-source-llm.webp')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### 한전 제3자 PPA 제도개정 어떻게 진행되나 
+
+<br>  
+
+[기사링크](https://www.electimes.com/news/articleView.html?idxno=321492&fbclid=IwAR3oZZRDC1m6xcID5CE_D59dUtFfdNOmfdv_6gnWEoic8tNl3Ef1gh75XJ0)      
+
+<br>
+
+6월 14일 **제3자 PPA의 고시개정안** 공청회가 있었다는 기사입니다.  
+
+제3자 PPA란 RE100의 대표적인 이행수단으로 한전 중개로 전기소비자와 재생에너지 발전사업자간 전력구매계약(PPA)를 체결하여 소비자는 재생에너지로 생산한 전력을 구매하고 '재생에너지 사용 확인서'를 받아 RE100 및 온실가스 감축 이행에 활용하는 방법입니다.  
+
+개정안의 주요 내용은 아래와 같다고 합니다.  
+
+1. 제3자간 및 직접 전력거래계약 불가 ; 동일한 발전설비/전기사용자가 제3자간 혹은 직접전력계약 동시 체결 불가  
+
+2. 시장 참여자 대상조건 확대 ; 기존 1MW 초과 소비자만 참여 가능 $\rightarrow$ 300kW이상 소비자로 확대  
+
+3. 다수 전기사용자 공동계약 허용  
+
+4. 발전량 구매방식 선택허용 ; 기존 무조건 전체 생산전력 구매 $\rightarrow$ 합의하여 발전량 구매방식을 균등정산 혹은 시간대별 정산 가능  
+
+5. 초과 발전량 시장 거래 허용 ; 사용한 전력량을 초과하는 발전량에 대해 전력시장에서 거래 가능 (단 SMP, REC는 받을 수 없음)  
+
+6. 전력량계 비용부담 ; 양방향 전력량계 설치 시 전기판매사업자와 발전사업자가 동일하게 나눠서 부담  
+
+7. 거래 수수료 정립 ; 발전사업자 또는 전기사용자가 다수인 경우 1/N으로 정산  
+
+8. 부가 정산금 산정방식 변경 ; 직접 PPA 부가정산금과 제3자 PPA 정산금 단가를 동일하게 산정  
+
+9. 요금항목 단가 산정시기 ; 기존 전년도 12월 재산정하여 당해 1월 ~ 12월 적용 $\rightarrow$ 당해 6월 산정하여 당해 7월 ~ 내년 6월까지 적용  
+
+일단 5번 항목이 상당히 매력적일 것 같습니다. 기업(재생에너지 발전사업자)입장에서는 대규모 재생에너지를 공급받고 초과량은 전력시장에 팔 수 있게 된 것입니다. 재생에너지 발전사업자에게도 좋은 조건이고, 앞으로 시간대별 정산이 더 활성화 될 것으로 보입니다.  
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://cdn.electimes.com/news/photo/202306/321492_521307_5810.jpg')
+
+```
+
+<br>
+
+### Chinese PV Industry Brief: Jinko to build 56 GW vertically integrated PV factory 
+
+<br>  
+
+[기사링크](https://www.pv-magazine.com/2023/06/16/chinese-pv-industry-brief-jinko-to-build-56-gw-vertically-integrated-pv-factory/)      
+
+
+
+<br>
+
+
+중국 업체 소식입니다.  
+
+정말 말도 안되는 속도로 생산능력을 향상시키고 있습니다.  
+
+무서운 속도로 양산능력을 높여가고 있습니다.  
+
+**JinkoSolar**는 산시성에 56GW규모의 PV공장을 건설할 예정(\$78.8B)이라 하고 **Longi Green Energy**는 실리콘 웨이퍼 100GW, 태양전지(Solar cell) 50GW 생산용량을 갖춘 공장을 건설 예정(\$45.2B)이라 합니다.  
+
+Longi Green Energy의 공자는 완공시 세계 최대의 PV 생산시설이 될 것이라 합니다.  
+
+참고로 한국의 태양광 전체 용량은 4GW 정도이니 저 공장의 규모를 대충 짐작하실 수 있으실 것입니다.  
+
+하나더 참고로 2022년 세계 태양광 신규 설치용량은 260GW, 올해는 IEA 예측 기준 310GW 입니다.   
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://pswenergy.com.au/wp-content/uploads/2020/05/Jinko-Solar-Panels-Perth-WA-PSW-Energy-1.jpg')
+
+```
+
+<br>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+없음
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
