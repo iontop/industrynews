@@ -1,0 +1,308 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 120"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### 대한민국폭염일수인포그래픽    
+
+<br>
+
+[기사링크](https://www.kier.re.kr/tpp/energy/B/view/223?contentsName=info_heat&menuId=MENU00961&fbclid=IwAR2aUwFiKQMiCNWo6HaitMvkdIgqfjP110mB2aL0Oh9YUZHcrle2b1Mysgo)  
+
+<br>  
+
+이런 인포그래픽은 보는 것만으로도 즐겁습니다.  
+
+간만에 너무 잘 만들어진 인포그래픽을 찾아 공유합니다.  
+
+[한국에너지기술연구원](https://www.kier.re.kr) 정책연구실 안지석 연구원이 만든 인포그래픽입니다.  
+
+그래프를 보면 어떤 기능인지 보이는데 이렇게 구성할 수 있다는 것을 생각도 못했습니다.  
+
+<br>
+
+```{r, out.width="100%"}
+knitr::include_graphics('https://www.kier.re.kr/resources/images/tpp/contents/heat_graph_3.svg')
+
+```
+
+<br>
+
+
+
+### Google DeepMind’s CEO Says Its Next Algorithm Will Eclipse ChatGPT   
+
+<br>
+
+[기사링크](https://www.wired.com/story/google-deepmind-demis-hassabis-chatgpt/)  
+
+지난 주에 Meta의 LLM을 소개해 드렸는데, 이번 주는 구글의 Gemini를 소개합니다.  
+
+MS + OpenAI 에게 생성인공지능 시장을 내어준데다 Meta의 Opensource 전략이 먹히고 있는 시점에서 구글은 유튜브 데이터로 훈련시킨 멀티모달 LLM을 내보일 것이라 합니다.  
+
+이렇게 되면 안드로이드를 비롯한 구글 제품과 서비스에 MS Co-pilot + ChatGPT에 대응하는 서비스 제공이 가능해질 것으로 보입니다.  
+
+AlphaGo를 시작으로 인공지능에 대한 대중들의 관심을 받으며 관련 분야를 선도하는 모양새였으나 최근 chatGPT에 밀려 존재감조차 사라진 느낌입니다.  
+
+과연 구글은 어떤 성능과 서비스를 제공할지 관심을 가지고 지켜봐야 할 듯 합니다.  
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://cdn.aitimes.com/news/photo/202306/152027_161733_232.jpg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### Form EIA-923 detailed data with previous form data (EIA-906/920)   
+
+<br>  
+
+[DATA](https://www.eia.gov/electricity/data/eia923/)      
+
+<br>
+
+미국내 발전소 운영정보 데이터가 공개되었습니다.  
+
+누군가 관심이 있으시면 시간을 가지고 정리한번 해 주셨으면 하는 마음에 공유합니다.  
+
+2001년부터 2022년까지 2656개 발전소에서 매월 데이터를 수집하고 8588개 발전소에서 매년 데이터를 수집한 것입니다. 
+
+1970년부터 취득한 데이터도 있습니다.  
+
+어마무시한 데이터 양이라 어찌해볼 엄두가 나지 않는데 혹시 관심이 있으시면 한 번 함께 정리하는 기회를 가졌으면 합니다.
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://www.eia.gov/homepage/images/slider/SEDS.jpg')
+
+```
+
+<br>
+
+### There are so many stories underneath these three curves 
+
+<br>  
+
+짧고 간단하지만 굵직한 메시지를 던져주는 그래프입니다.  
+
+이런 직관적이고 강한 메시지를 던져주는 시각화는 수백페이지 보고서 보다 더욱 효과적입니다.  
+
+더 할 이야기 없을 정도로 직관적으로 메시지를 던져주고 있습니다.  
+
+개인이나 회사나 미래를 위해서 무엇을 해야할지 명확하게 보여주고 있습니다.  
+
+
+<br>
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">There are so many stories underneath these three curves <a href="https://t.co/CnifFZ19Rp">pic.twitter.com/CnifFZ19Rp</a></p>&mdash; Nat Bullard (@NatBullard) <a href="https://twitter.com/NatBullard/status/1674569173052059649?ref_src=twsrc%5Etfw">June 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 6월 29일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 동교 태양광 발전소 신설 등[+10.125MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
