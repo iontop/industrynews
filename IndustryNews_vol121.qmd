@@ -1,0 +1,352 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 121"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Chatbot Arena Leaderboard Updates (Week 4)
+
+<br>
+
+[기사링크](https://lmsys.org/blog/2023-05-25-leaderboard/?fbclid=IwAR37diU4IssFpG_kx01Pm6BZoEP5PcJovhBdkOF5o8gyQXT0zzJROaPyPj8)  
+
+<br>
+
+그야말로 인공지능 챗봇의 춘추전국시대입니다.  
+
+링크를 타고 들어가면 생성형 AI 기반 챗봇의 순위(정성평가)가 나옵니다.  
+
+정성평가라 함은 특정 지표를 가지고 순위를 매긴 것이 아니라 4만명을 대상으로 좋다고 하는 모델을 뽑은 것이기 때문입니다.  
+
+1위는 역시 OpenAI의 GPT-4입니다. 2,3위가 구글이 지분투자 한 Anthropic의 Claude-v1가 차지했습니다.  
+
+이를 이어 4위가 OpenAI의 GPT-3.5의 순서로 이어집니다.  
+
+Meta도 겨우 마지막 17위를 차지했습니다. 
+
+조만간 상용화 될 예정이라는 LMSYS의 Vicuna가 5,7위를 차지한 점이 눈에 띄네요.  
+
+<br>
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://lmsys.org/images/blog/leaderboard_week4/win_fraction_matrix.png')
+
+```
+
+
+<br>
+
+### Mark Zuckerberg’s Twitter rival passed 30 million sign-ups overnight — here’s how to use Meta’s Threads app and what’s missing
+
+<br>
+
+[기사링크](https://www.cnbc.com/2023/07/06/how-to-use-metas-threads-app-and-whats-missing.html)  
+
+<br>  
+
+다 죽어가던 Meta가 다시 살아나고 있습니다.  
+
+이번 주 최대 뉴스는 아마도 Threads 일 것입니다.  
+
+상세 뉴스는 인터넷에 도배가 된 상황이니 다들 잘 아실터이고, 첫 날에만 가입자 3000만명을 달성하는 기염을 토하면서 Twitter를 위협하고 있습니다.
+
+유럽과 중국이 빠진 상태에서 이뤄낸 성과이니 이정도면 사실상 승리라해도 무방할 것 같습니다.  
+
+Twitter의 월간 활성사용자 수가 2억명을 넘었으니, 우선 이게 목표가 될 듯합니다.  
+
+여튼 간만에 새로운 SNS의 등장과 머스크와 저커버그의 대결까지 흥미롭게 진행되고 있는 모양새 입니다.  
+
+그나저나 이렇게 Meta가 살아날지 누가 생각을 했겠습니까....  
+
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://image.cnbcfm.com/api/v1/image/107266765-1688562432633-gettyimages-1494425577-AA_04072023_1259286.jpeg')
+
+```
+
+<br>
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### California’s electricity duck curve is deepening  
+
+<br>
+
+[기사링크](https://www.pv-magazine.com/2023/07/06/californias-electricity-duck-curve-is-deepening/?fbclid=IwAR1WY6-tv5UGBzdZrt6oy_6XA_joTI904bfqSBo2oTW67CGb3kWcCFaCIi0)  
+
+<br>  
+
+사실 몇 주전에 이 기사를 EIA에서 보고 공유드릴려고 했는데 다시 찾으려니 찾지 못해 아쉬워했었는데 다행히 다른 곳에서 기사화 해 주어 공유 합니다.  
+
+늘 이야기 하듯 캘리포니아에 재생전력의 확대로 Duck curve가 점점 심화되고 있다는 내용입니다.  
+
+아래 보시는 것과 같이 2021년 이후 낮시간에는 기저부하가 필요없을 정도로 재생에너지의 비중이 높아졌습니다.  
+
+기저부하, 그리드 관성 등의 표현이 이제 조금만 더 지나면 옛날 옛적 이야기가 되어 버릴 판입니다.  
+
+<br>
+
+
+```{r ,out.width="100%"}
+knitr::include_graphics('./vol121_EIACalifornia.png')
+
+```
+
+
+<br>
+
+
+
+### “10년 만의 대기록”…한화큐셀, 美 태양광 모듈 ‘역대 최대 점유율’     
+
+<br>  
+
+[기사링크](https://www.asiatoday.co.kr/view.php?key=20230703010000454) 
+
+<br>
+
+경쟁사(?)이긴 하지만 한국 태양광 제조기업인 한화 큐셀 소식입니다.  
+
+미국내 태양광 모듈 최대 점유율을 기록했다고 합니다. IRA와 미중 무역갈등, 그리고 미국 태양광 시장의 폭발적 성장 3박자가 잘 맞아떨어진 결과입니다.  
+
+환경이 좋았다해도 기술력이 어느정도 인정받았기 때문이기도 합니다.  
+
+국내에서는 태양광 발전이 중국제품에 치이고 정치적인 이슈에 밀려 고사 직전인 상황에서 고무적인 소식입니다.  
+
+미국시장에서 발전 기자재로 시장 점유율 1등을 할 줄이야... 참 부럽기도 하고, 대단하다는 생각이 듭니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://img.asiatoday.co.kr/file/2023y/07m/03d/2023070301000105500004801.jpg')
+
+```
+
+<br>
+
+### 신재생에너지 정책 전면 재검토…RPS 개편·소형태양광 우대 종료     
+  
+<br>. 
+
+[기사링크](https://m.ekn.kr/view.php?key=20230704010000791) 
+
+<br>
+
+산업통상자원부는 에너지 발전단가를 높게 쳐주는 신재생에너지 공급의무화제도(RPS)를 수정하고 농민·협동조합에 혜택을 주던 소형태양광고정가격계약(FIT)을 종료시킬 계획이라는 소식입니다.  
+
+산업부는 소형태양광에 대해 20년간 입찰경쟁 없이 고정가격으로 매입해주는 우대제도 FIT 때문에 소규모 태양광이 급속도로 확대되며 계통수급 문제가 발생했다고 보았고, FIT 종료를 위한 의견수렴 절차를 진행할 예정이라 합니다.  
+
+또한 재생에너지 발전사업 설치비를 고려해 전력도매가격(SMP)과 에너지공급인증서(REC) 가격을 더해 보상해주는 RPS 제도를 재검토하고, 재생에너지 입찰시장을 통해 적절한 가격을 매기는 방안을 마련 중이라는 내용도 포함되어 있습니다.    
+
+아울러 향후 신재생에너지 정책혁신 TF 회의에서 부정 청탁 방지 조치, 에너지 유관기관 종사자의 태양광 사업 금지 방안 등을 논의하고 수천억 원 규모의 신재생에너지 예산지원 사업들을 전면 점검할 예정이라고 합니다.
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://www.ekn.kr/mnt/file/202307/2023070501000180900008491.jpg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(shape = 'circle',
+                          minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 7월 5일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 여주복합CC 신설[+1,025.4MW]
+- 비중앙급전발전기 : 잭앤트리태양광 신설 등[+3.2MW]
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
