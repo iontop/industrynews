@@ -1,0 +1,355 @@
+---
+title: "A.H.N Letter"
+subtitle: "for Your Industry News"
+description: "Vol. 122"
+author: 
+- name: 안준호 [`r emo::ji("e-mail")`](mailto:junho.ahn@gmail.com)
+  affiliations:
+    - name: 두산에너빌리티
+lang: kr
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+license: "Copyright 안준호. 2023. All Rights Reserved"
+output: 
+  html:
+    fig-width: 8
+    fig-height: 4
+format: 
+  html: 
+    theme: lux
+    fontsize: 0.95em
+    toc: true
+    toc-depth: 2
+    toc-title: "목차"
+    code-fold: true
+    self-contained: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h1.title{
+    color:#005EB8;
+    font-weight:bold;
+  }
+  
+  p.subtitle.lead{
+    color:#00A5D7;
+    font-weight:bold;
+  }
+</style>
+
+```{r, setup, include=FALSE}
+graphics.off()
+rm(list = ls())
+gc()
+
+knitr::opts_chunk$set(echo=FALSE, 
+                      message=FALSE, 
+                      warning=FALSE,
+                      fig.align = "center",
+                      cache=TRUE,
+                      dpi = 96
+)
+
+```
+
+<pre>
+
+
+
+
+</pre>
+
+
+## PART 1. 데이터분석, 인공지능
+
+### Claude   
+
+<br>
+
+[claude](https://claude.ai/)  
+
+<br>  
+
+Anthropic의 claude 두번째 버전이 Release 되었습니다.  
+
+지금은 로그인 하려고 하면 US와 UK에서만 된다면서 가능한 지역인지 확인하라는 메시지가 나옵니다. (안타깝지만 한국에서는 아직 사용이 불가합니다. `r emo::ji("sob")`)  
+
+사용자들의 의견에 따르면 전작에 비해 많은 부분이 업데이트 되었는데, 그 중 몇개를 꼽아보자면 GRE와 변호사 시험에서 GPT-4를 능가하는 수치를 보여주었고 특히 한번에 처리할 수 있는 컨텍스트가 100,000토큰으로 증가하였다고 합니다.  
+
+이는 GPT-4의 8K에 비해 12배 더 긴 문장을 한번에 입력시킬 수 있다는건데 claude를 만든 Anthropic사에서는 '위대한 개츠비' 작품을 한번에 기억시키고, 그 중 한문장만 고쳐서 차이점을 물어봤을경우 22초만에 답을 찾아낼 수 있었다고 합니다.  
+
+따라서 기업이나 기타 API를 사용하는 경우를 제외한, 일반적인 소비자 입장에서 보면 chatGPT 대비 다음의 두 가지 장점이 있을 수 있습니다.  
+
+- chatGPT처럼 별도의 플러그인 없이 txt, csv, pdf 등을 바로 채팅창에 올려 분석 요청할 수 있음
+
+- chatGPT보다 10배 이상 긴 텍스트를 한번에 물어볼 수 있음
+
+Anthropic은 2022년 Google이 3억달러를 투자하면서 지분의 10%를 보유하고 있습니다.  
+
+Google의 Gemini(작명이 정말 마음에 듭니다.)와 합쳐져서 시너지를 일으킬 경우 chat GPT의 독주가 계속되리라 장담할 수 없을 것 같습니다.  
+
+
+<br>
+
+```{r, out.width="100%"}
+knitr::include_graphics('https://scriblre.com/wp-content/uploads/2023/07/claude-ai-1.webp')
+
+```
+
+<br>
+
+
+
+### Introducing NotebookLM    
+
+<br>
+
+[NotebookLM](https://blog.google/technology/ai/notebooklm-google-ai/)  
+
+Google의 새로운 서비스입니다.  
+
+[Bard update](https://bard.google.com/updates)에 묻혀 조용하게 지나는 듯 합니다.  
+
+저는 Bard update보다 더 와 닿는데, 지난 5월 [Google I/O](https://techcrunch.com/2023/05/10/with-project-tailwind-google-aims-to-make-note-taking-smarter/)에 공개한 tailwind project를 앱으로 만든 것으로 사용자의 노트북에 있는 정보를 모아 노트를 만들어 주는 기능입니다.  
+
+지금처럼 정보를 찾을 필요없이 해당 앱을 이용하여 "터빈의 성능을 높일 수 있는 타사의 아이디어를 정리해줘"라고 하면 노트북 내 자료를 알아서 찾고 정리하여 노트를 만들어 줍니다!!! `r emo::ji("+1")` 
+
+정리된 노트에서 "Key topics"을 추출해주고, 질문을 받기도 합니다.  
+
+그동안 모아둔 자료가 빛을 발할 때가 왔습니다.  
+
+Google은 아직 이걸 어디에 쓸 지 모르겠다고 하지만 저는 잠재력이 굉장히 클 것으로 보고 있습니다.  
+
+이런 기술을 볼 때마다 이젠 정말 더 이상 AI가 없었던 시절로 돌아가는 것은 불가능하다는 것이 체감됩니다.  
+
+
+<br>
+
+```{r, out.width="100%"}
+knitr::include_graphics('https://storage.googleapis.com/gweb-uniblog-publish-prod/images/DocumentGuide-Keyword-V2.width-1000.format-webp.webp')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre>
+
+## PART 2. 전력산업 동향
+
+<br>  
+
+### A New Energy Pact for Africa   
+
+<br>  
+
+[기사링크](https://www.project-syndicate.org/commentary/new-energy-pact-for-africa-will-create-prosperous-future-by-william-ruto-and-fatih-birol-2023-07)      
+
+<br>
+
+아프리카 에너지 시장에 대한 흥미로운 기사가 있어 가져왔습니다.  
+
+1. Despite being home to 60% of the best solar resources globally, for example, Africa has roughly the same installed solar PV capacity as Belgium, a small country not known for its sunshine.  
+
+2. Throughout Africa, hundreds of millions of people still lack access to electricity – a major impediment to gaining an education, finding regular employment, and contributing to a productive economy.  
+
+3. Four out of five people in Sub-Saharan Africa still cook with wood and biomass, which, when burned, produces harmful smoke.  
+
+4. Nearly a half-million premature deaths per year in Sub-Saharan Africa are linked to household air pollution resulting from the lack of access to clean cooking facilities.  
+ 
+5. Currently, only about 3% of energy investments worldwide are made in Africa, even though the continent is home to 17% of the world’s population. 
+
+아프리카가 기회의 땅이라 하는 이야기는 많이 듣지만 구체적인 숫자 - 특히 에너지 분야 - 는 잘 알지 못했는데 이 기사에 잘 정리되어 있습니다.
+
+기사를 읽으면서 아직 기회의 땅은 많구나 하는 생각을 했습니다.  
+
+
+<br>
+
+```{r, out.width="75%"}
+knitr::include_graphics('https://webapi.project-syndicate.org/library/8d61b66ddf7b519256fecc660d5b235e.2-1-super.1.jpg')
+
+```
+
+<br>
+
+### PJM Planning
+
+<br>  
+
+[PJM Planning](https://pjm.com/planning)
+
+<br>
+
+미국 동부 전력회사인 PJM의 홈페이지를 둘러보다가 상당히 잘 구성되어 있어 소개 해 드립니다.  
+
+특히 향후 계획을 정리해 둔 Planning을 보면 어떤 식으로 미국의 에너지 시장이 바뀔지 알 수 있습니다.  
+
+놀라운 것이 Queued Generation Fuel Mix 부분인데... 제가 보고 있는 7월 15일 17:50 기준 태양광이 75GW, ESS가 54GW, 풍력이 22GW 대기 중입니다.  
+
+에너지 전환이 매우 빠른 속도로 진행되고 있음을 알 수 있습니다.  
+
+<br>
+
+### 롯데케미칼, RE100 가입…2050년까지 전력 100% 재생에너지로     
+  
+<br>
+
+[기사링크](https://www.yna.co.kr/view/AKR20230705044600003?fbclid=IwAR2onvKL2BnJBMa3jVFaKcEEQQ5Jsn23rENQHb8qS7qB5JpzG7t_4zOjkxk) 
+
+<br>
+
+롯데케미칼의 RE100 가입 소식입니다.   
+
+국내 기업중 34번째 RE100 가입 입니다.  
+
+국내에서 재생에너지 충당이 가능할지 의문입니다. 최근 [삼성전자 지속가능경영보고서 2023](https://download.semiconductor.samsung.com/resources/others/Samsung_Electronics_Sustainability_Report_2023_KOR.pdf)에서도 *삼성전자는 전력사용으로 인해 발생하는 탄소 간접배출(Scope2)을 줄이기 위해 글로벌 이니셔티브인 RE100에 가입했습니다. 전력 수요가 큰 반면 국내 재생에너지 공급 여건이 상대적으로 불리한 상황이지만 2050년까지 사용 전력 100%의 재생에너지 전환을 추진할 예정입니다. 이를 위해 우선 2027년까지 모든 해외사업장에서 재생에너지 목표 달성을 추진합니다. 베트남∙인도∙브라질은 2022년 재생에너지 전환을 완료했고, 중남미 2025년, 동남아∙CIS∙아프리카는 2027년까지 재생에너지 목표 달성을 완료할 예정입니다. 이미 재생에너지 목표를 달성한 미국, 중국, 유럽의 경우 재생에너지 공급 계약(PPA)을 국가제도가 구비되고 재생에너지 시장이 활성화된 지역 중심으로 확대해 나갈 예정입니다.* 라고 국내에서 재생에너지 공급 여건이 불리하다는 의견을 내었습니다.  
+
+기업이 요구하는 방향과 정부가 이끄는 전력 정책간의 간극이 점점 커지고 있습니다.  
+
+향후 방향이 어떻게 될지 관심을 가져야 할 때 입니다.  
+
+<br>  
+
+```{r ,out.width="75%"}
+knitr::include_graphics('https://img9.yna.co.kr/etc/inner/KR/2023/07/05/AKR20230705044600003_01_i_P4.jpg')
+
+```
+
+<pre>
+
+
+</pre>
+
+--- 
+
+<pre>
+
+
+</pre> 
+
+## PART 3. 전력시장
+
+<br>
+
+### Wordcloud for Energy  
+
+<br>  
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(tidytext)
+library(wordcloud2)
+library(stringr)
+
+
+
+eng_news <- function(term) {
+
+  html_dat <- read_html(paste0("https://news.google.com/search?q=",term,"&hl=en-US&gl=US&ceid=US%3Aen"))
+
+  dat <- data.frame(Link = html_dat %>%
+                      html_nodes('.VDXfz') %>%
+                      html_attr('href')) %>%
+    mutate(Link = gsub("./articles/","https://news.google.com/articles/",Link))
+
+  news_dat <- data.frame(
+    Title = html_dat %>%
+      html_nodes('.DY5T1d') %>%
+      html_text(),
+    Link = dat$Link
+  )
+
+  return(news_dat)
+}
+
+df1 <- eng_news("energy")
+
+title_text <- df1$Title
+
+title_text <-
+  title_text %>%
+  tolower() %>% # 모두 소문자로 변환
+  str_replace_all("[[:punct:]]", "") %>% # 구두점 삭제
+  str_replace_all("\\W", " ") %>% # 알파벳, 숫자, _ 빼고 공백으로 변환
+  str_replace_all("\\v", "") %>% # 수직 탭 (|) 삭제
+  str_replace_all("(?i)(energy)", "")
+  # %>%  
+  # str_replace_all("(?i)(doosan)", "") %>% # 대소문자 관계없이 doosan 삭제
+  # str_replace_all("(?i)(enerbility)", "") %>%
+  # str_replace_all("(?i)(heavy)", "")
+
+title_text <-
+  title_text %>%
+  tibble() # no=1:nrow(df1), text = title_text
+
+names(title_text)[1] <- "title"
+
+title_text <-
+  title_text %>%
+  unnest_tokens(word, title) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE)
+
+names(title_text) <- c("words", "freq")
+
+title_text %>% wordcloud2(minRotation = -pi/6,
+                          maxRotation = -pi/6,
+                          rotateRatio = 1)
+
+```
+
+<br>
+
+### 전력계통  
+  
+2023년 7월 12일 적용 발전설비 용량변경
+
+
+<변동내역>
+
+- 중앙급전발전기 : 없음
+- 비중앙급전발전기 : 광진포항1 태양광발전소 신설 등[+141.514MW]
+
+
+<br>
+
+<div class="right">
+__best regards,__  
+__J.H__
+</div>
+
+<br>  
+
+---
+**Industry News?**  
+매주 데이터 분석, 인공지능, 전력산업의 새로운 소식과 산업계 동향을 공유하는 뉴스레터입니다.   
+Feedback은 언제라도 환영합니다.   
+`r emo::ji("mailbox")` junho.ahn@doosan.com
+
+<br>
+<br>
+
+<div class="right">
+__END__
+</div>
+
+<br>
